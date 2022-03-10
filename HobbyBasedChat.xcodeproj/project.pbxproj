@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03ADF2B3D2B96BBC4CAE336C /* Pods_HobbyBasedChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2740E84C916D5533B17DB9 /* Pods_HobbyBasedChat.framework */; };
+		0FAAF8153F2EC6314C2D2097 /* Pods_HobbyBasedChat_HobbyBasedChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F39029AD2B7773A9F79E3B /* Pods_HobbyBasedChat_HobbyBasedChatUITests.framework */; };
+		579DC8FF1E68464279E0BB3E /* Pods_HobbyBasedChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */; };
 		F4EDAE4527D9A4D6005D26E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE4427D9A4D6005D26E6 /* AppDelegate.swift */; };
 		F4EDAE4727D9A4D6005D26E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE4627D9A4D6005D26E6 /* SceneDelegate.swift */; };
 		F4EDAE4927D9A4D6005D26E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE4827D9A4D6005D26E6 /* ViewController.swift */; };
-		F4EDAE4C27D9A4D6005D26E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE4A27D9A4D6005D26E6 /* Main.storyboard */; };
 		F4EDAE4E27D9A4D8005D26E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE4D27D9A4D8005D26E6 /* Assets.xcassets */; };
 		F4EDAE5127D9A4D8005D26E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE4F27D9A4D8005D26E6 /* LaunchScreen.storyboard */; };
 		F4EDAE5C27D9A4D9005D26E6 /* HobbyBasedChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE5B27D9A4D9005D26E6 /* HobbyBasedChatTests.swift */; };
 		F4EDAE6627D9A4D9005D26E6 /* HobbyBasedChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE6527D9A4D9005D26E6 /* HobbyBasedChatUITests.swift */; };
 		F4EDAE6827D9A4D9005D26E6 /* HobbyBasedChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE6727D9A4D9005D26E6 /* HobbyBasedChatUITestsLaunchTests.swift */; };
+		F4EDAE7727D9A5D2005D26E6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EDAE7627D9A5D2005D26E6 /* StoreKit.framework */; };
+		F4EDAE7D27D9AEC6005D26E6 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE7A27D9AEC6005D26E6 /* NotoSansCJKkr-Medium.otf */; };
+		F4EDAE7E27D9AEC6005D26E6 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE7B27D9AEC6005D26E6 /* NotoSansCJKkr-Bold.otf */; };
+		F4EDAE7F27D9AEC6005D26E6 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE7C27D9AEC6005D26E6 /* NotoSansCJKkr-Regular.otf */; };
+		F4EDAE8327DA1754005D26E6 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE8227DA1754005D26E6 /* Toast */; };
+		F4EDAE8627DA176D005D26E6 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE8527DA176D005D26E6 /* Tabman */; };
+		F4EDAE8927DA1790005D26E6 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE8827DA1790005D26E6 /* RxCocoa */; };
+		F4EDAE8B27DA1790005D26E6 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE8A27DA1790005D26E6 /* RxRelay */; };
+		F4EDAE8D27DA1790005D26E6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE8C27DA1790005D26E6 /* RxSwift */; };
+		F4EDAE9027DA17B7005D26E6 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE8F27DA17B7005D26E6 /* SocketIO */; };
+		F4EDAE9327DA17D9005D26E6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE9227DA17D9005D26E6 /* Alamofire */; };
+		F4EDAE9627DA1AC1005D26E6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE9527DA1AC1005D26E6 /* SnapKit */; };
+		F4EDAE9927DA1B12005D26E6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE9827DA1B12005D26E6 /* Realm */; };
+		F4EDAE9B27DA1B12005D26E6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE9A27DA1B12005D26E6 /* RealmSwift */; };
+		F4EDAE9E27DA1BD4005D26E6 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE9D27DA1BD4005D26E6 /* RxDataSources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +53,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17F39029AD2B7773A9F79E3B /* Pods_HobbyBasedChat_HobbyBasedChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChat_HobbyBasedChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55EE52924397FB594FC16F6C /* Pods-HobbyBasedChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat.debug.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat/Pods-HobbyBasedChat.debug.xcconfig"; sourceTree = "<group>"; };
+		5E2740E84C916D5533B17DB9 /* Pods_HobbyBasedChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA9BE8AE4F754AEF2580E23 /* Pods-HobbyBasedChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat/Pods-HobbyBasedChat.release.xcconfig"; sourceTree = "<group>"; };
+		A73D44C4E3CB2123B9393AAF /* Pods-HobbyBasedChat-HobbyBasedChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF3A420035E255B906E2F0E1 /* Pods-HobbyBasedChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChatTests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChatTests/Pods-HobbyBasedChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		B67BA6502903B8176341B260 /* Pods-HobbyBasedChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChatTests.debug.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChatTests/Pods-HobbyBasedChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4EDAE4127D9A4D6005D26E6 /* HobbyBasedChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyBasedChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EDAE4427D9A4D6005D26E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4EDAE4627D9A4D6005D26E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4EDAE4827D9A4D6005D26E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4EDAE4B27D9A4D6005D26E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4EDAE4D27D9A4D8005D26E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4EDAE5027D9A4D8005D26E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4EDAE5227D9A4D8005D26E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +72,13 @@
 		F4EDAE6127D9A4D9005D26E6 /* HobbyBasedChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HobbyBasedChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EDAE6527D9A4D9005D26E6 /* HobbyBasedChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyBasedChatUITests.swift; sourceTree = "<group>"; };
 		F4EDAE6727D9A4D9005D26E6 /* HobbyBasedChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyBasedChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4EDAE7427D9A5C7005D26E6 /* HobbyBasedChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HobbyBasedChat.entitlements; sourceTree = "<group>"; };
+		F4EDAE7627D9A5D2005D26E6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F4EDAE7A27D9AEC6005D26E6 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Medium.otf"; path = "../../../../../../Downloads/NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		F4EDAE7B27D9AEC6005D26E6 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Bold.otf"; path = "../../../../../../Downloads/NotoSansCJKkr-hinted/NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		F4EDAE7C27D9AEC6005D26E6 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Regular.otf"; path = "../../../../../../Downloads/NotoSansCJKkr-hinted/NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4EDAE9B27DA1B12005D26E6 /* RealmSwift in Frameworks */,
+				F4EDAE9E27DA1BD4005D26E6 /* RxDataSources in Frameworks */,
+				F4EDAE9927DA1B12005D26E6 /* Realm in Frameworks */,
+				F4EDAE9327DA17D9005D26E6 /* Alamofire in Frameworks */,
+				F4EDAE8B27DA1790005D26E6 /* RxRelay in Frameworks */,
+				F4EDAE9027DA17B7005D26E6 /* SocketIO in Frameworks */,
+				F4EDAE8327DA1754005D26E6 /* Toast in Frameworks */,
+				F4EDAE8627DA176D005D26E6 /* Tabman in Frameworks */,
+				F4EDAE8927DA1790005D26E6 /* RxCocoa in Frameworks */,
+				F4EDAE7727D9A5D2005D26E6 /* StoreKit.framework in Frameworks */,
+				03ADF2B3D2B96BBC4CAE336C /* Pods_HobbyBasedChat.framework in Frameworks */,
+				F4EDAE8D27DA1790005D26E6 /* RxSwift in Frameworks */,
+				F4EDAE9627DA1AC1005D26E6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579DC8FF1E68464279E0BB3E /* Pods_HobbyBasedChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +114,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FAAF8153F2EC6314C2D2097 /* Pods_HobbyBasedChat_HobbyBasedChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CDFAB1F5A69667A78EFDFCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55EE52924397FB594FC16F6C /* Pods-HobbyBasedChat.debug.xcconfig */,
+				5EA9BE8AE4F754AEF2580E23 /* Pods-HobbyBasedChat.release.xcconfig */,
+				A73D44C4E3CB2123B9393AAF /* Pods-HobbyBasedChat-HobbyBasedChatUITests.debug.xcconfig */,
+				FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */,
+				B67BA6502903B8176341B260 /* Pods-HobbyBasedChatTests.debug.xcconfig */,
+				AF3A420035E255B906E2F0E1 /* Pods-HobbyBasedChatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F4EDAE3827D9A4D6005D26E6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +141,8 @@
 				F4EDAE5A27D9A4D9005D26E6 /* HobbyBasedChatTests */,
 				F4EDAE6427D9A4D9005D26E6 /* HobbyBasedChatUITests */,
 				F4EDAE4227D9A4D6005D26E6 /* Products */,
+				F4EDAE7527D9A5D2005D26E6 /* Frameworks */,
+				7CDFAB1F5A69667A78EFDFCB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +159,10 @@
 		F4EDAE4327D9A4D6005D26E6 /* HobbyBasedChat */ = {
 			isa = PBXGroup;
 			children = (
-				F4EDAE4427D9A4D6005D26E6 /* AppDelegate.swift */,
-				F4EDAE4627D9A4D6005D26E6 /* SceneDelegate.swift */,
+				F4EDAE7427D9A5C7005D26E6 /* HobbyBasedChat.entitlements */,
 				F4EDAE4827D9A4D6005D26E6 /* ViewController.swift */,
-				F4EDAE4A27D9A4D6005D26E6 /* Main.storyboard */,
-				F4EDAE4D27D9A4D8005D26E6 /* Assets.xcassets */,
-				F4EDAE4F27D9A4D8005D26E6 /* LaunchScreen.storyboard */,
+				F4EDAE8027D9B585005D26E6 /* Resources */,
+				F4EDAE7927D9AE5B005D26E6 /* Font */,
 				F4EDAE5227D9A4D8005D26E6 /* Info.plist */,
 			);
 			path = HobbyBasedChat;
@@ -127,6 +185,38 @@
 			path = HobbyBasedChatUITests;
 			sourceTree = "<group>";
 		};
+		F4EDAE7527D9A5D2005D26E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAE7627D9A5D2005D26E6 /* StoreKit.framework */,
+				5E2740E84C916D5533B17DB9 /* Pods_HobbyBasedChat.framework */,
+				17F39029AD2B7773A9F79E3B /* Pods_HobbyBasedChat_HobbyBasedChatUITests.framework */,
+				FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4EDAE7927D9AE5B005D26E6 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAE7B27D9AEC6005D26E6 /* NotoSansCJKkr-Bold.otf */,
+				F4EDAE7A27D9AEC6005D26E6 /* NotoSansCJKkr-Medium.otf */,
+				F4EDAE7C27D9AEC6005D26E6 /* NotoSansCJKkr-Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		F4EDAE8027D9B585005D26E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAE4F27D9A4D8005D26E6 /* LaunchScreen.storyboard */,
+				F4EDAE4D27D9A4D8005D26E6 /* Assets.xcassets */,
+				F4EDAE4427D9A4D6005D26E6 /* AppDelegate.swift */,
+				F4EDAE4627D9A4D6005D26E6 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +224,31 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4EDAE6B27D9A4D9005D26E6 /* Build configuration list for PBXNativeTarget "HobbyBasedChat" */;
 			buildPhases = (
+				4665F9D3A06792E93D336917 /* [CP] Check Pods Manifest.lock */,
+				F4EDAE7827D9AD2F005D26E6 /* ShellScript */,
 				F4EDAE3D27D9A4D6005D26E6 /* Sources */,
 				F4EDAE3E27D9A4D6005D26E6 /* Frameworks */,
 				F4EDAE3F27D9A4D6005D26E6 /* Resources */,
+				BE0E5F0146D424DB428886E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = HobbyBasedChat;
+			packageProductDependencies = (
+				F4EDAE8227DA1754005D26E6 /* Toast */,
+				F4EDAE8527DA176D005D26E6 /* Tabman */,
+				F4EDAE8827DA1790005D26E6 /* RxCocoa */,
+				F4EDAE8A27DA1790005D26E6 /* RxRelay */,
+				F4EDAE8C27DA1790005D26E6 /* RxSwift */,
+				F4EDAE8F27DA17B7005D26E6 /* SocketIO */,
+				F4EDAE9227DA17D9005D26E6 /* Alamofire */,
+				F4EDAE9527DA1AC1005D26E6 /* SnapKit */,
+				F4EDAE9827DA1B12005D26E6 /* Realm */,
+				F4EDAE9A27DA1B12005D26E6 /* RealmSwift */,
+				F4EDAE9D27DA1BD4005D26E6 /* RxDataSources */,
+			);
 			productName = HobbyBasedChat;
 			productReference = F4EDAE4127D9A4D6005D26E6 /* HobbyBasedChat.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4EDAE6E27D9A4D9005D26E6 /* Build configuration list for PBXNativeTarget "HobbyBasedChatTests" */;
 			buildPhases = (
+				F1FB22E9A2AC86E6646EAECA /* [CP] Check Pods Manifest.lock */,
 				F4EDAE5327D9A4D9005D26E6 /* Sources */,
 				F4EDAE5427D9A4D9005D26E6 /* Frameworks */,
 				F4EDAE5527D9A4D9005D26E6 /* Resources */,
@@ -169,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4EDAE7127D9A4D9005D26E6 /* Build configuration list for PBXNativeTarget "HobbyBasedChatUITests" */;
 			buildPhases = (
+				8372FC658B71ABBA45D7ADE7 /* [CP] Check Pods Manifest.lock */,
 				F4EDAE5D27D9A4D9005D26E6 /* Sources */,
 				F4EDAE5E27D9A4D9005D26E6 /* Frameworks */,
 				F4EDAE5F27D9A4D9005D26E6 /* Resources */,
+				2580C575178A903FEEC6C943 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +324,16 @@
 				Base,
 			);
 			mainGroup = F4EDAE3827D9A4D6005D26E6;
+			packageReferences = (
+				F4EDAE8127DA1754005D26E6 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				F4EDAE8427DA176D005D26E6 /* XCRemoteSwiftPackageReference "Tabman" */,
+				F4EDAE8727DA1790005D26E6 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F4EDAE8E27DA17B6005D26E6 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+				F4EDAE9127DA17D9005D26E6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F4EDAE9427DA1AC1005D26E6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F4EDAE9727DA1B12005D26E6 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				F4EDAE9C27DA1BD3005D26E6 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+			);
 			productRefGroup = F4EDAE4227D9A4D6005D26E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,8 +351,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4EDAE5127D9A4D8005D26E6 /* LaunchScreen.storyboard in Resources */,
+				F4EDAE7F27D9AEC6005D26E6 /* NotoSansCJKkr-Regular.otf in Resources */,
+				F4EDAE7E27D9AEC6005D26E6 /* NotoSansCJKkr-Bold.otf in Resources */,
 				F4EDAE4E27D9A4D8005D26E6 /* Assets.xcassets in Resources */,
-				F4EDAE4C27D9A4D6005D26E6 /* Main.storyboard in Resources */,
+				F4EDAE7D27D9AEC6005D26E6 /* NotoSansCJKkr-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +373,127 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2580C575178A903FEEC6C943 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4665F9D3A06792E93D336917 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HobbyBasedChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8372FC658B71ABBA45D7ADE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HobbyBasedChat-HobbyBasedChatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE0E5F0146D424DB428886E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HobbyBasedChat/Pods-HobbyBasedChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HobbyBasedChat/Pods-HobbyBasedChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HobbyBasedChat/Pods-HobbyBasedChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1FB22E9A2AC86E6646EAECA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HobbyBasedChatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4EDAE7827D9AD2F005D26E6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4EDAE3D27D9A4D6005D26E6 /* Sources */ = {
@@ -297,14 +539,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F4EDAE4A27D9A4D6005D26E6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4EDAE4B27D9A4D6005D26E6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F4EDAE4F27D9A4D8005D26E6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,7 +601,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -434,9 +668,11 @@
 		};
 		F4EDAE6C27D9A4D9005D26E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55EE52924397FB594FC16F6C /* Pods-HobbyBasedChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HobbyBasedChat/HobbyBasedChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2EZ5QWFYX2;
@@ -444,7 +680,7 @@
 				INFOPLIST_FILE = HobbyBasedChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,19 +688,21 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.simon.HobbyBasedChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.memolease.sesac1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F4EDAE6D27D9A4D9005D26E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EA9BE8AE4F754AEF2580E23 /* Pods-HobbyBasedChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HobbyBasedChat/HobbyBasedChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2EZ5QWFYX2;
@@ -472,7 +710,7 @@
 				INFOPLIST_FILE = HobbyBasedChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,16 +718,17 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.simon.HobbyBasedChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.memolease.sesac1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		F4EDAE6F27D9A4D9005D26E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B67BA6502903B8176341B260 /* Pods-HobbyBasedChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +749,7 @@
 		};
 		F4EDAE7027D9A4D9005D26E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF3A420035E255B906E2F0E1 /* Pods-HobbyBasedChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +770,7 @@
 		};
 		F4EDAE7227D9A4D9005D26E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A73D44C4E3CB2123B9393AAF /* Pods-HobbyBasedChat-HobbyBasedChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +789,7 @@
 		};
 		F4EDAE7327D9A4D9005D26E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -604,6 +846,131 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4EDAE8127DA1754005D26E6 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4EDAE8427DA176D005D26E6 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F4EDAE8727DA1790005D26E6 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F4EDAE8E27DA17B6005D26E6 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4EDAE9127DA17D9005D26E6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4EDAE9427DA1AC1005D26E6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		F4EDAE9727DA1B12005D26E6 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F4EDAE9C27DA1BD3005D26E6 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4EDAE8227DA1754005D26E6 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4EDAE8127DA1754005D26E6 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		F4EDAE8527DA176D005D26E6 /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4EDAE8427DA176D005D26E6 /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
+		};
+		F4EDAE8827DA1790005D26E6 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4EDAE8727DA1790005D26E6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F4EDAE8A27DA1790005D26E6 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4EDAE8727DA1790005D26E6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		F4EDAE8C27DA1790005D26E6 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4EDAE8727DA1790005D26E6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		F4EDAE8F27DA17B7005D26E6 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4EDAE8E27DA17B6005D26E6 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+		F4EDAE9227DA17D9005D26E6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4EDAE9127DA17D9005D26E6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F4EDAE9527DA1AC1005D26E6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4EDAE9427DA1AC1005D26E6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F4EDAE9827DA1B12005D26E6 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4EDAE9727DA1B12005D26E6 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		F4EDAE9A27DA1B12005D26E6 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4EDAE9727DA1B12005D26E6 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		F4EDAE9D27DA1BD4005D26E6 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4EDAE9C27DA1BD3005D26E6 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4EDAE3927D9A4D6005D26E6 /* Project object */;
 }
