@@ -33,6 +33,8 @@
 		F4EDAE9927DA1B12005D26E6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE9827DA1B12005D26E6 /* Realm */; };
 		F4EDAE9B27DA1B12005D26E6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE9A27DA1B12005D26E6 /* RealmSwift */; };
 		F4EDAE9E27DA1BD4005D26E6 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE9D27DA1BD4005D26E6 /* RxDataSources */; };
+		F4EDAEA027DB354A005D26E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE9F27DB354A005D26E6 /* GoogleService-Info.plist */; };
+		F4EDAEA327DB7646005D26E6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEA227DB7646005D26E6 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		F4EDAE7A27D9AEC6005D26E6 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Medium.otf"; path = "../../../../../../Downloads/NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		F4EDAE7B27D9AEC6005D26E6 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Bold.otf"; path = "../../../../../../Downloads/NotoSansCJKkr-hinted/NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
 		F4EDAE7C27D9AEC6005D26E6 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Regular.otf"; path = "../../../../../../Downloads/NotoSansCJKkr-hinted/NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		F4EDAE9F27DB354A005D26E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../SeSAC_SPL/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4EDAEA227DB7646005D26E6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -163,7 +167,8 @@
 				F4EDAE4827D9A4D6005D26E6 /* ViewController.swift */,
 				F4EDAE8027D9B585005D26E6 /* Resources */,
 				F4EDAE7927D9AE5B005D26E6 /* Font */,
-				F4EDAE5227D9A4D8005D26E6 /* Info.plist */,
+				F4EDAEA127DB7545005D26E6 /* Extension */,
+				F4EDAE9F27DB354A005D26E6 /* GoogleService-Info.plist */,
 			);
 			path = HobbyBasedChat;
 			sourceTree = "<group>";
@@ -209,12 +214,21 @@
 		F4EDAE8027D9B585005D26E6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F4EDAE4F27D9A4D8005D26E6 /* LaunchScreen.storyboard */,
+				F4EDAE5227D9A4D8005D26E6 /* Info.plist */,
 				F4EDAE4D27D9A4D8005D26E6 /* Assets.xcassets */,
+				F4EDAE4F27D9A4D8005D26E6 /* LaunchScreen.storyboard */,
 				F4EDAE4427D9A4D6005D26E6 /* AppDelegate.swift */,
 				F4EDAE4627D9A4D6005D26E6 /* SceneDelegate.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4EDAEA127DB7545005D26E6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAEA227DB7646005D26E6 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +369,7 @@
 				F4EDAE7E27D9AEC6005D26E6 /* NotoSansCJKkr-Bold.otf in Resources */,
 				F4EDAE4E27D9A4D8005D26E6 /* Assets.xcassets in Resources */,
 				F4EDAE7D27D9AEC6005D26E6 /* NotoSansCJKkr-Medium.otf in Resources */,
+				F4EDAEA027DB354A005D26E6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +517,7 @@
 			files = (
 				F4EDAE4927D9A4D6005D26E6 /* ViewController.swift in Sources */,
 				F4EDAE4527D9A4D6005D26E6 /* AppDelegate.swift in Sources */,
+				F4EDAEA327DB7646005D26E6 /* UIViewController+Extension.swift in Sources */,
 				F4EDAE4727D9A4D6005D26E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
