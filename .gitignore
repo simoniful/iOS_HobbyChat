@@ -136,6 +136,9 @@ iOSInjectionProject/
 ## APIKey
 **/**/APIKey
 
+## Rswift
+*.generated.swift
+
 ## Gcc Patch
 /*.gcno
 
