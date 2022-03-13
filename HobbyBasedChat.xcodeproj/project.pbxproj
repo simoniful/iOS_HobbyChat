@@ -12,8 +12,7 @@
 		579DC8FF1E68464279E0BB3E /* Pods_HobbyBasedChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */; };
 		F4EDAE4527D9A4D6005D26E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE4427D9A4D6005D26E6 /* AppDelegate.swift */; };
 		F4EDAE4727D9A4D6005D26E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE4627D9A4D6005D26E6 /* SceneDelegate.swift */; };
-		F4EDAE4927D9A4D6005D26E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE4827D9A4D6005D26E6 /* ViewController.swift */; };
-		F4EDAE4E27D9A4D8005D26E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE4D27D9A4D8005D26E6 /* Assets.xcassets */; };
+		F4EDAE4E27D9A4D8005D26E6 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE4D27D9A4D8005D26E6 /* Icons.xcassets */; };
 		F4EDAE5127D9A4D8005D26E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE4F27D9A4D8005D26E6 /* LaunchScreen.storyboard */; };
 		F4EDAE5C27D9A4D9005D26E6 /* HobbyBasedChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE5B27D9A4D9005D26E6 /* HobbyBasedChatTests.swift */; };
 		F4EDAE6627D9A4D9005D26E6 /* HobbyBasedChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE6527D9A4D9005D26E6 /* HobbyBasedChatUITests.swift */; };
@@ -33,7 +32,6 @@
 		F4EDAE9927DA1B12005D26E6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE9827DA1B12005D26E6 /* Realm */; };
 		F4EDAE9B27DA1B12005D26E6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE9A27DA1B12005D26E6 /* RealmSwift */; };
 		F4EDAE9E27DA1BD4005D26E6 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = F4EDAE9D27DA1BD4005D26E6 /* RxDataSources */; };
-		F4EDAEA027DB354A005D26E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE9F27DB354A005D26E6 /* GoogleService-Info.plist */; };
 		F4EDAEA327DB7646005D26E6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEA227DB7646005D26E6 /* UIViewController+Extension.swift */; };
 		F4EDAEA927DC649C005D26E6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEA827DC649C005D26E6 /* OnboardingView.swift */; };
 		F4EDAEAC27DC64DA005D26E6 /* ViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEAB27DC64DA005D26E6 /* ViewRepresentable.swift */; };
@@ -42,6 +40,7 @@
 		F4EDAEB227DCCB32005D26E6 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEB127DCCB32005D26E6 /* UILabel+Extension.swift */; };
 		F4EDAEB427DCCB72005D26E6 /* CarouselElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEB327DCCB72005D26E6 /* CarouselElement.swift */; };
 		F4EDAEB627DCCE7C005D26E6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEB527DCCE7B005D26E6 /* R.generated.swift */; };
+		F4EDAEB927DE1FB6005D26E6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAEB827DE1FB6005D26E6 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +71,7 @@
 		F4EDAE4127D9A4D6005D26E6 /* HobbyBasedChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyBasedChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EDAE4427D9A4D6005D26E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4EDAE4627D9A4D6005D26E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4EDAE4827D9A4D6005D26E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4EDAE4D27D9A4D8005D26E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4EDAE4D27D9A4D8005D26E6 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		F4EDAE5027D9A4D8005D26E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4EDAE5227D9A4D8005D26E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4EDAE5727D9A4D9005D26E6 /* HobbyBasedChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HobbyBasedChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +84,6 @@
 		F4EDAE7A27D9AEC6005D26E6 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Medium.otf"; path = "../../../../../../Downloads/NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		F4EDAE7B27D9AEC6005D26E6 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Bold.otf"; path = "../../../../../../Downloads/NotoSansCJKkr-hinted/NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
 		F4EDAE7C27D9AEC6005D26E6 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Regular.otf"; path = "../../../../../../Downloads/NotoSansCJKkr-hinted/NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
-		F4EDAE9F27DB354A005D26E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../SeSAC_SPL/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4EDAEA227DB7646005D26E6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F4EDAEA827DC649C005D26E6 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		F4EDAEAB27DC64DA005D26E6 /* ViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRepresentable.swift; sourceTree = "<group>"; };
@@ -95,6 +92,8 @@
 		F4EDAEB127DCCB32005D26E6 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		F4EDAEB327DCCB72005D26E6 /* CarouselElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselElement.swift; sourceTree = "<group>"; };
 		F4EDAEB527DCCE7B005D26E6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		F4EDAEB727DCD071005D26E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4EDAEB827DE1FB6005D26E6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -177,14 +176,12 @@
 		F4EDAE4327D9A4D6005D26E6 /* HobbyBasedChat */ = {
 			isa = PBXGroup;
 			children = (
-				F4EDAEA427DC6448005D26E6 /* Onboarding */,
 				F4EDAE7427D9A5C7005D26E6 /* HobbyBasedChat.entitlements */,
-				F4EDAE4827D9A4D6005D26E6 /* ViewController.swift */,
-				F4EDAE8027D9B585005D26E6 /* Resources */,
+				F4EDAEA427DC6448005D26E6 /* Onboarding */,
 				F4EDAE7927D9AE5B005D26E6 /* Font */,
 				F4EDAEAA27DC64B5005D26E6 /* Protocol */,
 				F4EDAEA127DB7545005D26E6 /* Extension */,
-				F4EDAE9F27DB354A005D26E6 /* GoogleService-Info.plist */,
+				F4EDAE8027D9B585005D26E6 /* Resources */,
 			);
 			path = HobbyBasedChat;
 			sourceTree = "<group>";
@@ -230,9 +227,11 @@
 		F4EDAE8027D9B585005D26E6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F4EDAEB727DCD071005D26E6 /* GoogleService-Info.plist */,
 				F4EDAEB527DCCE7B005D26E6 /* R.generated.swift */,
 				F4EDAE5227D9A4D8005D26E6 /* Info.plist */,
-				F4EDAE4D27D9A4D8005D26E6 /* Assets.xcassets */,
+				F4EDAE4D27D9A4D8005D26E6 /* Icons.xcassets */,
+				F4EDAEB827DE1FB6005D26E6 /* Colors.xcassets */,
 				F4EDAE4F27D9A4D8005D26E6 /* LaunchScreen.storyboard */,
 				F4EDAE4427D9A4D6005D26E6 /* AppDelegate.swift */,
 				F4EDAE4627D9A4D6005D26E6 /* SceneDelegate.swift */,
@@ -420,9 +419,9 @@
 				F4EDAE5127D9A4D8005D26E6 /* LaunchScreen.storyboard in Resources */,
 				F4EDAE7F27D9AEC6005D26E6 /* NotoSansCJKkr-Regular.otf in Resources */,
 				F4EDAE7E27D9AEC6005D26E6 /* NotoSansCJKkr-Bold.otf in Resources */,
-				F4EDAE4E27D9A4D8005D26E6 /* Assets.xcassets in Resources */,
+				F4EDAE4E27D9A4D8005D26E6 /* Icons.xcassets in Resources */,
 				F4EDAE7D27D9AEC6005D26E6 /* NotoSansCJKkr-Medium.otf in Resources */,
-				F4EDAEA027DB354A005D26E6 /* GoogleService-Info.plist in Resources */,
+				F4EDAEB927DE1FB6005D26E6 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +568,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4EDAE4927D9A4D6005D26E6 /* ViewController.swift in Sources */,
 				F4EDAE4527D9A4D6005D26E6 /* AppDelegate.swift in Sources */,
 				F4EDAEB027DCCAC4005D26E6 /* CarouselViewContainer.swift in Sources */,
 				F4EDAEA327DB7646005D26E6 /* UIViewController+Extension.swift in Sources */,

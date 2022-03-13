@@ -18,7 +18,7 @@ class OnBoardingView: UIView, ViewRepresentable {
     let startButton: UIButton = {
         var configuration = UIButton.Configuration.filled()
         var attText = AttributedString.init("시작하기")
-        attText.font = UIFont.notoSansKR(size: 14, family: .Medium)
+        attText.font = R.font.notoSansCJKkrMedium(size: 14)
         configuration.attributedTitle = attText
         configuration.baseBackgroundColor = .brandcolor_green
         configuration.baseForegroundColor = .custom_white

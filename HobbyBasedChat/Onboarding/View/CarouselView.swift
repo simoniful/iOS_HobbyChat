@@ -12,11 +12,11 @@ import SnapKit
 class CarouselView: UIView, ViewRepresentable {
     let infoLabel: UILabel = {
         let label = UILabel()
-        label.font =
+        label.font = R.font.notoSansCJKkrMedium(size: 24)
         label.setTextWithLineHeight(text: "", lineHeight: 38.4)
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.textColor = R.color
+        label.textColor = .custom_black
         return label
     }()
     
