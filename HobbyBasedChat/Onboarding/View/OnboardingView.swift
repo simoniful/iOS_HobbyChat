@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Rswift
 
 class OnBoardingView: UIView, ViewRepresentable {
     let containerView: UIView = {
@@ -20,16 +21,14 @@ class OnBoardingView: UIView, ViewRepresentable {
         var attText = AttributedString.init("시작하기")
         attText.font = R.font.notoSansCJKkrMedium(size: 14)
         configuration.attributedTitle = attText
-        configuration.baseBackgroundColor = .brandcolor_green
-        configuration.baseForegroundColor = .custom_white
+        configuration.baseBackgroundColor = R.color.brandcolor_green()
+        configuration.baseForegroundColor = R.color.custom_white()
         let button = UIButton(configuration: configuration, primaryAction: nil)
         return button
     }()
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setupView()
-        setupConstraints()
+        fatalError("init(coder:) has not been implemented")
     }
     
     override init(frame: CGRect) {
@@ -47,8 +46,7 @@ class OnBoardingView: UIView, ViewRepresentable {
     func setupConstraints() {
         containerView.snp.makeConstraints {
             $0.top.equalToSuperview().offset(44)
-            $0.leading.equalTo(self.safeAreaLayoutGuide)
-            $0.trailing.equalTo(self.safeAreaLayoutGuide)
+            $0.leading.trailing.equalTo(self.safeAreaLayoutGuide)
         }
         
         startButton.snp.makeConstraints {

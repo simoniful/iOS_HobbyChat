@@ -16,7 +16,7 @@ class CarouselView: UIView, ViewRepresentable {
         label.setTextWithLineHeight(text: "", lineHeight: 38.4)
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.textColor = .custom_black
+        label.textColor = R.color.custom_black()
         return label
     }()
     
@@ -26,9 +26,7 @@ class CarouselView: UIView, ViewRepresentable {
     }()
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setupView()
-        setupConstraints()
+        fatalError("init(coder:) has not been implemented")
     }
     
     override init(frame: CGRect) {
@@ -38,7 +36,7 @@ class CarouselView: UIView, ViewRepresentable {
     }
     
     func setupView() {
-        self.backgroundColor = .white
+        self.backgroundColor = R.color.custom_white()
         addSubview(infoLabel)
         addSubview(infoImage)
     }

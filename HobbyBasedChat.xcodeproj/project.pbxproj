@@ -36,11 +36,19 @@
 		F4EDAEA927DC649C005D26E6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEA827DC649C005D26E6 /* OnboardingView.swift */; };
 		F4EDAEAC27DC64DA005D26E6 /* ViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEAB27DC64DA005D26E6 /* ViewRepresentable.swift */; };
 		F4EDAEAE27DCCA91005D26E6 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEAD27DCCA91005D26E6 /* CarouselView.swift */; };
-		F4EDAEB027DCCAC4005D26E6 /* CarouselViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEAF27DCCAC4005D26E6 /* CarouselViewContainer.swift */; };
+		F4EDAEB027DCCAC4005D26E6 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEAF27DCCAC4005D26E6 /* CarouselViewController.swift */; };
 		F4EDAEB227DCCB32005D26E6 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEB127DCCB32005D26E6 /* UILabel+Extension.swift */; };
 		F4EDAEB427DCCB72005D26E6 /* CarouselElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEB327DCCB72005D26E6 /* CarouselElement.swift */; };
 		F4EDAEB627DCCE7C005D26E6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEB527DCCE7B005D26E6 /* R.generated.swift */; };
 		F4EDAEB927DE1FB6005D26E6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAEB827DE1FB6005D26E6 /* Colors.xcassets */; };
+		F4EDAEBB27DF7835005D26E6 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEBA27DF7835005D26E6 /* OnboardingViewController.swift */; };
+		F4EDAEBD27DF787D005D26E6 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEBC27DF787C005D26E6 /* OnboardingPageViewController.swift */; };
+		F4EDAEC627DF7DE3005D26E6 /* PhoneFillOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEC527DF7DE3005D26E6 /* PhoneFillOutView.swift */; };
+		F4EDAEC927DF7E18005D26E6 /* PhoneFillOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEC827DF7E18005D26E6 /* PhoneFillOutViewController.swift */; };
+		F4EDAECB27DF7E46005D26E6 /* PhoneFillOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAECA27DF7E46005D26E6 /* PhoneFillOutViewModel.swift */; };
+		F4EDAECD27DF7E6F005D26E6 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAECC27DF7E6F005D26E6 /* CommonViewModel.swift */; };
+		F4EDAED027DF7F13005D26E6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAECF27DF7F12005D26E6 /* Helper.swift */; };
+		F4EDAED327DF8025005D26E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAED227DF8025005D26E6 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,12 +96,20 @@
 		F4EDAEA827DC649C005D26E6 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		F4EDAEAB27DC64DA005D26E6 /* ViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRepresentable.swift; sourceTree = "<group>"; };
 		F4EDAEAD27DCCA91005D26E6 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
-		F4EDAEAF27DCCAC4005D26E6 /* CarouselViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewContainer.swift; sourceTree = "<group>"; };
+		F4EDAEAF27DCCAC4005D26E6 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		F4EDAEB127DCCB32005D26E6 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		F4EDAEB327DCCB72005D26E6 /* CarouselElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselElement.swift; sourceTree = "<group>"; };
 		F4EDAEB527DCCE7B005D26E6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		F4EDAEB727DCD071005D26E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4EDAEB827DE1FB6005D26E6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F4EDAEBA27DF7835005D26E6 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		F4EDAEBC27DF787C005D26E6 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		F4EDAEC527DF7DE3005D26E6 /* PhoneFillOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFillOutView.swift; sourceTree = "<group>"; };
+		F4EDAEC827DF7E18005D26E6 /* PhoneFillOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFillOutViewController.swift; sourceTree = "<group>"; };
+		F4EDAECA27DF7E46005D26E6 /* PhoneFillOutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFillOutViewModel.swift; sourceTree = "<group>"; };
+		F4EDAECC27DF7E6F005D26E6 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		F4EDAECF27DF7F12005D26E6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F4EDAED227DF8025005D26E6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -178,8 +194,11 @@
 			children = (
 				F4EDAE7427D9A5C7005D26E6 /* HobbyBasedChat.entitlements */,
 				F4EDAEA427DC6448005D26E6 /* Onboarding */,
+				F4EDAEBE27DF7B80005D26E6 /* Auth */,
 				F4EDAE7927D9AE5B005D26E6 /* Font */,
+				F4EDAECE27DF7EE3005D26E6 /* Util */,
 				F4EDAEAA27DC64B5005D26E6 /* Protocol */,
+				F4EDAED127DF8007005D26E6 /* Custom */,
 				F4EDAEA127DB7545005D26E6 /* Extension */,
 				F4EDAE8027D9B585005D26E6 /* Resources */,
 			);
@@ -261,8 +280,10 @@
 			isa = PBXGroup;
 			children = (
 				F4EDAEA827DC649C005D26E6 /* OnboardingView.swift */,
+				F4EDAEBA27DF7835005D26E6 /* OnboardingViewController.swift */,
+				F4EDAEBC27DF787C005D26E6 /* OnboardingPageViewController.swift */,
 				F4EDAEAD27DCCA91005D26E6 /* CarouselView.swift */,
-				F4EDAEAF27DCCAC4005D26E6 /* CarouselViewContainer.swift */,
+				F4EDAEAF27DCCAC4005D26E6 /* CarouselViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,8 +300,83 @@
 			isa = PBXGroup;
 			children = (
 				F4EDAEAB27DC64DA005D26E6 /* ViewRepresentable.swift */,
+				F4EDAECC27DF7E6F005D26E6 /* CommonViewModel.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F4EDAEBE27DF7B80005D26E6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAEBF27DF7B8C005D26E6 /* SMS */,
+				F4EDAEC027DF7BB2005D26E6 /* SignUp */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F4EDAEBF27DF7B8C005D26E6 /* SMS */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAEC127DF7BCA005D26E6 /* PhoneFillOut */,
+				F4EDAEC227DF7BDF005D26E6 /* AuthNumberFillOut */,
+			);
+			path = SMS;
+			sourceTree = "<group>";
+		};
+		F4EDAEC027DF7BB2005D26E6 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		F4EDAEC127DF7BCA005D26E6 /* PhoneFillOut */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAEC327DF7DB5005D26E6 /* View */,
+				F4EDAEC427DF7DC1005D26E6 /* ViewModel */,
+			);
+			path = PhoneFillOut;
+			sourceTree = "<group>";
+		};
+		F4EDAEC227DF7BDF005D26E6 /* AuthNumberFillOut */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AuthNumberFillOut;
+			sourceTree = "<group>";
+		};
+		F4EDAEC327DF7DB5005D26E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAEC527DF7DE3005D26E6 /* PhoneFillOutView.swift */,
+				F4EDAEC827DF7E18005D26E6 /* PhoneFillOutViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4EDAEC427DF7DC1005D26E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAECA27DF7E46005D26E6 /* PhoneFillOutViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F4EDAECE27DF7EE3005D26E6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAECF27DF7F12005D26E6 /* Helper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F4EDAED127DF8007005D26E6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAED227DF8025005D26E6 /* CustomTextField.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -569,14 +665,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4EDAE4527D9A4D6005D26E6 /* AppDelegate.swift in Sources */,
-				F4EDAEB027DCCAC4005D26E6 /* CarouselViewContainer.swift in Sources */,
+				F4EDAEB027DCCAC4005D26E6 /* CarouselViewController.swift in Sources */,
 				F4EDAEA327DB7646005D26E6 /* UIViewController+Extension.swift in Sources */,
+				F4EDAECB27DF7E46005D26E6 /* PhoneFillOutViewModel.swift in Sources */,
 				F4EDAEA927DC649C005D26E6 /* OnboardingView.swift in Sources */,
+				F4EDAECD27DF7E6F005D26E6 /* CommonViewModel.swift in Sources */,
+				F4EDAEC627DF7DE3005D26E6 /* PhoneFillOutView.swift in Sources */,
+				F4EDAEBD27DF787D005D26E6 /* OnboardingPageViewController.swift in Sources */,
+				F4EDAED327DF8025005D26E6 /* CustomTextField.swift in Sources */,
+				F4EDAED027DF7F13005D26E6 /* Helper.swift in Sources */,
 				F4EDAEAE27DCCA91005D26E6 /* CarouselView.swift in Sources */,
 				F4EDAEB427DCCB72005D26E6 /* CarouselElement.swift in Sources */,
 				F4EDAE4727D9A4D6005D26E6 /* SceneDelegate.swift in Sources */,
 				F4EDAEAC27DC64DA005D26E6 /* ViewRepresentable.swift in Sources */,
 				F4EDAEB627DCCE7C005D26E6 /* R.generated.swift in Sources */,
+				F4EDAEBB27DF7835005D26E6 /* OnboardingViewController.swift in Sources */,
+				F4EDAEC927DF7E18005D26E6 /* PhoneFillOutViewController.swift in Sources */,
 				F4EDAEB227DCCB32005D26E6 /* UILabel+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  CarouselViewContainer.swift
+//  CarouselViewController.swift
 //  HobbyBasedChat
 //
 //  Created by Sang hun Lee on 2022/03/12.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CarouselViewContainer: UIViewController {
+class CarouselViewController: UIViewController {
     let carouselView = CarouselView()
     
     override func loadView() {
