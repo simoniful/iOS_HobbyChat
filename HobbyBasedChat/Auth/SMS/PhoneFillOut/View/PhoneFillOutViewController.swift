@@ -65,11 +65,8 @@ class PhoneFillOutViewController: UIViewController {
     private func requestSMSVerification(completion: @escaping () -> ()) {
         phoneFillOutViewModel.requireSmsMessage(phoneNumber: phoneNumber!) { verificationID, error in
             if error == nil {
-                print("verificationID: \(verificationID ?? "")")
                 completion()
             } else {
-                print("SMS Varification Error: \(error.debugDescription)")
-                
                 if error?.localizedDescription == "Invalid format." {
                     var style = ToastStyle()
                     style.messageAlignment = .center

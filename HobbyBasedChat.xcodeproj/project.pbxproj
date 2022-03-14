@@ -49,6 +49,7 @@
 		F4EDAECD27DF7E6F005D26E6 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAECC27DF7E6F005D26E6 /* CommonViewModel.swift */; };
 		F4EDAED027DF7F13005D26E6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAECF27DF7F12005D26E6 /* Helper.swift */; };
 		F4EDAED327DF8025005D26E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAED227DF8025005D26E6 /* CustomTextField.swift */; };
+		F4EDAED527DF84D5005D26E6 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAED427DF84D4005D26E6 /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		F4EDAECC27DF7E6F005D26E6 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		F4EDAECF27DF7F12005D26E6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		F4EDAED227DF8025005D26E6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F4EDAED427DF84D4005D26E6 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -367,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				F4EDAECF27DF7F12005D26E6 /* Helper.swift */,
+				F4EDAED427DF84D4005D26E6 /* NetworkMonitor.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -680,6 +683,7 @@
 				F4EDAEAC27DC64DA005D26E6 /* ViewRepresentable.swift in Sources */,
 				F4EDAEB627DCCE7C005D26E6 /* R.generated.swift in Sources */,
 				F4EDAEBB27DF7835005D26E6 /* OnboardingViewController.swift in Sources */,
+				F4EDAED527DF84D5005D26E6 /* NetworkMonitor.swift in Sources */,
 				F4EDAEC927DF7E18005D26E6 /* PhoneFillOutViewController.swift in Sources */,
 				F4EDAEB227DCCB32005D26E6 /* UILabel+Extension.swift in Sources */,
 			);
