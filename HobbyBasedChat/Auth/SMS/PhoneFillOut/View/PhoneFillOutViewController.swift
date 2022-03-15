@@ -28,12 +28,23 @@ class PhoneFillOutViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
         super.viewDidLoad()
         bind()
-        phoneFillOutView.phoneNumTextFiled.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        networkMoniter()
     }
 
     func bind() {
         let input = PhoneFillOutViewModel.Input(phoneNumber: phoneFillOutView.phoneNumTextFiled.rx.text, tap: phoneFillOutView.requireSmsButton.rx.tap)
         let output = phoneFillOutViewModel.transform(input: input)
+        
+        output.convertedPhoneNumber
+            .bind { result in
+                self.phoneFillOutView.phoneNumTextFiled.text = result
+                self.phoneNumber = Helper.specifyPhoneNumber(result)
+            }
+            .disposed(by: disposeBag)
         
         output.validationStatus
             .bind(onNext: { result in
@@ -55,13 +66,6 @@ class PhoneFillOutViewController: UIViewController {
             .disposed(by: disposeBag)
     }
     
-    @objc func textFieldDidChange(_ textField: UITextField) {
-        let phoneNum = phoneFillOutView.phoneNumTextFiled.text ?? ""
-        let result = phoneNum.starts(with: "010") ? Helper.formatNumber(with: "XXX-XXXX-XXXX", numberStr: phoneNum) : Helper.formatNumber(with: "XXX-XXX-XXXX", numberStr: phoneNum)
-        textField.text = result
-        phoneNumber = Helper.specifyPhoneNumber(result)
-    }
-    
     private func requestSMSVerification(completion: @escaping () -> ()) {
         phoneFillOutViewModel.requireSmsMessage(phoneNumber: phoneNumber!) { verificationID, error in
             if error == nil {
@@ -81,8 +85,8 @@ class PhoneFillOutViewController: UIViewController {
     }
     
     func pushAuthNumFillout() {
-        let viewController = AuthNumFillOutViewController()
-        viewController.phoneNumber = self.phoneNumber
-        self.navigationController?.pushViewController(viewController, animated: true)
+//        let viewController = AuthNumFillOutViewController()
+//        viewController.phoneNumber = self.phoneNumber
+//        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

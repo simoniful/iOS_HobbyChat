@@ -15,21 +15,31 @@ class PhoneFillOutViewModel: CommonViewModel {
     var disposeBag: DisposeBag =  DisposeBag()
     
     struct Input {
+        
         let phoneNumber: ControlProperty<String?>
         let tap: ControlEvent<Void>
     }
 
     struct Output {
+        let convertedPhoneNumber: Observable<String>
         let validationStatus: Observable<Bool>
         let sceneTransition: ControlEvent<Void>
     }
     
     func transform(input: Input) -> Output {
-        let result = input.phoneNumber
+        let convertedPhoneNumber = input.phoneNumber
+            .orEmpty
+            .map {
+                $0.starts(with: "010") ? Helper.formatNumber(with: "XXX-XXXX-XXXX", numberStr: $0) : Helper.formatNumber(with: "XXX-XXX-XXXX", numberStr: $0)
+            }
+            .share(replay: 1, scope: .whileConnected)
+        
+        let validationStatus = input.phoneNumber
             .orEmpty
             .map { self.isValidPhoneNum(testStr: $0) }
             .share(replay: 1, scope: .whileConnected)
-        return Output(validationStatus: result, sceneTransition: input.tap)
+        
+        return Output(convertedPhoneNumber: convertedPhoneNumber, validationStatus: validationStatus, sceneTransition: input.tap)
     }
     
     func isValidPhoneNum(testStr:String) -> Bool {
@@ -44,7 +54,7 @@ class PhoneFillOutViewModel: CommonViewModel {
             .verifyPhoneNumber(phoneNumber, uiDelegate: nil) { verificationID, error in
             guard let error = error else {
                 UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
-                UserDefaults.standard.set(phoneNumber, forKey: "newbiePhoneNumber")
+                UserDefaults.standard.set(phoneNumber, forKey: "userPhoneNumber")
                 completion(verificationID, nil)
                 return
             }

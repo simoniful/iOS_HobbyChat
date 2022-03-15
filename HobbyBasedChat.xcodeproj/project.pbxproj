@@ -50,6 +50,7 @@
 		F4EDAED027DF7F13005D26E6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAECF27DF7F12005D26E6 /* Helper.swift */; };
 		F4EDAED327DF8025005D26E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAED227DF8025005D26E6 /* CustomTextField.swift */; };
 		F4EDAED527DF84D5005D26E6 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAED427DF84D4005D26E6 /* NetworkMonitor.swift */; };
+		F4EDAED927E0DA8A005D26E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAED827E0DA89005D26E6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +102,6 @@
 		F4EDAEB127DCCB32005D26E6 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		F4EDAEB327DCCB72005D26E6 /* CarouselElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselElement.swift; sourceTree = "<group>"; };
 		F4EDAEB527DCCE7B005D26E6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		F4EDAEB727DCD071005D26E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4EDAEB827DE1FB6005D26E6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F4EDAEBA27DF7835005D26E6 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F4EDAEBC27DF787C005D26E6 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +112,7 @@
 		F4EDAECF27DF7F12005D26E6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		F4EDAED227DF8025005D26E6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		F4EDAED427DF84D4005D26E6 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		F4EDAED827E0DA89005D26E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -202,6 +203,8 @@
 				F4EDAEAA27DC64B5005D26E6 /* Protocol */,
 				F4EDAED127DF8007005D26E6 /* Custom */,
 				F4EDAEA127DB7545005D26E6 /* Extension */,
+				F4EDAE5227D9A4D8005D26E6 /* Info.plist */,
+				F4EDAED827E0DA89005D26E6 /* GoogleService-Info.plist */,
 				F4EDAE8027D9B585005D26E6 /* Resources */,
 			);
 			path = HobbyBasedChat;
@@ -248,9 +251,7 @@
 		F4EDAE8027D9B585005D26E6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F4EDAEB727DCD071005D26E6 /* GoogleService-Info.plist */,
 				F4EDAEB527DCCE7B005D26E6 /* R.generated.swift */,
-				F4EDAE5227D9A4D8005D26E6 /* Info.plist */,
 				F4EDAE4D27D9A4D8005D26E6 /* Icons.xcassets */,
 				F4EDAEB827DE1FB6005D26E6 /* Colors.xcassets */,
 				F4EDAE4F27D9A4D8005D26E6 /* LaunchScreen.storyboard */,
@@ -521,6 +522,7 @@
 				F4EDAE4E27D9A4D8005D26E6 /* Icons.xcassets in Resources */,
 				F4EDAE7D27D9AEC6005D26E6 /* NotoSansCJKkr-Medium.otf in Resources */,
 				F4EDAEB927DE1FB6005D26E6 /* Colors.xcassets in Resources */,
+				F4EDAED927E0DA8A005D26E6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,11 +656,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				$SRCROOT/Resources/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Resources/R.generated.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -999,7 +1001,7 @@
 				F4EDAE6A27D9A4D9005D26E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F4EDAE6B27D9A4D9005D26E6 /* Build configuration list for PBXNativeTarget "HobbyBasedChat" */ = {
 			isa = XCConfigurationList;
@@ -1008,7 +1010,7 @@
 				F4EDAE6D27D9A4D9005D26E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F4EDAE6E27D9A4D9005D26E6 /* Build configuration list for PBXNativeTarget "HobbyBasedChatTests" */ = {
 			isa = XCConfigurationList;
@@ -1017,7 +1019,7 @@
 				F4EDAE7027D9A4D9005D26E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F4EDAE7127D9A4D9005D26E6 /* Build configuration list for PBXNativeTarget "HobbyBasedChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -1026,7 +1028,7 @@
 				F4EDAE7327D9A4D9005D26E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
