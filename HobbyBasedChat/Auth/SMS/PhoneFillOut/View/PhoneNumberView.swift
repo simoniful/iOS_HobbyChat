@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class PhoneFillOutView: UIView, ViewRepresentable {
+class PhoneNumberView: UIView, ViewRepresentable {
     let infoLabel: UILabel = {
         let label = UILabel()
         label.font = R.font.notoSansCJKkrRegular(size: 20)

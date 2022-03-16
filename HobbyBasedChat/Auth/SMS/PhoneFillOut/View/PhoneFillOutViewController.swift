@@ -13,15 +13,15 @@ import FirebaseAuth
 import Toast
 
 class PhoneFillOutViewController: UIViewController {
-    let phoneFillOutView = PhoneFillOutView()
-    let phoneFillOutViewModel = PhoneFillOutViewModel()
+    let phoneNumberView = PhoneNumberView()
+    let phoneNumberViewModel = PhoneNumberViewModel()
     let disposeBag = DisposeBag()
     
     var phoneNumber: String?
     
     override func loadView() {
         super.loadView()
-        self.view = phoneFillOutView
+        self.view = phoneNumberView
     }
     
     override func viewDidLoad() {
@@ -36,19 +36,19 @@ class PhoneFillOutViewController: UIViewController {
     }
 
     func bind() {
-        let input = PhoneFillOutViewModel.Input(phoneNumber: phoneFillOutView.phoneNumTextFiled.rx.text, tap: phoneFillOutView.requireSmsButton.rx.tap)
-        let output = phoneFillOutViewModel.transform(input: input)
+        let input = PhoneNumberViewModel.Input(phoneNumber: phoneNumberView.phoneNumTextFiled.rx.text, tap: phoneNumberView.requireSmsButton.rx.tap)
+        let output = phoneNumberViewModel.transform(input: input)
         
         output.convertedPhoneNumber
             .bind { result in
-                self.phoneFillOutView.phoneNumTextFiled.text = result
+                self.phoneNumberView.phoneNumTextFiled.text = result
                 self.phoneNumber = Helper.specifyPhoneNumber(result)
             }
             .disposed(by: disposeBag)
         
         output.validationStatus
             .bind(onNext: { result in
-                let button = self.phoneFillOutView.requireSmsButton
+                let button = self.phoneNumberView.requireSmsButton
                 button.isEnabled = result
                 var configuration = button.configuration
                 configuration?.baseForegroundColor = result ? R.color.custom_white() : R.color.grayscale_gray6()
@@ -67,7 +67,7 @@ class PhoneFillOutViewController: UIViewController {
     }
     
     private func requestSMSVerification(completion: @escaping () -> ()) {
-        phoneFillOutViewModel.requireSmsMessage(phoneNumber: phoneNumber!) { verificationID, error in
+        phoneNumberViewModel.requireSmsMessage(phoneNumber: phoneNumber!) { verificationID, error in
             if error == nil {
                 completion()
             } else {
@@ -85,8 +85,8 @@ class PhoneFillOutViewController: UIViewController {
     }
     
     func pushAuthNumFillout() {
-//        let viewController = AuthNumFillOutViewController()
-//        viewController.phoneNumber = self.phoneNumber
-//        self.navigationController?.pushViewController(viewController, animated: true)
+        let viewController = AuthNumberViewController()
+        viewController.phoneNumber = self.phoneNumber
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

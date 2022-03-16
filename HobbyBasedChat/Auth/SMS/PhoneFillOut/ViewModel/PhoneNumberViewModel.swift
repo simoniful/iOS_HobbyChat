@@ -11,11 +11,10 @@ import RxCocoa
 import FirebaseAuth
 import Alamofire
 
-class PhoneFillOutViewModel: CommonViewModel {
+class PhoneNumberViewModel: CommonViewModel {
     var disposeBag: DisposeBag =  DisposeBag()
     
     struct Input {
-        
         let phoneNumber: ControlProperty<String?>
         let tap: ControlEvent<Void>
     }
@@ -54,7 +53,7 @@ class PhoneFillOutViewModel: CommonViewModel {
             .verifyPhoneNumber(phoneNumber, uiDelegate: nil) { verificationID, error in
             guard let error = error else {
                 UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
-                UserDefaults.standard.set(phoneNumber, forKey: "userPhoneNumber")
+                UserDefaults.standard.set(phoneNumber, forKey: "phoneNumber")
                 completion(verificationID, nil)
                 return
             }

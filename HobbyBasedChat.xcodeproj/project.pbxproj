@@ -10,6 +10,16 @@
 		03ADF2B3D2B96BBC4CAE336C /* Pods_HobbyBasedChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2740E84C916D5533B17DB9 /* Pods_HobbyBasedChat.framework */; };
 		0FAAF8153F2EC6314C2D2097 /* Pods_HobbyBasedChat_HobbyBasedChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F39029AD2B7773A9F79E3B /* Pods_HobbyBasedChat_HobbyBasedChatUITests.framework */; };
 		579DC8FF1E68464279E0BB3E /* Pods_HobbyBasedChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */; };
+		F452DCB327E2242E003F550B /* NicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCB227E2242E003F550B /* NicknameView.swift */; };
+		F452DCB527E2255B003F550B /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCB427E2255A003F550B /* NicknameViewController.swift */; };
+		F452DCB727E225C3003F550B /* NicknameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCB627E225C3003F550B /* NicknameViewModel.swift */; };
+		F452DCBE27E22A0F003F550B /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCBD27E22A0E003F550B /* FirebaseService.swift */; };
+		F452DCC027E22A60003F550B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCBF27E22A60003F550B /* UserService.swift */; };
+		F452DCC227E22A7F003F550B /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCC127E22A7F003F550B /* UserAPI.swift */; };
+		F452DCC627E22AFE003F550B /* BirthdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCC527E22AFE003F550B /* BirthdayView.swift */; };
+		F452DCC827E22B17003F550B /* BirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCC727E22B17003F550B /* BirthdayViewController.swift */; };
+		F452DCCA27E22B27003F550B /* BirthdayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCC927E22B27003F550B /* BirthdayViewModel.swift */; };
+		F452DCCC27E22C8B003F550B /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCCB27E22C8B003F550B /* Data+Extension.swift */; };
 		F4EDAE4527D9A4D6005D26E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE4427D9A4D6005D26E6 /* AppDelegate.swift */; };
 		F4EDAE4727D9A4D6005D26E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE4627D9A4D6005D26E6 /* SceneDelegate.swift */; };
 		F4EDAE4E27D9A4D8005D26E6 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE4D27D9A4D8005D26E6 /* Icons.xcassets */; };
@@ -43,14 +53,17 @@
 		F4EDAEB927DE1FB6005D26E6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAEB827DE1FB6005D26E6 /* Colors.xcassets */; };
 		F4EDAEBB27DF7835005D26E6 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEBA27DF7835005D26E6 /* OnboardingViewController.swift */; };
 		F4EDAEBD27DF787D005D26E6 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEBC27DF787C005D26E6 /* OnboardingPageViewController.swift */; };
-		F4EDAEC627DF7DE3005D26E6 /* PhoneFillOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEC527DF7DE3005D26E6 /* PhoneFillOutView.swift */; };
+		F4EDAEC627DF7DE3005D26E6 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEC527DF7DE3005D26E6 /* PhoneNumberView.swift */; };
 		F4EDAEC927DF7E18005D26E6 /* PhoneFillOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEC827DF7E18005D26E6 /* PhoneFillOutViewController.swift */; };
-		F4EDAECB27DF7E46005D26E6 /* PhoneFillOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAECA27DF7E46005D26E6 /* PhoneFillOutViewModel.swift */; };
+		F4EDAECB27DF7E46005D26E6 /* PhoneNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAECA27DF7E46005D26E6 /* PhoneNumberViewModel.swift */; };
 		F4EDAECD27DF7E6F005D26E6 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAECC27DF7E6F005D26E6 /* CommonViewModel.swift */; };
 		F4EDAED027DF7F13005D26E6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAECF27DF7F12005D26E6 /* Helper.swift */; };
 		F4EDAED327DF8025005D26E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAED227DF8025005D26E6 /* CustomTextField.swift */; };
 		F4EDAED527DF84D5005D26E6 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAED427DF84D4005D26E6 /* NetworkMonitor.swift */; };
 		F4EDAED927E0DA8A005D26E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAED827E0DA89005D26E6 /* GoogleService-Info.plist */; };
+		F4EDAEDD27E0E1CD005D26E6 /* AuthNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEDC27E0E1CC005D26E6 /* AuthNumberView.swift */; };
+		F4EDAEDF27E0E3C8005D26E6 /* AuthNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEDE27E0E3C6005D26E6 /* AuthNumberViewModel.swift */; };
+		F4EDAEE127E0E482005D26E6 /* AuthNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAEE027E0E47F005D26E6 /* AuthNumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +91,16 @@
 		A73D44C4E3CB2123B9393AAF /* Pods-HobbyBasedChat-HobbyBasedChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF3A420035E255B906E2F0E1 /* Pods-HobbyBasedChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChatTests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChatTests/Pods-HobbyBasedChatTests.release.xcconfig"; sourceTree = "<group>"; };
 		B67BA6502903B8176341B260 /* Pods-HobbyBasedChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChatTests.debug.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChatTests/Pods-HobbyBasedChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F452DCB227E2242E003F550B /* NicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameView.swift; sourceTree = "<group>"; };
+		F452DCB427E2255A003F550B /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
+		F452DCB627E225C3003F550B /* NicknameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewModel.swift; sourceTree = "<group>"; };
+		F452DCBD27E22A0E003F550B /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		F452DCBF27E22A60003F550B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		F452DCC127E22A7F003F550B /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		F452DCC527E22AFE003F550B /* BirthdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayView.swift; sourceTree = "<group>"; };
+		F452DCC727E22B17003F550B /* BirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewController.swift; sourceTree = "<group>"; };
+		F452DCC927E22B27003F550B /* BirthdayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewModel.swift; sourceTree = "<group>"; };
+		F452DCCB27E22C8B003F550B /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		F4EDAE4127D9A4D6005D26E6 /* HobbyBasedChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyBasedChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EDAE4427D9A4D6005D26E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4EDAE4627D9A4D6005D26E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,14 +128,17 @@
 		F4EDAEB827DE1FB6005D26E6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F4EDAEBA27DF7835005D26E6 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F4EDAEBC27DF787C005D26E6 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
-		F4EDAEC527DF7DE3005D26E6 /* PhoneFillOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFillOutView.swift; sourceTree = "<group>"; };
+		F4EDAEC527DF7DE3005D26E6 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
 		F4EDAEC827DF7E18005D26E6 /* PhoneFillOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFillOutViewController.swift; sourceTree = "<group>"; };
-		F4EDAECA27DF7E46005D26E6 /* PhoneFillOutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFillOutViewModel.swift; sourceTree = "<group>"; };
+		F4EDAECA27DF7E46005D26E6 /* PhoneNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewModel.swift; sourceTree = "<group>"; };
 		F4EDAECC27DF7E6F005D26E6 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		F4EDAECF27DF7F12005D26E6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		F4EDAED227DF8025005D26E6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		F4EDAED427DF84D4005D26E6 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		F4EDAED827E0DA89005D26E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4EDAEDC27E0E1CC005D26E6 /* AuthNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNumberView.swift; sourceTree = "<group>"; };
+		F4EDAEDE27E0E3C6005D26E6 /* AuthNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNumberViewModel.swift; sourceTree = "<group>"; };
+		F4EDAEE027E0E47F005D26E6 /* AuthNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNumberViewController.swift; sourceTree = "<group>"; };
 		FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -170,6 +196,130 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F452DCAA27E22353003F550B /* Nickname */ = {
+			isa = PBXGroup;
+			children = (
+				F452DCAE27E223B4003F550B /* View */,
+				F452DCAF27E223BB003F550B /* ViewModel */,
+			);
+			path = Nickname;
+			sourceTree = "<group>";
+		};
+		F452DCAB27E22379003F550B /* Birthday */ = {
+			isa = PBXGroup;
+			children = (
+				F452DCB127E223F1003F550B /* View */,
+				F452DCB027E223E6003F550B /* ViewModel */,
+			);
+			path = Birthday;
+			sourceTree = "<group>";
+		};
+		F452DCAC27E2238E003F550B /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				F452DCC327E22AD5003F550B /* View */,
+				F452DCC427E22AE4003F550B /* ViewModel */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		F452DCAD27E2239B003F550B /* Gender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gender;
+			sourceTree = "<group>";
+		};
+		F452DCAE27E223B4003F550B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F452DCB227E2242E003F550B /* NicknameView.swift */,
+				F452DCB427E2255A003F550B /* NicknameViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F452DCAF27E223BB003F550B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F452DCB627E225C3003F550B /* NicknameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F452DCB027E223E6003F550B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F452DCC927E22B27003F550B /* BirthdayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F452DCB127E223F1003F550B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F452DCC527E22AFE003F550B /* BirthdayView.swift */,
+				F452DCC727E22B17003F550B /* BirthdayViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F452DCB827E229B1003F550B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F452DCBB27E229E7003F550B /* Firebase */,
+				F452DCB927E229D4003F550B /* User */,
+				F452DCBC27E229F3003F550B /* Chat */,
+				F452DCBA27E229DB003F550B /* Queue */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F452DCB927E229D4003F550B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				F452DCBF27E22A60003F550B /* UserService.swift */,
+				F452DCC127E22A7F003F550B /* UserAPI.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		F452DCBA27E229DB003F550B /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		F452DCBB27E229E7003F550B /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				F452DCBD27E22A0E003F550B /* FirebaseService.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		F452DCBC27E229F3003F550B /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		F452DCC327E22AD5003F550B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F452DCC427E22AE4003F550B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F4EDAE3827D9A4D6005D26E6 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +352,7 @@
 				F4EDAECE27DF7EE3005D26E6 /* Util */,
 				F4EDAEAA27DC64B5005D26E6 /* Protocol */,
 				F4EDAED127DF8007005D26E6 /* Custom */,
+				F452DCB827E229B1003F550B /* Network */,
 				F4EDAEA127DB7545005D26E6 /* Extension */,
 				F4EDAE5227D9A4D8005D26E6 /* Info.plist */,
 				F4EDAED827E0DA89005D26E6 /* GoogleService-Info.plist */,
@@ -266,6 +417,7 @@
 			children = (
 				F4EDAEA227DB7646005D26E6 /* UIViewController+Extension.swift */,
 				F4EDAEB127DCCB32005D26E6 /* UILabel+Extension.swift */,
+				F452DCCB27E22C8B003F550B /* Data+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -329,6 +481,10 @@
 		F4EDAEC027DF7BB2005D26E6 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				F452DCAA27E22353003F550B /* Nickname */,
+				F452DCAB27E22379003F550B /* Birthday */,
+				F452DCAC27E2238E003F550B /* Email */,
+				F452DCAD27E2239B003F550B /* Gender */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -345,6 +501,8 @@
 		F4EDAEC227DF7BDF005D26E6 /* AuthNumberFillOut */ = {
 			isa = PBXGroup;
 			children = (
+				F4EDAEDA27E0DFC1005D26E6 /* View */,
+				F4EDAEDB27E0E025005D26E6 /* ViewModel */,
 			);
 			path = AuthNumberFillOut;
 			sourceTree = "<group>";
@@ -352,7 +510,7 @@
 		F4EDAEC327DF7DB5005D26E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F4EDAEC527DF7DE3005D26E6 /* PhoneFillOutView.swift */,
+				F4EDAEC527DF7DE3005D26E6 /* PhoneNumberView.swift */,
 				F4EDAEC827DF7E18005D26E6 /* PhoneFillOutViewController.swift */,
 			);
 			path = View;
@@ -361,7 +519,7 @@
 		F4EDAEC427DF7DC1005D26E6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F4EDAECA27DF7E46005D26E6 /* PhoneFillOutViewModel.swift */,
+				F4EDAECA27DF7E46005D26E6 /* PhoneNumberViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -381,6 +539,23 @@
 				F4EDAED227DF8025005D26E6 /* CustomTextField.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		F4EDAEDA27E0DFC1005D26E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAEDC27E0E1CC005D26E6 /* AuthNumberView.swift */,
+				F4EDAEE027E0E47F005D26E6 /* AuthNumberViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4EDAEDB27E0E025005D26E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDAEDE27E0E3C6005D26E6 /* AuthNumberViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -671,23 +846,36 @@
 			files = (
 				F4EDAE4527D9A4D6005D26E6 /* AppDelegate.swift in Sources */,
 				F4EDAEB027DCCAC4005D26E6 /* CarouselViewController.swift in Sources */,
+				F452DCC027E22A60003F550B /* UserService.swift in Sources */,
+				F452DCB727E225C3003F550B /* NicknameViewModel.swift in Sources */,
 				F4EDAEA327DB7646005D26E6 /* UIViewController+Extension.swift in Sources */,
-				F4EDAECB27DF7E46005D26E6 /* PhoneFillOutViewModel.swift in Sources */,
+				F452DCC827E22B17003F550B /* BirthdayViewController.swift in Sources */,
+				F4EDAECB27DF7E46005D26E6 /* PhoneNumberViewModel.swift in Sources */,
+				F452DCB527E2255B003F550B /* NicknameViewController.swift in Sources */,
 				F4EDAEA927DC649C005D26E6 /* OnboardingView.swift in Sources */,
 				F4EDAECD27DF7E6F005D26E6 /* CommonViewModel.swift in Sources */,
-				F4EDAEC627DF7DE3005D26E6 /* PhoneFillOutView.swift in Sources */,
+				F4EDAEC627DF7DE3005D26E6 /* PhoneNumberView.swift in Sources */,
 				F4EDAEBD27DF787D005D26E6 /* OnboardingPageViewController.swift in Sources */,
 				F4EDAED327DF8025005D26E6 /* CustomTextField.swift in Sources */,
 				F4EDAED027DF7F13005D26E6 /* Helper.swift in Sources */,
+				F452DCC227E22A7F003F550B /* UserAPI.swift in Sources */,
 				F4EDAEAE27DCCA91005D26E6 /* CarouselView.swift in Sources */,
 				F4EDAEB427DCCB72005D26E6 /* CarouselElement.swift in Sources */,
+				F452DCCC27E22C8B003F550B /* Data+Extension.swift in Sources */,
+				F452DCCA27E22B27003F550B /* BirthdayViewModel.swift in Sources */,
 				F4EDAE4727D9A4D6005D26E6 /* SceneDelegate.swift in Sources */,
 				F4EDAEAC27DC64DA005D26E6 /* ViewRepresentable.swift in Sources */,
+				F452DCC627E22AFE003F550B /* BirthdayView.swift in Sources */,
 				F4EDAEB627DCCE7C005D26E6 /* R.generated.swift in Sources */,
+				F4EDAEDD27E0E1CD005D26E6 /* AuthNumberView.swift in Sources */,
 				F4EDAEBB27DF7835005D26E6 /* OnboardingViewController.swift in Sources */,
 				F4EDAED527DF84D5005D26E6 /* NetworkMonitor.swift in Sources */,
+				F452DCBE27E22A0F003F550B /* FirebaseService.swift in Sources */,
 				F4EDAEC927DF7E18005D26E6 /* PhoneFillOutViewController.swift in Sources */,
+				F4EDAEE127E0E482005D26E6 /* AuthNumberViewController.swift in Sources */,
 				F4EDAEB227DCCB32005D26E6 /* UILabel+Extension.swift in Sources */,
+				F4EDAEDF27E0E3C8005D26E6 /* AuthNumberViewModel.swift in Sources */,
+				F452DCB327E2242E003F550B /* NicknameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
