@@ -226,6 +226,8 @@
 		F452DCAD27E2239B003F550B /* Gender */ = {
 			isa = PBXGroup;
 			children = (
+				F452DCCD27E22EC6003F550B /* View */,
+				F452DCCE27E22ECE003F550B /* ViewModel */,
 			);
 			path = Gender;
 			sourceTree = "<group>";
@@ -320,6 +322,27 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F452DCCD27E22EC6003F550B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F452DCCE27E22ECE003F550B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F452DCCF27E22F06003F550B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		F4EDAE3827D9A4D6005D26E6 = {
 			isa = PBXGroup;
 			children = (
@@ -348,10 +371,11 @@
 				F4EDAE7427D9A5C7005D26E6 /* HobbyBasedChat.entitlements */,
 				F4EDAEA427DC6448005D26E6 /* Onboarding */,
 				F4EDAEBE27DF7B80005D26E6 /* Auth */,
+				F452DCCF27E22F06003F550B /* Main */,
+				F4EDAED127DF8007005D26E6 /* Custom */,
 				F4EDAE7927D9AE5B005D26E6 /* Font */,
 				F4EDAECE27DF7EE3005D26E6 /* Util */,
 				F4EDAEAA27DC64B5005D26E6 /* Protocol */,
-				F4EDAED127DF8007005D26E6 /* Custom */,
 				F452DCB827E229B1003F550B /* Network */,
 				F4EDAEA127DB7545005D26E6 /* Extension */,
 				F4EDAE5227D9A4D8005D26E6 /* Info.plist */,
