@@ -86,7 +86,7 @@ class AuthNumberViewModel: CommonViewModel {
             case 406:
                 UserDefaults.standard.set(true, forKey: "isSMSAuthCompleted")
             case 401:
-                FireBaseService.requestIDToken { idToken, error in
+                FirebaseService.requestIDToken { idToken, error in
                     if let error = error {
                         print("ID 토큰 갱신 오류, 잠시 후 다시 시도", error.localizedDescription)
                     }

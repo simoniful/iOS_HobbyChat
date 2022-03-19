@@ -57,7 +57,7 @@ class GenderView: UIView, ViewRepresentable {
         button.configurationUpdateHandler = handler
         button.layer.cornerRadius = 8
         button.clipsToBounds = true
-        button.layer.borderColor = R.color.grayscale_gray3()
+        button.layer.borderColor = R.color.grayscale_gray3()?.cgColor
         button.layer.borderWidth = 1
         return button
     }()

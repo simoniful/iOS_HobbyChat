@@ -8,7 +8,7 @@
 import UIKit
 import Rswift
 
-class EmailFillOutView: UIView, ViewRepresentable {
+class EmailView: UIView, ViewRepresentable {
     let infoLabel: UILabel = {
         let label = UILabel()
         label.font = R.font.notoSansCJKkrRegular(size: 20)

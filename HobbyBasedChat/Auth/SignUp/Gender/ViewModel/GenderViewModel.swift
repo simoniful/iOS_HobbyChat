@@ -85,7 +85,7 @@ class GenderViewModel: CommonViewModel {
                 UserDefaults.standard.set(true, forKey: "isSingUpCompleted")
                 completion(statusCode, error)
             case 401:
-                FireBaseService.requestIDToken { idToken, error in
+                FirebaseService.requestIDToken { idToken, error in
                     if let error = error {
                         print("ID 토큰 갱신 오류, 잠시 후 다시 시도", error.localizedDescription)
                     }
@@ -100,6 +100,5 @@ class GenderViewModel: CommonViewModel {
                 completion(statusCode, error)
             }
         }
-        
     }
 }

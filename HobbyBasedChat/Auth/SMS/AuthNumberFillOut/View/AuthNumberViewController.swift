@@ -154,7 +154,7 @@ class AuthNumberViewController: UIViewController {
                 case 200:
                     print("\(statusCode ?? 0) 성공")
                     self.view.makeToast("이미 가입된 회원입니다.")
-                    Helper.transitionToRootView(view: self.view, controller: MainTabBarController())
+//                    Helper.transitionToRootView(view: self.view, controller: MainTabBarController())
 
                 case 406:
                     print("\(statusCode ?? 0) 미가입 유저")

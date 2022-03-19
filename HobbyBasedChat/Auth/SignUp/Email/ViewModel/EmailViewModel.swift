@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class EmailFilloutViewModel: CommonViewModel {
+class EmailViewModel: CommonViewModel {
     var disposeBag: DisposeBag =  DisposeBag()
     
     struct Input {

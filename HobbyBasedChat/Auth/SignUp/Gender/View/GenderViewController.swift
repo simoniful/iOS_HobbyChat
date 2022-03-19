@@ -37,12 +37,11 @@ class GenderViewController: UIViewController {
             genderView.maleButton.isSelected = false
             genderView.femaleButton.isSelected = false
         }
-        
         bind()
     }
     
     func bind() {
-        let input = GenderViewModel.Input(maleButtonTap: genderSelectView.maleButton.rx.tap, femaleButtonTap: genderSelectView.femaleButton.rx.tap, nextButtonTap: genderSelectView.nextStepButton.rx.tap)
+        let input = GenderViewModel.Input(maleButtonTap: genderView.maleButton.rx.tap, femaleButtonTap: genderView.femaleButton.rx.tap, nextButtonTap: genderView.nextStepButton.rx.tap)
         
         let output = genderViewModel.transform(input: input)
         
@@ -57,10 +56,10 @@ class GenderViewController: UIViewController {
         output.validateStatus
             .bind(onNext: { result in
                 self.isValidated = result
-                let button = self.genderSelectView.nextStepButton
+                let button = self.genderView.nextStepButton
                 var configuration = button.configuration
-                configuration?.baseForegroundColor = result ? .custom_white : .grayscale_gray6
-                configuration?.baseBackgroundColor = result ? .brandcolor_green : .grayscale_gray3
+                configuration?.baseForegroundColor = result ? R.color.custom_white() : R.color.grayscale_gray6()
+                configuration?.baseBackgroundColor = result ? R.color.brandcolor_green() : R.color.grayscale_gray3()
                 button.configuration = configuration
             })
             .disposed(by: disposeBag)
@@ -77,19 +76,19 @@ class GenderViewController: UIViewController {
         UserDefaults.standard.set(genderCode.rawValue, forKey: "newbieGender")
         genderViewModel.requestSignUp { statusCode, error in
             switch statusCode {
-            case 200:
-                self.view.makeToast("회원가입에 성공했습니다.")
-                Helper.transitionToRootView(view: self.view, controller: MainTabBarController())
-            case 201:
-                self.view.makeToast("이미 가입한 유저입니다.")
-                Helper.transitionToRootView(view: self.view, controller: MainTabBarController())
+//            case 200:
+//                self.view.makeToast("회원가입에 성공했습니다.")
+//                Helper.transitionToRootView(view: self.view, controller: MainTabBarController())
+//            case 201:
+//                self.view.makeToast("이미 가입한 유저입니다.")
+//                Helper.transitionToRootView(view: self.view, controller: MainTabBarController())
             case 202:
                 var style = ToastStyle()
                 style.messageAlignment = .center
                 self.view.makeToast("사용할 수 없는 닉네임입니다.\n닉네임 설정 화면으로 이동합니다.", style: style)
                 guard let viewControllerStack = self.navigationController?.viewControllers else { return }
                 for viewController in viewControllerStack {
-                    if let nickVC = viewController as? NicknameFillOutViewController { self.navigationController?.popToViewController(nickVC, animated: true)
+                    if let nickVC = viewController as? NicknameViewController { self.navigationController?.popToViewController(nickVC, animated: true)
                     }
                 }
             default:
