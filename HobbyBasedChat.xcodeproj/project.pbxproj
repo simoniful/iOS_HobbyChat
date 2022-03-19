@@ -20,6 +20,14 @@
 		F452DCC827E22B17003F550B /* BirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCC727E22B17003F550B /* BirthdayViewController.swift */; };
 		F452DCCA27E22B27003F550B /* BirthdayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCC927E22B27003F550B /* BirthdayViewModel.swift */; };
 		F452DCCC27E22C8B003F550B /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCCB27E22C8B003F550B /* Data+Extension.swift */; };
+		F452DCD127E2CD61003F550B /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCD027E2CD61003F550B /* EmailView.swift */; };
+		F452DCD327E2CD77003F550B /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCD227E2CD77003F550B /* EmailViewController.swift */; };
+		F452DCD527E2CD86003F550B /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCD427E2CD86003F550B /* EmailViewModel.swift */; };
+		F452DCD727E60DD2003F550B /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCD627E60DD2003F550B /* GenderView.swift */; };
+		F452DCD927E60DE5003F550B /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCD827E60DE5003F550B /* GenderViewController.swift */; };
+		F452DCDB27E60E60003F550B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCDA27E60E60003F550B /* UIImage+Extension.swift */; };
+		F452DCDD27E62429003F550B /* GenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCDC27E62429003F550B /* GenderViewModel.swift */; };
+		F452DCE027E6271C003F550B /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F452DCDF27E6271C003F550B /* SignUp.swift */; };
 		F4EDAE4527D9A4D6005D26E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE4427D9A4D6005D26E6 /* AppDelegate.swift */; };
 		F4EDAE4727D9A4D6005D26E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDAE4627D9A4D6005D26E6 /* SceneDelegate.swift */; };
 		F4EDAE4E27D9A4D8005D26E6 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EDAE4D27D9A4D8005D26E6 /* Icons.xcassets */; };
@@ -101,6 +109,14 @@
 		F452DCC727E22B17003F550B /* BirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewController.swift; sourceTree = "<group>"; };
 		F452DCC927E22B27003F550B /* BirthdayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewModel.swift; sourceTree = "<group>"; };
 		F452DCCB27E22C8B003F550B /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		F452DCD027E2CD61003F550B /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		F452DCD227E2CD77003F550B /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		F452DCD427E2CD86003F550B /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
+		F452DCD627E60DD2003F550B /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		F452DCD827E60DE5003F550B /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		F452DCDA27E60E60003F550B /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F452DCDC27E62429003F550B /* GenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewModel.swift; sourceTree = "<group>"; };
+		F452DCDF27E6271C003F550B /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		F4EDAE4127D9A4D6005D26E6 /* HobbyBasedChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyBasedChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EDAE4427D9A4D6005D26E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4EDAE4627D9A4D6005D26E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +244,7 @@
 			children = (
 				F452DCCD27E22EC6003F550B /* View */,
 				F452DCCE27E22ECE003F550B /* ViewModel */,
+				F452DCDE27E626EF003F550B /* Model */,
 			);
 			path = Gender;
 			sourceTree = "<group>";
@@ -311,6 +328,8 @@
 		F452DCC327E22AD5003F550B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F452DCD027E2CD61003F550B /* EmailView.swift */,
+				F452DCD227E2CD77003F550B /* EmailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,6 +337,7 @@
 		F452DCC427E22AE4003F550B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F452DCD427E2CD86003F550B /* EmailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -325,6 +345,8 @@
 		F452DCCD27E22EC6003F550B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F452DCD627E60DD2003F550B /* GenderView.swift */,
+				F452DCD827E60DE5003F550B /* GenderViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,6 +354,7 @@
 		F452DCCE27E22ECE003F550B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F452DCDC27E62429003F550B /* GenderViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -341,6 +364,14 @@
 			children = (
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		F452DCDE27E626EF003F550B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F452DCDF27E6271C003F550B /* SignUp.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F4EDAE3827D9A4D6005D26E6 = {
@@ -442,6 +473,7 @@
 				F4EDAEA227DB7646005D26E6 /* UIViewController+Extension.swift */,
 				F4EDAEB127DCCB32005D26E6 /* UILabel+Extension.swift */,
 				F452DCCB27E22C8B003F550B /* Data+Extension.swift */,
+				F452DCDA27E60E60003F550B /* UIImage+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -870,6 +902,7 @@
 			files = (
 				F4EDAE4527D9A4D6005D26E6 /* AppDelegate.swift in Sources */,
 				F4EDAEB027DCCAC4005D26E6 /* CarouselViewController.swift in Sources */,
+				F452DCD927E60DE5003F550B /* GenderViewController.swift in Sources */,
 				F452DCC027E22A60003F550B /* UserService.swift in Sources */,
 				F452DCB727E225C3003F550B /* NicknameViewModel.swift in Sources */,
 				F4EDAEA327DB7646005D26E6 /* UIViewController+Extension.swift in Sources */,
@@ -882,22 +915,29 @@
 				F4EDAEBD27DF787D005D26E6 /* OnboardingPageViewController.swift in Sources */,
 				F4EDAED327DF8025005D26E6 /* CustomTextField.swift in Sources */,
 				F4EDAED027DF7F13005D26E6 /* Helper.swift in Sources */,
+				F452DCD127E2CD61003F550B /* EmailView.swift in Sources */,
 				F452DCC227E22A7F003F550B /* UserAPI.swift in Sources */,
+				F452DCD527E2CD86003F550B /* EmailViewModel.swift in Sources */,
 				F4EDAEAE27DCCA91005D26E6 /* CarouselView.swift in Sources */,
 				F4EDAEB427DCCB72005D26E6 /* CarouselElement.swift in Sources */,
 				F452DCCC27E22C8B003F550B /* Data+Extension.swift in Sources */,
 				F452DCCA27E22B27003F550B /* BirthdayViewModel.swift in Sources */,
 				F4EDAE4727D9A4D6005D26E6 /* SceneDelegate.swift in Sources */,
+				F452DCD327E2CD77003F550B /* EmailViewController.swift in Sources */,
 				F4EDAEAC27DC64DA005D26E6 /* ViewRepresentable.swift in Sources */,
 				F452DCC627E22AFE003F550B /* BirthdayView.swift in Sources */,
+				F452DCDD27E62429003F550B /* GenderViewModel.swift in Sources */,
 				F4EDAEB627DCCE7C005D26E6 /* R.generated.swift in Sources */,
 				F4EDAEDD27E0E1CD005D26E6 /* AuthNumberView.swift in Sources */,
+				F452DCE027E6271C003F550B /* SignUp.swift in Sources */,
+				F452DCD727E60DD2003F550B /* GenderView.swift in Sources */,
 				F4EDAEBB27DF7835005D26E6 /* OnboardingViewController.swift in Sources */,
 				F4EDAED527DF84D5005D26E6 /* NetworkMonitor.swift in Sources */,
 				F452DCBE27E22A0F003F550B /* FirebaseService.swift in Sources */,
 				F4EDAEC927DF7E18005D26E6 /* PhoneFillOutViewController.swift in Sources */,
 				F4EDAEE127E0E482005D26E6 /* AuthNumberViewController.swift in Sources */,
 				F4EDAEB227DCCB32005D26E6 /* UILabel+Extension.swift in Sources */,
+				F452DCDB27E60E60003F550B /* UIImage+Extension.swift in Sources */,
 				F4EDAEDF27E0E3C8005D26E6 /* AuthNumberViewModel.swift in Sources */,
 				F452DCB327E2242E003F550B /* NicknameView.swift in Sources */,
 			);
