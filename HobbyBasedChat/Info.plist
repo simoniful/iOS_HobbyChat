@@ -6,8 +6,8 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>NotoSansCJKkr-Regular.otf</string>
-		<string>NotoSansCJKkr-Medium.otf</string>
+		<string>NotoSansKR-Regular</string>
+		<string>NotoSansKR-Medium</string>
 	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
