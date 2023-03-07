@@ -28,6 +28,15 @@
       }
     },
     {
+      "identity" : "doubleslider",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yhkaplan/DoubleSlider",
+      "state" : {
+        "revision" : "6aa792cca0168c00d5e8d1293da73ffa64ab0cb0",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "firebase-ios-sdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk.git",
@@ -160,6 +169,24 @@
       "state" : {
         "branch" : "main",
         "revision" : "f671317335633fe9396fd3522dca1f5e64fc29c1"
+      }
+    },
+    {
+      "identity" : "rxgesture",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RxSwiftCommunity/RxGesture",
+      "state" : {
+        "revision" : "1b137c576b4aaaab949235752278956697c9e4a0",
+        "version" : "4.0.4"
+      }
+    },
+    {
+      "identity" : "rxkeyboard",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RxSwiftCommunity/RxKeyboard",
+      "state" : {
+        "revision" : "085fd99d7bb4f98e671904fcfe7ff561e66574ad",
+        "version" : "2.0.0"
       }
     },
     {
