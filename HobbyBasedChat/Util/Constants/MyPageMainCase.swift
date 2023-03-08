@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum MyPageMenuCase: String, CaseIterable {
+enum MyPageMainCase: String, CaseIterable {
   
   case notice, question, inquiry, notification, terms
   

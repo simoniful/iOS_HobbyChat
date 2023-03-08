@@ -26,7 +26,7 @@ final class GenderUseCase {
   func requestRegister(gender: GenderCase) {
     saveGenderInfo(gender: gender)
     let userSignUpInfo = makeUserSignUpInfo()
-    sesacRepository.requestRegister(userSignUpInfo: userSignUpInfo) { [weak self] response in
+    sesacRepository.requestSignUp(userSignUpInfo: userSignUpInfo) { [weak self] response in
       guard let self = self else { return }
       switch response {
       case .success(let userInfo):
