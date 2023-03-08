@@ -44,7 +44,6 @@ final class BirthdayViewController: BaseViewController {
       .asSignal(onErrorJustReturn: ("", "", ""))
   )
   private lazy var output = viewModel.transform(input: input)
-  private let disposdBag = DisposeBag()
   
   private var viewModel: BirthdayViewModel
   
@@ -70,23 +69,23 @@ final class BirthdayViewController: BaseViewController {
       .emit(onNext: { [unowned self] text in
         self.view.makeToast(text, position: .top)
       })
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.isValid
       .drive(nextButton.rx.isValid)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.yearText
       .emit(to: yearPickerTextField.rx.text)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.monthText
       .emit(to: monthPickerTextField.rx.text)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.dayText
       .emit(to: dayPickerTextField.rx.text)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
   }
   
   override func setupView() {

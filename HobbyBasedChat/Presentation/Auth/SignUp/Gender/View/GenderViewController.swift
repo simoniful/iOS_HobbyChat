@@ -27,7 +27,6 @@ class GenderViewController: BaseViewController {
     didNextButtonTap: nextButton.rx.tap.asSignal()
   )
   private lazy var output = viewModel.transform(input: input)
-  private let disposdBag = DisposeBag()
   
   private var viewModel: GenderViewModel
   
@@ -51,27 +50,27 @@ class GenderViewController: BaseViewController {
   override func bind() {
     output.isValid
       .drive(nextButton.rx.isValid)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.isManSelected
       .drive(manButton.rx.isSelected)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.isWomanSelected
       .drive(womanButton.rx.isSelected)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.showToastAction
       .emit(onNext: { [unowned self] text in
         self.view.makeToast(text, position: .top)
       })
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.indicatorAction
       .drive(onNext: {
         $0 ? IndicatorView.shared.show(backgoundColor: Asset.transparent.color) : IndicatorView.shared.hide()
       })
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
   }
   
   override func setupView() {

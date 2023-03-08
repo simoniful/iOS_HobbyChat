@@ -63,36 +63,36 @@ final class LoginViewController: BaseViewController {
   override func bind() {
     output.phoneNumberText
       .emit(to: phoneNumberTextField.rx.text)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.isValidState
       .drive(confirmButton.rx.isValid)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.phoneNumberRemoveHiponAction
       .emit(onNext: { [unowned self] in
         self.phoneNumberTextField.text = self.phoneNumberTextField.text?.removeHipon()
       })
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.phoneNumberAddHiponAction
       .emit (onNext: { [unowned self] in
         self.phoneNumberTextField.text = self.phoneNumberTextField.text?.addHipon()
       })
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.showToastAction
       .emit(onNext: { [unowned self] message in
         self.makeToastStyle()
         self.view.makeToast(message, position: .top)
       })
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.indicatorAction
       .drive(onNext: {
         $0 ? IndicatorView.shared.show(backgoundColor: Asset.transparent.color) : IndicatorView.shared.hide()
       })
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
   }
   
   override func setupView() {

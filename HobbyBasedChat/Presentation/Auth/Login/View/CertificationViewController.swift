@@ -29,7 +29,6 @@ final class CertificationViewController: BaseViewController {
   private let startButtonTapSignal = PublishRelay<String>()
   private let signInFirebaseSignal = PublishRelay<String>()
   private let didLimitTime = PublishRelay<Void>()
-  private let disposdBag = DisposeBag()
   
   private let totalTime = 60
   private lazy var currentTime = totalTime
@@ -66,23 +65,23 @@ final class CertificationViewController: BaseViewController {
       .emit(onNext: { [weak self] message in
         self?.showToast(message: message)
       })
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.isValidState
       .drive(startButton.rx.isValid)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.disposeTimerAction
       .emit(onNext: { [weak self] in
         self?.timerDisposable?.dispose()
       })
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.indicatorAction
       .drive(onNext: {
         $0 ? IndicatorView.shared.show(backgoundColor: Asset.transparent.color) : IndicatorView.shared.hide()
       })
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
   }
   
   override func setupView() {

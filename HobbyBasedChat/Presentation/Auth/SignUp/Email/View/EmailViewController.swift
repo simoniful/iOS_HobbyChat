@@ -28,7 +28,6 @@ final class EmailViewController: BaseViewController {
       .asSignal(onErrorJustReturn: "")
   )
   private lazy var output = viewModel.transform(input: input)
-  private let disposdBag = DisposeBag()
   
   private var viewModel: EmailViewModel
   
@@ -59,11 +58,11 @@ final class EmailViewController: BaseViewController {
       .emit(onNext: { [unowned self] text in
         self.view.makeToast(text, position: .top)
       })
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.isValid
       .drive(nextButton.rx.isValid)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
   }
   
   override func setupView() {

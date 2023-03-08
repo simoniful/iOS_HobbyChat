@@ -14,7 +14,7 @@ final class MyPageGenderView: UIView {
   private let manButton = SelectionButton(title: "남자")
   private let womanButton = SelectionButton(title: "여자")
   
-  private let disposdBag = DisposeBag()
+  private let disposeBag = DisposeBag()
   
   var getGender: GenderCase {
     if manButton.isSelected { return .man }
@@ -42,7 +42,7 @@ final class MyPageGenderView: UIView {
         return !self.manButton.isSelected
       }
       .drive(manButton.rx.isSelected)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     womanButton.rx.tap.asDriver()
       .map { [weak self] in
@@ -52,7 +52,7 @@ final class MyPageGenderView: UIView {
         return !self.womanButton.isSelected
       }
       .drive(womanButton.rx.isSelected)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
   }
   
   func setGender(gender: GenderCase) {

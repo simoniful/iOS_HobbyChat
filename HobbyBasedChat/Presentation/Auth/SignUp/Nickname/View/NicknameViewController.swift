@@ -24,7 +24,6 @@ final class NicknameViewController: BaseViewController {
       .asSignal(onErrorJustReturn: "")
   )
   private lazy var output = viewModel.transform(input: input)
-  private let disposdBag = DisposeBag()
   private let didTextChange = PublishRelay<String>()
   private let didNextButtonTap = PublishRelay<String>()
   private var viewModel: NicknameViewModel
@@ -56,11 +55,11 @@ final class NicknameViewController: BaseViewController {
       .emit(onNext: { [unowned self] text in
         self.view.makeToast(text, position: .top)
       })
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
     
     output.isValidState
       .drive(nextButton.rx.isValid)
-      .disposed(by: disposdBag)
+      .disposed(by: disposeBag)
   }
   
   override func setupView() {

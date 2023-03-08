@@ -20,7 +20,7 @@ final class MyPageUpdateFooterView: UITableViewHeaderFooterView {
   private let withdrawButton = BaseButton(title: "회원탈퇴")
   
   lazy var withdrawButtonTap = withdrawButton.rx.tap.asSignal()
-  let disposdBag = DisposeBag()
+  let disposeBag = DisposeBag()
   
   private lazy var stackView = UIStackView(
     arrangedSubviews: [myGenderView,
