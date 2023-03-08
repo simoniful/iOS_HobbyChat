@@ -18,7 +18,7 @@ final class HobbyLabel: UILabel {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    self.setConfiguration()
+    self.setupAttributes()
     isFixed = false
   }
   
@@ -38,7 +38,7 @@ final class HobbyLabel: UILabel {
     fatalError("NearHobbyLabel: fatal Error Message")
   }
   
-  private func setConfiguration() {
+  private func setupAttributes() {
     font = .title4R14
     numberOfLines = 1
     textAlignment = .center

@@ -17,15 +17,15 @@ final class SesacCardView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setConstraints()
-        setConfiguration()
+        setupConstraints()
+        setupAttributes()
     }
 
     required init?(coder: NSCoder) {
         fatalError("SesacCardView: fatal error")
     }
 
-    private func setConstraints() {
+    private func setupConstraints() {
         addSubview(previewView)
         addSubview(titleLabel)
         addSubview(sesacTitleView)
@@ -58,7 +58,7 @@ final class SesacCardView: UIView {
         }
     }
 
-    private func setConfiguration(){
+    private func setupAttributes(){
         layer.masksToBounds = true
         layer.cornerRadius = 8
         layer.borderColor = UIColor.gray4.cgColor

@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 import SnapKit
 
-final class MyPageUpdateViewController: UIViewController {
+final class MyPageUpdateViewController: BaseViewController {
   private let headerView = MyPageUpdateHeaderView()
   private let footerView = MyPageUpdateFooterView()
   private let tableView = UITableView(frame: .zero, style: .grouped)
@@ -30,14 +30,13 @@ final class MyPageUpdateViewController: UIViewController {
   )
   private lazy var output = viewModel.transform(input: input)
   private let viewModel: MyPageUpdateViewModel
-  private let disposeBag = DisposeBag()
-  
+
   private let requestWithdrawSignal = PublishRelay<Void>()
   private let requestUpdateSignal = PublishRelay<UpdateUserInfo>()
   
   init(viewModel: MyPageUpdateViewModel) {
     self.viewModel = viewModel
-    super.init(nibName: nil, bundle: nil)
+    super.init()
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -46,13 +45,13 @@ final class MyPageUpdateViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    setViews()
-    setConstraints()
-    setConfigurations()
+    setupView()
+    setupConstraints()
+    setupAttributes()
     bind()
   }
   
-  private func bind() {
+  override func bind() {
     output.userInfo
       .emit(onNext: { [weak self] info in
         guard let self = self else { return }
@@ -101,7 +100,7 @@ final class MyPageUpdateViewController: UIViewController {
     self.tableView.endEditing(true)
   }
   
-  private func setViews() {
+  override func setupView() {
     tableView.register(MyPageUpdateHeaderView.self,
                        forHeaderFooterViewReuseIdentifier: MyPageUpdateHeaderView.identifier)
     tableView.register(MyPageUpdateFooterView.self,
@@ -111,13 +110,13 @@ final class MyPageUpdateViewController: UIViewController {
     view.addSubview(tableView)
   }
   
-  private func setConstraints() {
+  override func setupConstraints() {
     tableView.snp.makeConstraints { make in
       make.edges.equalToSuperview()
     }
   }
   
-  private func setConfigurations() {
+  private func setupAttributes() {
     view.backgroundColor = .white
     tableView.delegate = self
     if #available(iOS 15.0, *) {

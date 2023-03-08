@@ -11,7 +11,7 @@ import RxSwift
 import SnapKit
 import Toast
 
-final class LoginViewController: UIViewController {
+final class LoginViewController: BaseViewController {
   private let descriptionLabel = BaseLabel(
     title: "새싹 서비스 이용을 위해\n휴대폰 번호를 입력해 주세요",
     font: .display1R20
@@ -26,13 +26,12 @@ final class LoginViewController: UIViewController {
     verifyPhoneNumber: verifyPhoneNumber.asSignal()
   )
   private lazy var output = viewModel.transform(input: input)
-  private let disposdBag = DisposeBag()
   private let verifyPhoneNumber = PublishRelay<String>()
   private var viewModel: LoginViewModel
   
   init(viewModel: LoginViewModel) {
     self.viewModel = viewModel
-    super.init(nibName: nil, bundle: nil)
+    super.init()
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -41,7 +40,7 @@ final class LoginViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    setupViews()
+    setupView()
     setupConstraints()
     setupAttributes()
     bind()
@@ -61,7 +60,7 @@ final class LoginViewController: UIViewController {
     self.view.endEditing(true)
   }
   
-  private func bind() {
+  override func bind() {
     output.phoneNumberText
       .emit(to: phoneNumberTextField.rx.text)
       .disposed(by: disposdBag)
@@ -96,13 +95,13 @@ final class LoginViewController: UIViewController {
       .disposed(by: disposdBag)
   }
   
-  private func setupViews() {
+  override func setupView() {
     view.addSubview(descriptionLabel)
     view.addSubview(phoneNumberTextField)
     view.addSubview(confirmButton)
   }
   
-  private func setupConstraints() {
+  override func setupConstraints() {
     descriptionLabel.snp.makeConstraints { make in
       make.centerY.equalToSuperview().multipliedBy(0.5)
       make.leading.equalToSuperview().offset(16)

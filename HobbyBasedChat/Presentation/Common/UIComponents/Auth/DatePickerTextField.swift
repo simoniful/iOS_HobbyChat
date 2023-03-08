@@ -12,7 +12,7 @@ final class DatePickerTextField: UITextField {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    self.setConfiguration()
+    self.setupAttributes()
   }
   
   convenience init(placeHolder text: String) {
@@ -48,7 +48,7 @@ final class DatePickerTextField: UITextField {
     inputView = datePicker
   }
   
-  private func setConfiguration() {
+  private func setupAttributes() {
     borderStyle = .none
     font = .title4R14
     setBorderLine()

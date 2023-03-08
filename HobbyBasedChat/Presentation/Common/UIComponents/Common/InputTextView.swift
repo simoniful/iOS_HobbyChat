@@ -12,7 +12,7 @@ final class InputTextView: UITextView, UITextViewDelegate {
   
   override init(frame: CGRect, textContainer: NSTextContainer?) {
     super.init(frame: frame, textContainer: textContainer)
-    self.setConfiguration()
+    self.setupAttributes()
     self.placeholderSetting()
   }
   
@@ -41,7 +41,7 @@ final class InputTextView: UITextView, UITextViewDelegate {
     fatalError("InputTextView: fatal Error")
   }
   
-  private func setConfiguration() {
+  private func setupAttributes() {
     delegate = self
     textContainerInset = UIEdgeInsets(top: 14, left: 12, bottom: 14, right: 44)
     backgroundColor = .gray1

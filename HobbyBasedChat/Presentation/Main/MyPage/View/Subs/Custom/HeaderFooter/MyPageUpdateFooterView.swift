@@ -11,7 +11,6 @@ import RxSwift
 import RxCocoa
 
 final class MyPageUpdateFooterView: UITableViewHeaderFooterView {
-  
   static let identifier = "MyPageUpdateFooterView."
   
   private let myGenderView = MyPageGenderView()

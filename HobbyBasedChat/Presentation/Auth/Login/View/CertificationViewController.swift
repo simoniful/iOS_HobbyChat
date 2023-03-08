@@ -9,7 +9,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-final class CertificationViewController: UIViewController {
+final class CertificationViewController: BaseViewController {
   private let descriptionLabel = BaseLabel(title: "인증번호가 문자로 전송되었어요", font: .display1R20)
   private let timeLimitLabel = UILabel()
   private let authNumberTextField = BaseTextField(placeHolder: "인증번호 입력")
@@ -39,7 +39,7 @@ final class CertificationViewController: UIViewController {
   
   init(viewModel: CertificationViewModel) {
     self.viewModel = viewModel
-    super.init(nibName: nil, bundle: nil)
+    super.init()
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -48,9 +48,9 @@ final class CertificationViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    setViews()
-    setConstraints()
-    setConfigurations()
+    setupView()
+    setupConstraints()
+    setupAttributes()
     bind()
   }
   
@@ -61,7 +61,7 @@ final class CertificationViewController: UIViewController {
     startTimerRefresh()
   }
   
-  private func bind() {
+  override func bind() {
     output.showToastAction
       .emit(onNext: { [weak self] message in
         self?.showToast(message: message)
@@ -85,7 +85,7 @@ final class CertificationViewController: UIViewController {
       .disposed(by: disposdBag)
   }
   
-  private func setViews() {
+  override func setupView() {
     view.addSubview(descriptionLabel)
     view.addSubview(transferButton)
     view.addSubview(authNumberTextField)
@@ -93,7 +93,7 @@ final class CertificationViewController: UIViewController {
     view.addSubview(timeLimitLabel)
   }
   
-  private func setConstraints() {
+  override func setupConstraints() {
     descriptionLabel.snp.makeConstraints { make in
       make.centerY.equalToSuperview().multipliedBy(0.5)
       make.leading.equalToSuperview().offset(16)
@@ -124,7 +124,7 @@ final class CertificationViewController: UIViewController {
     }
   }
   
-  private func setConfigurations() {
+  private func setupAttributes() {
     view.backgroundColor = .white
     navigationController?.navigationBar.isHidden = false
     transferButton.addTarget(self,

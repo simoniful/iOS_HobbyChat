@@ -32,14 +32,14 @@ final class GenderButton: UIButton {
   convenience init(gender: Gender) {
     self.init()
     self.gender = gender
-    self.setConfiguration()
+    self.setupAttributes()
   }
   
   required init?(coder: NSCoder) {
     fatalError("DefaultFillButton: fatal Error Message")
   }
   
-  private func setConfiguration() {
+  private func setupAttributes() {
     layer.masksToBounds = true
     gender == .woman ? setWomanConfiguration() : setManConfiguration()
   }
