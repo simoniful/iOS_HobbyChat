@@ -26,7 +26,7 @@ extension SesacRepository {
     }
   }
   
-  func requestRegister(userSignUpInfo: UserSignUpQuery, completion: @escaping (Result<UserInfo, SesacNetworkServiceError>) -> Void ) {
+  func requestSignUp(userSignUpInfo: UserSignUpQuery, completion: @escaping (Result<UserInfo, SesacNetworkServiceError>) -> Void ) {
     let requestDTO = UserRegisterInfoRequestDTO(userSignUpInfo: userSignUpInfo)
     provider.request(.register(parameters: requestDTO.toDictionary)) { result in
       switch result {
@@ -41,6 +41,19 @@ extension SesacRepository {
   
   func requestWithdraw(completion: @escaping (Result<Int, SesacNetworkServiceError>) -> Void ) {
     provider.request(.withdraw) { result in
+      self.process(result: result, completion: completion)
+    }
+  }
+  
+  func requestUpdateUserInfo(
+    userUpdateInfo: UserUpdateQuery,
+    completion: @escaping (
+      Result< Int,
+      SesacNetworkServiceError>
+    ) -> Void
+  ) {
+    let requestDTO = UserUpdateRequestDTO(userUpdateInfo: userUpdateInfo)
+    provider.request(.updateMyPage(parameters: requestDTO.toDictionary)) { result in
       self.process(result: result, completion: completion)
     }
   }

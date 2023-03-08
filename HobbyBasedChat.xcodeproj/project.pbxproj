@@ -142,6 +142,8 @@
 		F4F5B19E29B78A85007B960D /* UserInfoResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B19D29B78A85007B960D /* UserInfoResponseDTO.swift */; };
 		F4F5B1A029B78AFC007B960D /* UserSignUpRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B19F29B78AFC007B960D /* UserSignUpRequestDTO.swift */; };
 		F4F5B1A229B78BAE007B960D /* GenderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B1A129B78BAE007B960D /* GenderUseCase.swift */; };
+		F4F5B1A429B82E15007B960D /* UserUpdateRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B1A329B82E15007B960D /* UserUpdateRequestDTO.swift */; };
+		F4F5B1A629B82E46007B960D /* UserUpdateQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B1A529B82E46007B960D /* UserUpdateQuery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -277,6 +279,8 @@
 		F4F5B19D29B78A85007B960D /* UserInfoResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoResponseDTO.swift; sourceTree = "<group>"; };
 		F4F5B19F29B78AFC007B960D /* UserSignUpRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpRequestDTO.swift; sourceTree = "<group>"; };
 		F4F5B1A129B78BAE007B960D /* GenderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderUseCase.swift; sourceTree = "<group>"; };
+		F4F5B1A329B82E15007B960D /* UserUpdateRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdateRequestDTO.swift; sourceTree = "<group>"; };
+		F4F5B1A529B82E46007B960D /* UserUpdateQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdateQuery.swift; sourceTree = "<group>"; };
 		FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -653,9 +657,9 @@
 		F459EF1829B5E2C400199ED7 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				F459EF1929B5E2ED00199ED7 /* FirebaseRepositoryInterface.swift */,
 				F4F5B15E29B71884007B960D /* UserRepositoryInterface.swift */,
 				F4F5B16829B71D44007B960D /* SesacRepositoryInterface.swift */,
+				F459EF1929B5E2ED00199ED7 /* FirebaseRepositoryInterface.swift */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -972,6 +976,7 @@
 			isa = PBXGroup;
 			children = (
 				F4F5B17629B72121007B960D /* UserSignUpQuery.swift */,
+				F4F5B1A529B82E46007B960D /* UserUpdateQuery.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1023,9 +1028,9 @@
 		F4F5B17C29B722CE007B960D /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				F452DCBD27E22A0E003F550B /* FirebaseRepository.swift */,
 				F4F5B16E29B71F3B007B960D /* UserRepository.swift */,
 				F4F5B19B29B78A4D007B960D /* SesacRepository.swift */,
+				F452DCBD27E22A0E003F550B /* FirebaseRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -1066,6 +1071,7 @@
 			isa = PBXGroup;
 			children = (
 				F4F5B19F29B78AFC007B960D /* UserSignUpRequestDTO.swift */,
+				F4F5B1A329B82E15007B960D /* UserUpdateRequestDTO.swift */,
 			);
 			path = RequestDTO;
 			sourceTree = "<group>";
@@ -1460,6 +1466,7 @@
 				F459EF6229B6D94300199ED7 /* IndicatorView.swift in Sources */,
 				F459EF8229B6E21F00199ED7 /* CollectionViewLeftAlignFlowLayout.swift in Sources */,
 				F459EF4829B65D2400199ED7 /* UITextView+Rx.swift in Sources */,
+				F4F5B1A429B82E15007B960D /* UserUpdateRequestDTO.swift in Sources */,
 				F459EF7C29B6E08000199ED7 /* DynamicCollectionView.swift in Sources */,
 				F4F5B17729B72121007B960D /* UserSignUpQuery.swift in Sources */,
 				F4F5B19029B78929007B960D /* BirthdayViewModel.swift in Sources */,
@@ -1469,6 +1476,7 @@
 				F459EF7E29B6E0F400199ED7 /* ButtonState.swift in Sources */,
 				F459EF0529B5AAA100199ED7 /* AuthCoordinator.swift in Sources */,
 				F4F5B18729B7307F007B960D /* SesacTarget+Stub.swift in Sources */,
+				F4F5B1A629B82E46007B960D /* UserUpdateQuery.swift in Sources */,
 				F459EF6429B6D9A000199ED7 /* BaseLabel.swift in Sources */,
 				F459EF1329B5DF5600199ED7 /* OnBoardingViewModel.swift in Sources */,
 				F452DCCC27E22C8B003F550B /* Date+.swift in Sources */,

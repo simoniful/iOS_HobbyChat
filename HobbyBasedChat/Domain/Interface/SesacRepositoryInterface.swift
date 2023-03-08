@@ -16,7 +16,7 @@ protocol SesacRepositoryInterface: AnyObject {
     ) -> Void
   )
   
-  func requestRegister(
+  func requestSignUp(
     userSignUpInfo: UserSignUpQuery,
     completion: @escaping (
       Result< UserInfo,
@@ -25,6 +25,14 @@ protocol SesacRepositoryInterface: AnyObject {
   )
   
   func requestWithdraw(
+    completion: @escaping (
+      Result< Int,
+      SesacNetworkServiceError>
+    ) -> Void
+  )
+  
+  func requestUpdateUserInfo(
+    userUpdateInfo: UserUpdateQuery,
     completion: @escaping (
       Result< Int,
       SesacNetworkServiceError>

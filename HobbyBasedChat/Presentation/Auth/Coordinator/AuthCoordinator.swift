@@ -28,14 +28,12 @@ final class AuthCoordinator: Coordinator {
     } else {
       showOnboardingViewController()
     }
-    
   }
   
   func showOnboardingViewController() {
     let viewModel = OnBoardingViewModel(coordinator: self)
     let vc = OnBoardingViewController(viewModel: viewModel)
     navigationController.viewControllers = [vc]
-    //navigationController.pushViewController(vc, animated: true)
   }
   
   func connectTabBarCoordinator() {
