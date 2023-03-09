@@ -185,6 +185,18 @@
 		F4F5B21929B98EAE007B960D /* MapStatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B21829B98EAE007B960D /* MapStatusButton.swift */; };
 		F4F5B21B29B99027007B960D /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B21A29B99027007B960D /* FilterButton.swift */; };
 		F4F5B22029B99206007B960D /* HobbySettingSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B21F29B99206007B960D /* HobbySettingSectionHeaderView.swift */; };
+		F4F5B22429B9D9DF007B960D /* OnqueueRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B22329B9D9DF007B960D /* OnqueueRequestDTO.swift */; };
+		F4F5B22629B9DA30007B960D /* OnqueueResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B22529B9DA30007B960D /* OnqueueResponseDTO.swift */; };
+		F4F5B22829B9DB2B007B960D /* SesacSearchRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B22729B9DB2B007B960D /* SesacSearchRequestDTO.swift */; };
+		F4F5B22A29B9DCF7007B960D /* HomeSesacSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B22929B9DCF7007B960D /* HomeSesacSearchViewModel.swift */; };
+		F4F5B22C29B9DD0A007B960D /* HomeSesacSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B22B29B9DD0A007B960D /* HomeSesacSearchViewController.swift */; };
+		F4F5B23029B9F59D007B960D /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B22F29B9F59D007B960D /* TabButton.swift */; };
+		F4F5B23229B9F730007B960D /* HomeSesacSearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23129B9F730007B960D /* HomeSesacSearchUseCase.swift */; };
+		F4F5B23429B9F933007B960D /* MyQueueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23329B9F933007B960D /* MyQueueState.swift */; };
+		F4F5B23929BA04C4007B960D /* SesacFriendQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23829BA04C4007B960D /* SesacFriendQuery.swift */; };
+		F4F5B23B29BA1ED7007B960D /* SesacFriendRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23A29BA1ED7007B960D /* SesacFriendRequestDTO.swift */; };
+		F4F5B23D29BA1F50007B960D /* MyQueueStateResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23C29BA1F50007B960D /* MyQueueStateResponseDTO.swift */; };
+		F4F5B24029BA1FFA007B960D /* SesacCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23F29BA1FFA007B960D /* SesacCardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -363,6 +375,18 @@
 		F4F5B21829B98EAE007B960D /* MapStatusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStatusButton.swift; sourceTree = "<group>"; };
 		F4F5B21A29B99027007B960D /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		F4F5B21F29B99206007B960D /* HobbySettingSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbySettingSectionHeaderView.swift; sourceTree = "<group>"; };
+		F4F5B22329B9D9DF007B960D /* OnqueueRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnqueueRequestDTO.swift; sourceTree = "<group>"; };
+		F4F5B22529B9DA30007B960D /* OnqueueResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnqueueResponseDTO.swift; sourceTree = "<group>"; };
+		F4F5B22729B9DB2B007B960D /* SesacSearchRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacSearchRequestDTO.swift; sourceTree = "<group>"; };
+		F4F5B22929B9DCF7007B960D /* HomeSesacSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSesacSearchViewModel.swift; sourceTree = "<group>"; };
+		F4F5B22B29B9DD0A007B960D /* HomeSesacSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSesacSearchViewController.swift; sourceTree = "<group>"; };
+		F4F5B22F29B9F59D007B960D /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		F4F5B23129B9F730007B960D /* HomeSesacSearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSesacSearchUseCase.swift; sourceTree = "<group>"; };
+		F4F5B23329B9F933007B960D /* MyQueueState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQueueState.swift; sourceTree = "<group>"; };
+		F4F5B23829BA04C4007B960D /* SesacFriendQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacFriendQuery.swift; sourceTree = "<group>"; };
+		F4F5B23A29BA1ED7007B960D /* SesacFriendRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacFriendRequestDTO.swift; sourceTree = "<group>"; };
+		F4F5B23C29BA1F50007B960D /* MyQueueStateResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQueueStateResponseDTO.swift; sourceTree = "<group>"; };
+		F4F5B23F29BA1FFA007B960D /* SesacCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacCardCell.swift; sourceTree = "<group>"; };
 		FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1040,6 +1064,7 @@
 				F4F5B17629B72121007B960D /* UserSignUpQuery.swift */,
 				F4F5B1A529B82E46007B960D /* UserUpdateQuery.swift */,
 				F4F5B1FC29B97F14007B960D /* SesacSearchQuery.swift */,
+				F4F5B23829BA04C4007B960D /* SesacFriendQuery.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1050,6 +1075,7 @@
 				F4F5B17429B720F9007B960D /* UserInfo.swift */,
 				F4F5B1F829B97DEB007B960D /* Onqueue.swift */,
 				F4F5B1FA29B97E1C007B960D /* Coordinate.swift */,
+				F4F5B23329B9F933007B960D /* MyQueueState.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -1135,8 +1161,8 @@
 		F4F5B18929B7315C007B960D /* RequestDTO */ = {
 			isa = PBXGroup;
 			children = (
-				F4F5B19F29B78AFC007B960D /* UserSignUpRequestDTO.swift */,
-				F4F5B1A329B82E15007B960D /* UserUpdateRequestDTO.swift */,
+				F4F5B22129B9D9BE007B960D /* Auth */,
+				F4F5B22229B9D9C9007B960D /* Main */,
 			);
 			path = RequestDTO;
 			sourceTree = "<group>";
@@ -1145,6 +1171,8 @@
 			isa = PBXGroup;
 			children = (
 				F4F5B19D29B78A85007B960D /* UserInfoResponseDTO.swift */,
+				F4F5B22529B9DA30007B960D /* OnqueueResponseDTO.swift */,
+				F4F5B23C29BA1F50007B960D /* MyQueueStateResponseDTO.swift */,
 			);
 			path = ResponseDTO;
 			sourceTree = "<group>";
@@ -1164,6 +1192,7 @@
 			children = (
 				F4F5B1F629B97D8E007B960D /* HomeUseCase.swift */,
 				F4F5B20E29B98B2A007B960D /* HomeHobbySettingUseCase.swift */,
+				F4F5B23129B9F730007B960D /* HomeSesacSearchUseCase.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1461,6 +1490,8 @@
 		F4F5B21C29B99148007B960D /* SesacSearch */ = {
 			isa = PBXGroup;
 			children = (
+				F4F5B22B29B9DD0A007B960D /* HomeSesacSearchViewController.swift */,
+				F4F5B22D29B9F2FF007B960D /* Custom */,
 			);
 			path = SesacSearch;
 			sourceTree = "<group>";
@@ -1468,6 +1499,7 @@
 		F4F5B21D29B99162007B960D /* SesacSearch */ = {
 			isa = PBXGroup;
 			children = (
+				F4F5B22929B9DCF7007B960D /* HomeSesacSearchViewModel.swift */,
 			);
 			path = SesacSearch;
 			sourceTree = "<group>";
@@ -1478,6 +1510,50 @@
 				F4F5B21F29B99206007B960D /* HobbySettingSectionHeaderView.swift */,
 			);
 			path = HeaderFooter;
+			sourceTree = "<group>";
+		};
+		F4F5B22129B9D9BE007B960D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B19F29B78AFC007B960D /* UserSignUpRequestDTO.swift */,
+				F4F5B1A329B82E15007B960D /* UserUpdateRequestDTO.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F4F5B22229B9D9C9007B960D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B22329B9D9DF007B960D /* OnqueueRequestDTO.swift */,
+				F4F5B22729B9DB2B007B960D /* SesacSearchRequestDTO.swift */,
+				F4F5B23A29BA1ED7007B960D /* SesacFriendRequestDTO.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F4F5B22D29B9F2FF007B960D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B23E29BA1FE3007B960D /* Cell */,
+				F4F5B22E29B9F304007B960D /* UIComponents */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		F4F5B22E29B9F304007B960D /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B22F29B9F59D007B960D /* TabButton.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		F4F5B23E29BA1FE3007B960D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B23F29BA1FFA007B960D /* SesacCardCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1810,6 +1886,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F5B22629B9DA30007B960D /* OnqueueResponseDTO.swift in Sources */,
 				F4F5B1EE29B8E4B3007B960D /* MyPageUpdateUseCase.swift in Sources */,
 				F4F5B1DA29B8DD78007B960D /* MyPageGenderView.swift in Sources */,
 				F4F5B1D829B8DCFC007B960D /* SesacCardReviewView.swift in Sources */,
@@ -1822,6 +1899,7 @@
 				F4F5B20529B98030007B960D /* HomeHobbySettingViewModel.swift in Sources */,
 				F459EEFD29B5A6C100199ED7 /* Coordinator.swift in Sources */,
 				F4F5B1C929B83791007B960D /* MyPageMainHeaderView.swift in Sources */,
+				F4F5B22429B9D9DF007B960D /* OnqueueRequestDTO.swift in Sources */,
 				F459EEFB29B5A5CB00199ED7 /* AppCoordinator.swift in Sources */,
 				F459EF3029B65AD000199ED7 /* String+.swift in Sources */,
 				F4F5B17529B720F9007B960D /* UserInfo.swift in Sources */,
@@ -1832,6 +1910,7 @@
 				F459EF8C29B6E30A00199ED7 /* SesacBackgroundCase.swift in Sources */,
 				F459EF4E29B65D2400199ED7 /* InputTextView+Rx.swift in Sources */,
 				F4F5B1EC29B8E368007B960D /* HobbyLabel.swift in Sources */,
+				F4F5B23029B9F59D007B960D /* TabButton.swift in Sources */,
 				F4F5B20B29B9886B007B960D /* HomeHobbySettingSectionModel.swift in Sources */,
 				F4F5B21729B98EA0007B960D /* GenderFilterView.swift in Sources */,
 				F459EF3729B65BA900199ED7 /* UIButton+.swift in Sources */,
@@ -1875,6 +1954,7 @@
 				F4F5B16729B71CEA007B960D /* CertificationUseCase.swift in Sources */,
 				F4F5B1B529B83384007B960D /* ShopCoordinator.swift in Sources */,
 				F4F5B18029B72596007B960D /* SesacAPIEnvironment.swift in Sources */,
+				F4F5B23429B9F933007B960D /* MyQueueState.swift in Sources */,
 				F4F5B21B29B99027007B960D /* FilterButton.swift in Sources */,
 				F4F5B15F29B71884007B960D /* UserRepositoryInterface.swift in Sources */,
 				F4F5B18229B725B3007B960D /* SesacTarget.swift in Sources */,
@@ -1883,6 +1963,7 @@
 				F459EF4829B65D2400199ED7 /* UITextView+Rx.swift in Sources */,
 				F4F5B1A429B82E15007B960D /* UserUpdateRequestDTO.swift in Sources */,
 				F459EF7C29B6E08000199ED7 /* DynamicCollectionView.swift in Sources */,
+				F4F5B22829B9DB2B007B960D /* SesacSearchRequestDTO.swift in Sources */,
 				F4F5B17729B72121007B960D /* UserSignUpQuery.swift in Sources */,
 				F4F5B19029B78929007B960D /* BirthdayViewModel.swift in Sources */,
 				F459EF5C29B6D8D300199ED7 /* SelectionButton.swift in Sources */,
@@ -1898,7 +1979,9 @@
 				F459EF6429B6D9A000199ED7 /* BaseLabel.swift in Sources */,
 				F459EF1329B5DF5600199ED7 /* OnBoardingViewModel.swift in Sources */,
 				F452DCCC27E22C8B003F550B /* Date+.swift in Sources */,
+				F4F5B22A29B9DCF7007B960D /* HomeSesacSearchViewModel.swift in Sources */,
 				F459EEF929B5A54500199ED7 /* Assets+Generated.swift in Sources */,
+				F4F5B23229B9F730007B960D /* HomeSesacSearchUseCase.swift in Sources */,
 				F4F5B19429B789DF007B960D /* EmailViewController.swift in Sources */,
 				F4F5B1EA29B8E17D007B960D /* HobbyCell.swift in Sources */,
 				F4F5B20D29B98991007B960D /* Hobby.swift in Sources */,
@@ -1913,14 +1996,17 @@
 				F4F5B21929B98EAE007B960D /* MapStatusButton.swift in Sources */,
 				F4F5B1E429B8DFE1007B960D /* SesacCardProfileView.swift in Sources */,
 				F4F5B16D29B71E6F007B960D /* StopWatchConverter.swift in Sources */,
+				F4F5B23929BA04C4007B960D /* SesacFriendQuery.swift in Sources */,
 				F459EF8829B6E2CE00199ED7 /* GenderCase.swift in Sources */,
 				F4F5B1BA29B833B7007B960D /* HomeCoordinator.swift in Sources */,
+				F4F5B23B29BA1ED7007B960D /* SesacFriendRequestDTO.swift in Sources */,
 				F4F5B1A229B78BAE007B960D /* GenderUseCase.swift in Sources */,
 				F4F5B1FB29B97E1C007B960D /* Coordinate.swift in Sources */,
 				F4F5B16129B71BC0007B960D /* ToastCase.swift in Sources */,
 				F459EF7A29B6DDDF00199ED7 /* BaseTableViewBackgroundView.swift in Sources */,
 				F4F5B1F529B97CFF007B960D /* HomeMainViewModel.swift in Sources */,
 				F4EDAEAC27DC64DA005D26E6 /* ViewRepresentable.swift in Sources */,
+				F4F5B24029BA1FFA007B960D /* SesacCardCell.swift in Sources */,
 				F459EF5E29B6D8EE00199ED7 /* GenderButton.swift in Sources */,
 				F459EF1A29B5E2ED00199ED7 /* FirebaseRepositoryInterface.swift in Sources */,
 				F459EF6829B6D9B600199ED7 /* BaseTextField.swift in Sources */,
@@ -1929,6 +2015,7 @@
 				F4F5B19629B789FC007B960D /* EmailViewModel.swift in Sources */,
 				F459EF4A29B65D2400199ED7 /* UIViewController+Rx.swift in Sources */,
 				F4F5B1B329B83373007B960D /* MyPageCoordinator.swift in Sources */,
+				F4F5B23D29BA1F50007B960D /* MyQueueStateResponseDTO.swift in Sources */,
 				F4F5B1D629B8DCF0007B960D /* SesacCardTitleView.swift in Sources */,
 				F4EDAED527DF84D5005D26E6 /* NetworkMonitor.swift in Sources */,
 				F452DCBE27E22A0F003F550B /* FirebaseRepository.swift in Sources */,
@@ -1941,6 +2028,7 @@
 				F452DCDB27E60E60003F550B /* UIImage+.swift in Sources */,
 				F4F5B1A029B78AFC007B960D /* UserSignUpRequestDTO.swift in Sources */,
 				F4F5B1E229B8DF62007B960D /* SesacCardView.swift in Sources */,
+				F4F5B22C29B9DD0A007B960D /* HomeSesacSearchViewController.swift in Sources */,
 				F4F5B1DE29B8DDD8007B960D /* MyPagePhoneNumberPermitView.swift in Sources */,
 				F4F5B15D29B717EA007B960D /* LoginUseCase.swift in Sources */,
 				F4F5B1F729B97D8E007B960D /* HomeUseCase.swift in Sources */,

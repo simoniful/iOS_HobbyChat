@@ -57,6 +57,94 @@ extension SesacRepository {
       self.process(result: result, completion: completion)
     }
   }
+  
+  func requestOnqueue(
+    userLocationInfo: Coordinate,
+    completion: @escaping (
+      Result< Onqueue,
+      SesacTargetError>
+    ) -> Void
+  ) {
+    let requestDTO = OnqueueRequestDTO(userLocationInfo: userLocationInfo)
+    provider.request(.onqueue(parameters: requestDTO.toDictionary)) { result in
+      switch result {
+      case .success(let response):
+        let data = try? JSONDecoder().decode(OnqueueResponseDTO.self, from: response.data)
+        completion(.success(data!.toDomain()))
+      case .failure(let error):
+        completion(.failure(SesacTargetError(rawValue: error.response!.statusCode) ?? .unknown))
+      }
+    }
+  }
+  
+  func requestSesacSearch(
+    sesacSearchQuery: SesacSearchQuery,
+    completion: @escaping (
+      Result< Int,
+      SesacTargetError>
+    ) -> Void
+  ) {
+    let requestDTO = SesacSearchRequestDTO(sesacSearch: sesacSearchQuery)
+    provider.request(.searchSesac(parameters: requestDTO.toDictionary)) { result in
+      self.process(result: result, completion: completion)
+    }
+  }
+  
+  func requestPauseSearchSesac(
+    completion: @escaping (
+      Result< Int,
+      SesacTargetError>
+    ) -> Void
+  ) {
+    provider.request(.pauseSearchSesac) { result in
+      self.process(result: result, completion: completion)
+    }
+  }
+  
+  func requestSesacFriend(
+    sesacFriendQuery: SesacFriendQuery,
+    completion: @escaping (
+      Result<Int,
+      SesacTargetError>
+    ) -> Void
+  ) {
+    let requestDTO = SesacFriendRequestDTO(sesacFriendQuery: sesacFriendQuery)
+    provider.request(.requestHobbyFriend(parameters: requestDTO.toDictionary)) { result in
+      self.process(result: result, completion: completion)
+    }
+  }
+  
+  func requestAcceptSesacFriend(
+    sesacFriendQuery: SesacFriendQuery,
+    completion: @escaping (
+      Result<Int,
+      SesacTargetError>) -> Void
+  ) {
+    let requestDTO = SesacFriendRequestDTO(sesacFriendQuery: sesacFriendQuery)
+    provider.request(.acceptHobbyFriend(parameters: requestDTO.toDictionary)) { result in
+      self.process(result: result, completion: completion)
+    }
+  }
+  
+  func requestMyQueueState(
+    completion: @escaping (
+      Result<MyQueueState,
+      SesacTargetError>) -> Void
+  ) {
+    provider.request(.myQueueState) { result in
+      switch result {
+      case .success(let response):
+        let data = try? JSONDecoder().decode(MyQueueStateResponseDTO.self, from: response.data)
+        completion(.success(data!.toDomain()))
+      case .failure(let error):
+        completion(.failure(
+          SesacTargetError(
+            rawValue: error.response!.statusCode
+          ) ?? .unknown
+        ))
+      }
+    }
+  }
 }
 
 extension SesacRepository {

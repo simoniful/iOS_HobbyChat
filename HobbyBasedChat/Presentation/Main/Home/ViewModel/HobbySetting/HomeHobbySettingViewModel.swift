@@ -113,7 +113,7 @@ final class HomeHobbySettingViewModel: ViewModel {
       .asSignal()
       .emit(onNext: { [weak self] in
         guard let self = self else { return }
-        self.coordinator?.showHobbySearchViewController(coordinate: self.userCoordinate)
+        self.coordinator?.showHomeSesacSearchViewController(coordinate: self.userCoordinate)
       })
       .disposed(by: disposeBag)
     

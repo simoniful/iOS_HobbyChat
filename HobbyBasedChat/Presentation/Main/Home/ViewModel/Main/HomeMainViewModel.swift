@@ -82,10 +82,10 @@ final class HomeMainViewModel: ViewModel {
         case .general:
           return true
         case .matching:
-          self.coordinator?.showHobbySearchViewController(coordinate: self.userCoordinate)
+          self.coordinator?.showHomeSesacSearchViewController(coordinate: self.userCoordinate)
           return false
         case .matched:
-          self.coordinator?.showChatViewController()
+          // self.coordinator?.showChatViewController()
           return false
         }
       }
@@ -96,7 +96,7 @@ final class HomeMainViewModel: ViewModel {
           if self.homeUseCase.fetchGender() == .total {
             self.coordinator?.changeTabToMyPageViewController(message: ToastCase.unSelectedGender.description)
           } else {
-            self.coordinator?.showHomeSearchViewController(coordinate: self.userCoordinate)
+            self.coordinator?.showHomeHobbySettingViewController(coordinate: self.userCoordinate)
           }
         } else {
           self.unAutorizedLocationAlert.accept(("위치 서비스 사용 불가", "아이폰 설정으로 이동합니다."))
@@ -133,7 +133,6 @@ final class HomeMainViewModel: ViewModel {
     )
   }
 }
-
 
 extension HomeMainViewModel {
   private func filterSesacDB(nearSesacDB: Onqueue, gender: GenderCase) -> [SesacDB] {

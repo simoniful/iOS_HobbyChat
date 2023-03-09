@@ -49,8 +49,8 @@ final class HomeHobbySettingUseCase {
   
   func requestSearchSesac(coordinate: Coordinate, hobbys: [String]) {
     let gender = fetchGender()
-    let searchSesacQuery = SesacSearchQuery(type: gender, coordinate: coordinate, hobbys: hobbys)
-    self.sesacRepository.requestSearchSesac(searchSesacQuery: searchSesacQuery) { [weak self] response in
+    let sesacSearchQuery = SesacSearchQuery(type: gender, coordinate: coordinate, hobbys: hobbys)
+    self.sesacRepository.requestSesacSearch(sesacSearchQuery: sesacSearchQuery) { [weak self] response in
       guard let self = self else { return }
       switch response {
       case .success(_):

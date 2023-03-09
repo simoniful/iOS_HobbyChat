@@ -47,8 +47,8 @@ protocol SesacRepositoryInterface: AnyObject {
     ) -> Void
   )
   
-  func requestSearchSesac(
-    searchSesacQuery: SesacSearchQuery,
+  func requestSesacSearch(
+    sesacSearchQuery: SesacSearchQuery,
     completion: @escaping (
       Result< Int,
       SesacTargetError>
@@ -58,6 +58,29 @@ protocol SesacRepositoryInterface: AnyObject {
   func requestPauseSearchSesac(
     completion: @escaping (
       Result< Int,
+      SesacTargetError>
+    ) -> Void
+  )
+  
+  func requestSesacFriend(
+    sesacFriendQuery: SesacFriendQuery,
+    completion: @escaping (
+      Result< Int,
+      SesacTargetError>
+    ) -> Void
+  )
+  
+  func requestAcceptSesacFriend(
+    sesacFriendQuery: SesacFriendQuery,
+    completion: @escaping (
+      Result< Int,
+      SesacTargetError>
+    ) -> Void
+  )
+  
+  func requestMyQueueState(                    
+    completion: @escaping (
+      Result< MyQueueState,
       SesacTargetError>
     ) -> Void
   )
