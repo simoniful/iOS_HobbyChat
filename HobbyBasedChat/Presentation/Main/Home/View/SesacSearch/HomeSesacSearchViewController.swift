@@ -86,7 +86,7 @@ final class HomeSesacSearchViewController: BaseViewController {
     output.items
       .drive(tableView.rx.items) { [weak self] tv, index, element in
         guard let self = self else { return UITableViewCell() }
-        let cell = tv.dequeueReusableCell(withIdentifier: SesacCardCell.identifier) as! SesacCardCell
+        let cell = tv.dequeueReusableCell(withIdentifier: SesacSeachCardCell.identifier) as! SesacSeachCardCell
         switch self.status {
         case .near:
           cell.updateUI(item: element, tabStatus: .near)
@@ -226,7 +226,7 @@ final class HomeSesacSearchViewController: BaseViewController {
     refreshButton.layer.borderWidth = 1
     refreshButton.layer.borderColor = UIColor.green.cgColor
     refreshButton.layer.cornerRadius = 8
-    tableView.register(SesacCardCell.self, forCellReuseIdentifier: SesacCardCell.identifier)
+    tableView.register(SesacSeachCardCell.self, forCellReuseIdentifier: SesacSeachCardCell.identifier)
     tableView.rx.setDelegate(self).disposed(by: disposeBag)
     tableView.estimatedRowHeight = 400
     tableView.separatorColor = .clear
@@ -239,7 +239,6 @@ final class HomeSesacSearchViewController: BaseViewController {
     }, completion: nil)
   }
 }
-
 
 extension HomeSesacSearchViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

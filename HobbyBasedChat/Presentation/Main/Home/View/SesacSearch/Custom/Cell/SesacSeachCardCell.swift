@@ -10,9 +10,8 @@ import RxSwift
 import RxCocoa
 import SnapKit
 
-class SesacCardCell: BaseTableViewCell {
-  
-  static let identifier = "SesacCardCell"
+final class SesacSeachCardCell: BaseTableViewCell {
+  static let identifier = "SesacSeachCardCell"
   
   private let profileView = SesacCardProfileView()
   let cardView = SesacCardView()

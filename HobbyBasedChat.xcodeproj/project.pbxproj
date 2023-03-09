@@ -196,7 +196,7 @@
 		F4F5B23929BA04C4007B960D /* SesacFriendQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23829BA04C4007B960D /* SesacFriendQuery.swift */; };
 		F4F5B23B29BA1ED7007B960D /* SesacFriendRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23A29BA1ED7007B960D /* SesacFriendRequestDTO.swift */; };
 		F4F5B23D29BA1F50007B960D /* MyQueueStateResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23C29BA1F50007B960D /* MyQueueStateResponseDTO.swift */; };
-		F4F5B24029BA1FFA007B960D /* SesacCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23F29BA1FFA007B960D /* SesacCardCell.swift */; };
+		F4F5B24029BA1FFA007B960D /* SesacSeachCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23F29BA1FFA007B960D /* SesacSeachCardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -386,7 +386,7 @@
 		F4F5B23829BA04C4007B960D /* SesacFriendQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacFriendQuery.swift; sourceTree = "<group>"; };
 		F4F5B23A29BA1ED7007B960D /* SesacFriendRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacFriendRequestDTO.swift; sourceTree = "<group>"; };
 		F4F5B23C29BA1F50007B960D /* MyQueueStateResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQueueStateResponseDTO.swift; sourceTree = "<group>"; };
-		F4F5B23F29BA1FFA007B960D /* SesacCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacCardCell.swift; sourceTree = "<group>"; };
+		F4F5B23F29BA1FFA007B960D /* SesacSeachCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacSeachCardCell.swift; sourceTree = "<group>"; };
 		FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1551,7 +1551,7 @@
 		F4F5B23E29BA1FE3007B960D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				F4F5B23F29BA1FFA007B960D /* SesacCardCell.swift */,
+				F4F5B23F29BA1FFA007B960D /* SesacSeachCardCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -2006,7 +2006,7 @@
 				F459EF7A29B6DDDF00199ED7 /* BaseTableViewBackgroundView.swift in Sources */,
 				F4F5B1F529B97CFF007B960D /* HomeMainViewModel.swift in Sources */,
 				F4EDAEAC27DC64DA005D26E6 /* ViewRepresentable.swift in Sources */,
-				F4F5B24029BA1FFA007B960D /* SesacCardCell.swift in Sources */,
+				F4F5B24029BA1FFA007B960D /* SesacSeachCardCell.swift in Sources */,
 				F459EF5E29B6D8EE00199ED7 /* GenderButton.swift in Sources */,
 				F459EF1A29B5E2ED00199ED7 /* FirebaseRepositoryInterface.swift in Sources */,
 				F459EF6829B6D9B600199ED7 /* BaseTextField.swift in Sources */,
