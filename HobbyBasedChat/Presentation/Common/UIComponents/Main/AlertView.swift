@@ -101,12 +101,12 @@ final class AlertView: UIView {
   }
   
   func showAlert() {
-    self.setAttributes()
-    self.setConstraints()
+    self.setupAttributes()
+    self.setupConstraints()
     self.setAnimation()
   }
   
-  private func setAttributes() {
+  private func setupAttributes() {
     backgroundColor = UIColor.black.withAlphaComponent(0.3)
     titleLabel.text = title
     messageLabel.text = message
@@ -123,7 +123,7 @@ final class AlertView: UIView {
     removeAnimation()
   }
   
-  private func setConstraints() {
+  private func setupConstraints() {
     UIApplication.shared.windows.first?.addSubview(self)
     frame = UIScreen.main.bounds
     addSubview(alertView)

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SesacNetworkServiceError: Int, Error {
+enum SesacTargetError: Int, Error {
   case duplicatedError = 201
   case inValidInputBodyError = 202
   case inValidIDTokenError = 401
@@ -20,7 +20,7 @@ enum SesacNetworkServiceError: Int, Error {
   var description: String { self.errorDescription }
 }
 
-extension SesacNetworkServiceError {
+extension SesacTargetError {
   var errorDescription: String {
     switch self {
     case .duplicatedError: return "201:DUPLICATE_ERROR"

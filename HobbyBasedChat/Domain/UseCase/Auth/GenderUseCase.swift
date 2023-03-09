@@ -13,7 +13,7 @@ final class GenderUseCase {
   private let sesacRepository: SesacRepositoryInterface
   
   var successRegisterSignal = PublishSubject<Void>()
-  var failRegisterSignal = PublishSubject<SesacNetworkServiceError>()
+  var failRegisterSignal = PublishSubject<SesacTargetError>()
   
   init(
     userRepository: UserRepositoryInterface,

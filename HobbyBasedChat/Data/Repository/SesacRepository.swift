@@ -14,19 +14,19 @@ final class SesacRepository: SesacRepositoryInterface {
 }
 
 extension SesacRepository {
-  func requestUserInfo(completion: @escaping (Result<UserInfo, SesacNetworkServiceError>) -> Void) {
+  func requestUserInfo(completion: @escaping (Result<UserInfo, SesacTargetError>) -> Void) {
     provider.request(.getUserInfo) { result in
       switch result {
       case .success(let response):
         let data = try? JSONDecoder().decode(UserInfoResponseDTO.self, from: response.data)
         completion(.success(data!.toDomain()))
       case .failure(let error):
-        completion(.failure(SesacNetworkServiceError(rawValue: error.response!.statusCode) ?? .unknown))
+        completion(.failure(SesacTargetError(rawValue: error.response!.statusCode) ?? .unknown))
       }
     }
   }
   
-  func requestSignUp(userSignUpInfo: UserSignUpQuery, completion: @escaping (Result<UserInfo, SesacNetworkServiceError>) -> Void ) {
+  func requestSignUp(userSignUpInfo: UserSignUpQuery, completion: @escaping (Result<UserInfo, SesacTargetError>) -> Void ) {
     let requestDTO = UserRegisterInfoRequestDTO(userSignUpInfo: userSignUpInfo)
     provider.request(.register(parameters: requestDTO.toDictionary)) { result in
       switch result {
@@ -34,12 +34,12 @@ extension SesacRepository {
         let data = try? JSONDecoder().decode(UserInfoResponseDTO.self, from: response.data)
         completion(.success(data!.toDomain()))
       case .failure(let error):
-        completion(.failure(SesacNetworkServiceError(rawValue: error.response!.statusCode) ?? .unknown))
+        completion(.failure(SesacTargetError(rawValue: error.response!.statusCode) ?? .unknown))
       }
     }
   }
   
-  func requestWithdraw(completion: @escaping (Result<Int, SesacNetworkServiceError>) -> Void ) {
+  func requestWithdraw(completion: @escaping (Result<Int, SesacTargetError>) -> Void ) {
     provider.request(.withdraw) { result in
       self.process(result: result, completion: completion)
     }
@@ -49,7 +49,7 @@ extension SesacRepository {
     userUpdateInfo: UserUpdateQuery,
     completion: @escaping (
       Result< Int,
-      SesacNetworkServiceError>
+      SesacTargetError>
     ) -> Void
   ) {
     let requestDTO = UserUpdateRequestDTO(userUpdateInfo: userUpdateInfo)
@@ -63,27 +63,27 @@ extension SesacRepository {
   private func process<T: Codable, E>(
     type: T.Type,
     result: Result<Response, MoyaError>,
-    completion: @escaping (Result<E, SesacNetworkServiceError>) -> Void
+    completion: @escaping (Result<E, SesacTargetError>) -> Void
   ) {
     switch result {
     case .success(let response):
       let data = try? JSONDecoder().decode(type, from: response.data)
       completion(.success(data as! E))
     case .failure(let error):
-      completion(.failure(SesacNetworkServiceError(rawValue: error.response!.statusCode) ?? .unknown))
+      completion(.failure(SesacTargetError(rawValue: error.response!.statusCode) ?? .unknown))
     }
   }
   
   private func process(
     result: Result<Response, MoyaError>,
-    completion: @escaping (Result<Int, SesacNetworkServiceError>) -> Void
+    completion: @escaping (Result<Int, SesacTargetError>) -> Void
   ) {
     switch result {
     case .success(let response):
       completion(.success(response.statusCode))
     case .failure(let error):
       print(error)
-      completion(.failure(SesacNetworkServiceError(rawValue: error.response!.statusCode) ?? .unknown))
+      completion(.failure(SesacTargetError(rawValue: error.response!.statusCode) ?? .unknown))
     }
   }
 }

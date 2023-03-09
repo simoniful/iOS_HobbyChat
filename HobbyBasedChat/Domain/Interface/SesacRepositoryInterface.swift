@@ -12,7 +12,7 @@ protocol SesacRepositoryInterface: AnyObject {
   func requestUserInfo(
     completion: @escaping (
       Result< UserInfo,
-      SesacNetworkServiceError>
+      SesacTargetError>
     ) -> Void
   )
   
@@ -20,14 +20,14 @@ protocol SesacRepositoryInterface: AnyObject {
     userSignUpInfo: UserSignUpQuery,
     completion: @escaping (
       Result< UserInfo,
-      SesacNetworkServiceError>
+      SesacTargetError>
     ) -> Void
   )
   
   func requestWithdraw(
     completion: @escaping (
       Result< Int,
-      SesacNetworkServiceError>
+      SesacTargetError>
     ) -> Void
   )
   
@@ -35,7 +35,30 @@ protocol SesacRepositoryInterface: AnyObject {
     userUpdateInfo: UserUpdateQuery,
     completion: @escaping (
       Result< Int,
-      SesacNetworkServiceError>
+      SesacTargetError>
+    ) -> Void
+  )
+  
+  func requestOnqueue(
+    userLocationInfo: Coordinate,
+    completion: @escaping (
+      Result< Onqueue,
+      SesacTargetError>
+    ) -> Void
+  )
+  
+  func requestSearchSesac(
+    searchSesacQuery: SesacSearchQuery,
+    completion: @escaping (
+      Result< Int,
+      SesacTargetError>
+    ) -> Void
+  )
+  
+  func requestPauseSearchSesac(
+    completion: @escaping (
+      Result< Int,
+      SesacTargetError>
     ) -> Void
   )
 }
