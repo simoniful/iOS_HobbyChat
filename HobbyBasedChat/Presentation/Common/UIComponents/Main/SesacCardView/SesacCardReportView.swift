@@ -44,7 +44,7 @@ final class SesacCardReportView: UIView {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    setConstraints()
+    setupConstraints()
     bind()
   }
   
@@ -75,7 +75,7 @@ final class SesacCardReportView: UIView {
     .disposed(by: disposeBag)
   }
   
-  private func setConstraints() {
+  private func setupConstraints() {
     addSubview(stackView)
     stackView.snp.makeConstraints { make in
       make.edges.equalToSuperview()
