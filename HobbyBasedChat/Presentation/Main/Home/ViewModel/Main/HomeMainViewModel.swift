@@ -85,7 +85,7 @@ final class HomeMainViewModel: ViewModel {
           self.coordinator?.showHomeSesacSearchViewController(coordinate: self.userCoordinate)
           return false
         case .matched:
-          // self.coordinator?.showChatViewController()
+          self.coordinator?.showHomeChatViewController()
           return false
         }
       }

@@ -135,7 +135,6 @@ final class HomeHobbySettingViewModel: ViewModel {
   }
 }
 
-
 extension HomeHobbySettingViewModel {
     private func validationSearchText(text: String) -> (Bool, String) {
         return (text.count <= 8, text)
@@ -177,4 +176,3 @@ extension HomeHobbySettingViewModel {
         self.useCase.requestSearchSesac(coordinate: coordinate, hobbys: hobbys)
     }
 }
-

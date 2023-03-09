@@ -142,7 +142,7 @@ final class HomeSesacSearchViewModel: ViewModel {
     input.reviewDetailButtonTap
       .emit(onNext: { [weak self] index in
         guard let self = self else { return }
-        // self.coordinator?.showReviewDetailViewController(reviews: self.items.value[index].reviews)
+        self.coordinator?.showHomeReviewDetailViewController(reviews: self.items.value[index].reviews)
       })
       .disposed(by: disposeBag)
     
@@ -163,7 +163,7 @@ final class HomeSesacSearchViewModel: ViewModel {
           self?.showToastAction.accept("약속이 종료되어 채팅을 보낼 수 없습니다")
         } else if state.matched == 1 {
           self?.coordinator?.navigationController.view.makeToast("dks", duration: 1, position: .top, completion: { didTap in
-            // self?.coordinator?.showChatViewController()
+            self?.coordinator?.showHomeChatViewController()
           })
         }
       })
@@ -190,7 +190,7 @@ final class HomeSesacSearchViewModel: ViewModel {
       .emit(onNext: { [weak self] _ in
         print("수락하였습니다. 채팅화면 이동!!")
         self?.indicatorAction.accept(false)
-        // self?.coordinator?.showChatViewController()
+        self?.coordinator?.showHomeChatViewController()
       })
       .disposed(by: disposeBag)
     

@@ -8,7 +8,6 @@
 import UIKit.UILabel
 
 final class PaddingLabel: UILabel {
-  
   private var padding = UIEdgeInsets(
     top: 5.0,
     left: 16.0,

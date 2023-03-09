@@ -118,7 +118,7 @@ extension SesacTarget: TargetType {
     }
   }
   
-  var sampleData: Data { //더미데이터로 사용할때 꾸리기
+  var sampleData: Data { 
     return stubData(self)
   }
   

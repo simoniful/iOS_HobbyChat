@@ -14,7 +14,6 @@ enum AlertStyle {
 }
 
 final class AlertView: UIView {
-  
   private let alertView: UIView = {
     let alert = UIView()
     alert.backgroundColor = .white

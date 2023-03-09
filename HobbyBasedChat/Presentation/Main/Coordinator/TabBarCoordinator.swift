@@ -71,11 +71,10 @@ final class TabBarCoordinator: Coordinator {
   private func connectTabCoordinator(of page: TabBarPageCase, to tabNavigationController: UINavigationController) {
     switch page {
     case .home:
-      break
-//      let homeCoordinator = HomeCoordinator(tabNavigationController)
-//      homeCoordinator.delegate = self
-//      self.childCoordinators.append(homeCoordinator)
-//      homeCoordinator.start()
+      let homeCoordinator = HomeCoordinator(tabNavigationController)
+      homeCoordinator.delegate = self
+      self.childCoordinators.append(homeCoordinator)
+      homeCoordinator.start()
     case .sesacshop:
       break
 //      let sesacShopCoordinator = SesacShopCoordinator(tabNavigationController)

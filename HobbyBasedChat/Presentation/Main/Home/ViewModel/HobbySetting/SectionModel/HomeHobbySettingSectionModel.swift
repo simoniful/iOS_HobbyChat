@@ -44,4 +44,3 @@ enum HobbySettingItem: Equatable {
         }
     }
 }
-

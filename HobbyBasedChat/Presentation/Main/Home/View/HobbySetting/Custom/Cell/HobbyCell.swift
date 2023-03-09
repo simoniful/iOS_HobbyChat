@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class HobbyCell: UICollectionViewCell {
+final class HobbyCell: UICollectionViewCell {
   static let identifier = "HobbyCell"
   private var hobbyLabel = HobbyLabel()
   

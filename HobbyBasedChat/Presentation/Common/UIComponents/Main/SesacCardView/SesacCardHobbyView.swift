@@ -57,7 +57,6 @@ final class SesacCardHobbyView: UIView, UIScrollViewDelegate {
       make.top.equalTo(titleLabel.snp.bottom)
       make.left.equalToSuperview().offset(16)
       make.right.equalToSuperview().offset(-16)
-      //make.height.equalTo(100).priority(.low)
       make.bottom.equalToSuperview().offset(-16)
     }
   }

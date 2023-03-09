@@ -69,6 +69,30 @@ final class HomeCoordinator: Coordinator {
     IndicatorView.shared.show(backgoundColor: .white)
   }
   
+  func showHomeReviewDetailViewController(reviews: [String]) {
+      let vc = HomeReviewDetailViewController(reviews: reviews)
+      vc.title = "새싹 리뷰"
+      navigationController.pushViewController(vc, animated: true)
+  }
+
+  func showHomeChatViewController() {
+      let vc = HomeChatViewController(
+          viewModel: HomeChatViewModel(
+              coordinator: self,
+              useCase: HomeChatUseCase(
+                  userRepository: UserRepository(),
+                  fireBaseRepository: FirebaseRepository(),
+                  sesacRepository: SesacRepository(),
+                  socketIORepository: SocketIORepository(),
+                  chatRealmRepository: ChatRelamRepository()
+              )
+          )
+      )
+      vc.hidesBottomBarWhenPushed = true
+      navigationController.setNavigationBarHidden(false, animated: false)
+      navigationController.pushViewController(vc, animated: true)
+  }
+  
   func changeTabToMyPageViewController(message: String) {
     navigationController.tabBarController?.selectedIndex = 3
     navigationController.tabBarController?.view.makeToast(message, position: .top)

@@ -145,6 +145,139 @@ extension SesacRepository {
       }
     }
   }
+  
+  func requestSendChat(
+      to id: String,
+      chatQuery: ChatQuery,
+      completion: @escaping (
+          Result< Chat,
+          SesacTargetError>
+      ) -> Void
+  ) {
+    let requestDTO = ChatRequestDTO(chatQuery: chatQuery)
+    provider.request(.sendChatMessage(parameters: requestDTO.toDictionary, id: id)) { result in
+        print(result)
+        switch result {
+        case .success(let response):
+            let data = try? JSONDecoder().decode(ChatDTO.self, from: response.data)
+            completion(.success(data!.toDomain()))
+        case .failure(let error):
+            completion(.failure(
+              SesacTargetError(
+                rawValue: error.response!.statusCode
+              ) ?? .unknown)
+            )
+        }
+    }
+  }
+
+  func requestChat(
+      to id: String,
+      dateString: String,
+      completion: @escaping (
+          Result< ChatList,
+          SesacTargetError>
+      ) -> Void
+  ) {
+    provider.request(.getChatInfo(id: id, date: dateString)) { result in
+        print(result)
+        switch result {
+        case .success(let response):
+            let data = try? JSONDecoder().decode(ChatResponseDTO.self, from: response.data)
+            completion(.success(data!.toDomain()))
+        case .failure(let error):
+            completion(.failure(
+              SesacTargetError(
+                rawValue: error.response!.statusCode
+              ) ?? .unknown)
+            )
+        }
+    }
+  }
+
+  func requestDodge(
+      dodgeQuery: DodgeQuery,
+      completion: @escaping (
+          Result< Int,
+          SesacTargetError>
+      ) -> Void
+  ) {
+    let requestDTO = DodgeRequestDTO(dodgeQuery: dodgeQuery)
+    provider.request(.dodge(parameters: requestDTO.toDictionary)) { result in
+        self.process(result: result, completion: completion)
+    }
+  }
+
+  func reqeustWriteReview(
+      to id: String,
+      review: ReviewQuery,
+      completion: @escaping (
+          Result< Int,
+          SesacTargetError>
+      ) -> Void
+  ) {
+    let requestDTO = ReviewRequestDTO(review: review)
+    provider.request(.writeReview(parameters: requestDTO.toDictionary, id: id)) { result in
+        print(result)
+        self.process(result: result, completion: completion)
+    }
+  }
+
+  func requestReport(
+      report: ReportQuery,
+      completion: @escaping (
+          Result< Int,
+          SesacTargetError>
+      ) -> Void
+  ) {
+    let requestDTO = ReportRequestDTO(report: report)
+    provider.request(.report(parameters: requestDTO.toDictionary)) { result in
+        self.process(result: result, completion: completion)
+    }
+  }
+
+  func requestShopUserInfo(
+      completion: @escaping (
+          Result< UserInfo,
+          SesacTargetError>
+      ) -> Void
+  ) {
+    provider.request(.shopUserInfo) { result in
+        switch result {
+        case .success(let response):
+            let data = try? JSONDecoder().decode(UserInfoResponseDTO.self, from: response.data)
+            completion(.success(data!.toDomain()))
+        case .failure(let error):
+            completion(.failure(SesacTargetError(rawValue: error.response!.statusCode) ?? .unknown))
+        }
+    }
+  }
+
+  func requestUpdateShop(
+      updateShop: UpdateShopQuery,
+      completion: @escaping (
+          Result< Int,
+          SesacTargetError>
+      ) -> Void
+  ) {
+    let requestDTO = UpdateShopRequestDTO(updateShop: updateShop)
+    provider.request(.updateShop(parameters: requestDTO.toDictionary)) { result in
+        self.process(result: result, completion: completion)
+    }
+  }
+
+  func requestPurchaseItem(
+      itemQuery: PurchaseItemQuery,
+      completion: @escaping (
+          Result< Int,
+          SesacTargetError>
+      ) -> Void
+  ) {
+    let requestDTO = PurchaseShopItemRequestDTO(itemInfo: itemQuery)
+    provider.request(.purchaseShopItem(parameters: requestDTO.toDictionary)) { result in
+        self.process(result: result, completion: completion)
+    }
+  }
 }
 
 extension SesacRepository {

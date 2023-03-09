@@ -196,7 +196,40 @@
 		F4F5B23929BA04C4007B960D /* SesacFriendQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23829BA04C4007B960D /* SesacFriendQuery.swift */; };
 		F4F5B23B29BA1ED7007B960D /* SesacFriendRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23A29BA1ED7007B960D /* SesacFriendRequestDTO.swift */; };
 		F4F5B23D29BA1F50007B960D /* MyQueueStateResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23C29BA1F50007B960D /* MyQueueStateResponseDTO.swift */; };
-		F4F5B24029BA1FFA007B960D /* SesacSeachCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23F29BA1FFA007B960D /* SesacSeachCardCell.swift */; };
+		F4F5B24029BA1FFA007B960D /* HomeSesacSeachCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B23F29BA1FFA007B960D /* HomeSesacSeachCardCell.swift */; };
+		F4F5B24629BA2425007B960D /* HomeReviewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B24529BA2425007B960D /* HomeReviewDetailViewController.swift */; };
+		F4F5B24A29BA3F6A007B960D /* HomeChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B24929BA3F6A007B960D /* HomeChatViewController.swift */; };
+		F4F5B24C29BA3F79007B960D /* HomeChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B24B29BA3F79007B960D /* HomeChatViewModel.swift */; };
+		F4F5B24E29BA3FA1007B960D /* HomeChatUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B24D29BA3FA1007B960D /* HomeChatUseCase.swift */; };
+		F4F5B25029BA4025007B960D /* SocketIORepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B24F29BA4025007B960D /* SocketIORepositoryInterface.swift */; };
+		F4F5B25229BA4051007B960D /* ChatRelamRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B25129BA4051007B960D /* ChatRelamRepositoryInterface.swift */; };
+		F4F5B25429BA40B7007B960D /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B25329BA40B7007B960D /* Chat.swift */; };
+		F4F5B25629BA4118007B960D /* ChatQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B25529BA4118007B960D /* ChatQuery.swift */; };
+		F4F5B25829BA41E8007B960D /* DodgeQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B25729BA41E8007B960D /* DodgeQuery.swift */; };
+		F4F5B25A29BA41FE007B960D /* ReviewQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B25929BA41FE007B960D /* ReviewQuery.swift */; };
+		F4F5B25C29BA4213007B960D /* ReportQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B25B29BA4213007B960D /* ReportQuery.swift */; };
+		F4F5B25E29BA4233007B960D /* UpdateShopQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B25D29BA4233007B960D /* UpdateShopQuery.swift */; };
+		F4F5B26029BA4253007B960D /* PurchaseItemQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B25F29BA4253007B960D /* PurchaseItemQuery.swift */; };
+		F4F5B26229BA42E4007B960D /* ChatRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B26129BA42E4007B960D /* ChatRequestDTO.swift */; };
+		F4F5B26429BA433D007B960D /* ChatResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B26329BA433D007B960D /* ChatResponseDTO.swift */; };
+		F4F5B26629BA43CD007B960D /* DodgeRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B26529BA43CD007B960D /* DodgeRequestDTO.swift */; };
+		F4F5B26829BA440D007B960D /* ReviewRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B26729BA440D007B960D /* ReviewRequestDTO.swift */; };
+		F4F5B26A29BA445E007B960D /* ReportRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B26929BA445E007B960D /* ReportRequestDTO.swift */; };
+		F4F5B26C29BA44D6007B960D /* UpdateShopRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B26B29BA44D6007B960D /* UpdateShopRequestDTO.swift */; };
+		F4F5B26E29BA4500007B960D /* PurchaseShopItemRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B26D29BA4500007B960D /* PurchaseShopItemRequestDTO.swift */; };
+		F4F5B27229BA45DB007B960D /* HomeReviewDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B27129BA45DB007B960D /* HomeReviewDetailCell.swift */; };
+		F4F5B27429BA4729007B960D /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B27329BA4729007B960D /* PopupView.swift */; };
+		F4F5B27629BA4846007B960D /* SesacCardReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B27529BA4846007B960D /* SesacCardReportView.swift */; };
+		F4F5B27829BA487F007B960D /* SesacReportCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B27729BA487F007B960D /* SesacReportCase.swift */; };
+		F4F5B27A29BA48FF007B960D /* PopupTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B27929BA48FF007B960D /* PopupTextView.swift */; };
+		F4F5B27F29BA4C24007B960D /* HomeChatSendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B27E29BA4C24007B960D /* HomeChatSendCell.swift */; };
+		F4F5B28129BA4C3F007B960D /* HomeChatReceiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B28029BA4C3F007B960D /* HomeChatReceiveCell.swift */; };
+		F4F5B28529BA4F1C007B960D /* HomeChatHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B28429BA4F1C007B960D /* HomeChatHeaderView.swift */; };
+		F4F5B28729BA4FD3007B960D /* SocketIORepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B28629BA4FD3007B960D /* SocketIORepository.swift */; };
+		F4F5B28929BA4FE2007B960D /* ChatRelamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B28829BA4FE2007B960D /* ChatRelamRepository.swift */; };
+		F4F5B28B29BA5057007B960D /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B28A29BA5057007B960D /* SocketIOManager.swift */; };
+		F4F5B28D29BA5097007B960D /* RealmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B28C29BA5097007B960D /* RealmStorage.swift */; };
+		F4F5B28F29BA50FC007B960D /* ChatRealmDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B28E29BA50FC007B960D /* ChatRealmDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -386,7 +419,40 @@
 		F4F5B23829BA04C4007B960D /* SesacFriendQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacFriendQuery.swift; sourceTree = "<group>"; };
 		F4F5B23A29BA1ED7007B960D /* SesacFriendRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacFriendRequestDTO.swift; sourceTree = "<group>"; };
 		F4F5B23C29BA1F50007B960D /* MyQueueStateResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQueueStateResponseDTO.swift; sourceTree = "<group>"; };
-		F4F5B23F29BA1FFA007B960D /* SesacSeachCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacSeachCardCell.swift; sourceTree = "<group>"; };
+		F4F5B23F29BA1FFA007B960D /* HomeSesacSeachCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSesacSeachCardCell.swift; sourceTree = "<group>"; };
+		F4F5B24529BA2425007B960D /* HomeReviewDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewDetailViewController.swift; sourceTree = "<group>"; };
+		F4F5B24929BA3F6A007B960D /* HomeChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChatViewController.swift; sourceTree = "<group>"; };
+		F4F5B24B29BA3F79007B960D /* HomeChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChatViewModel.swift; sourceTree = "<group>"; };
+		F4F5B24D29BA3FA1007B960D /* HomeChatUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChatUseCase.swift; sourceTree = "<group>"; };
+		F4F5B24F29BA4025007B960D /* SocketIORepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIORepositoryInterface.swift; sourceTree = "<group>"; };
+		F4F5B25129BA4051007B960D /* ChatRelamRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRelamRepositoryInterface.swift; sourceTree = "<group>"; };
+		F4F5B25329BA40B7007B960D /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		F4F5B25529BA4118007B960D /* ChatQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatQuery.swift; sourceTree = "<group>"; };
+		F4F5B25729BA41E8007B960D /* DodgeQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodgeQuery.swift; sourceTree = "<group>"; };
+		F4F5B25929BA41FE007B960D /* ReviewQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewQuery.swift; sourceTree = "<group>"; };
+		F4F5B25B29BA4213007B960D /* ReportQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportQuery.swift; sourceTree = "<group>"; };
+		F4F5B25D29BA4233007B960D /* UpdateShopQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateShopQuery.swift; sourceTree = "<group>"; };
+		F4F5B25F29BA4253007B960D /* PurchaseItemQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseItemQuery.swift; sourceTree = "<group>"; };
+		F4F5B26129BA42E4007B960D /* ChatRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRequestDTO.swift; sourceTree = "<group>"; };
+		F4F5B26329BA433D007B960D /* ChatResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatResponseDTO.swift; sourceTree = "<group>"; };
+		F4F5B26529BA43CD007B960D /* DodgeRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodgeRequestDTO.swift; sourceTree = "<group>"; };
+		F4F5B26729BA440D007B960D /* ReviewRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestDTO.swift; sourceTree = "<group>"; };
+		F4F5B26929BA445E007B960D /* ReportRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRequestDTO.swift; sourceTree = "<group>"; };
+		F4F5B26B29BA44D6007B960D /* UpdateShopRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateShopRequestDTO.swift; sourceTree = "<group>"; };
+		F4F5B26D29BA4500007B960D /* PurchaseShopItemRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseShopItemRequestDTO.swift; sourceTree = "<group>"; };
+		F4F5B27129BA45DB007B960D /* HomeReviewDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewDetailCell.swift; sourceTree = "<group>"; };
+		F4F5B27329BA4729007B960D /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		F4F5B27529BA4846007B960D /* SesacCardReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacCardReportView.swift; sourceTree = "<group>"; };
+		F4F5B27729BA487F007B960D /* SesacReportCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesacReportCase.swift; sourceTree = "<group>"; };
+		F4F5B27929BA48FF007B960D /* PopupTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupTextView.swift; sourceTree = "<group>"; };
+		F4F5B27E29BA4C24007B960D /* HomeChatSendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChatSendCell.swift; sourceTree = "<group>"; };
+		F4F5B28029BA4C3F007B960D /* HomeChatReceiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChatReceiveCell.swift; sourceTree = "<group>"; };
+		F4F5B28429BA4F1C007B960D /* HomeChatHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChatHeaderView.swift; sourceTree = "<group>"; };
+		F4F5B28629BA4FD3007B960D /* SocketIORepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIORepository.swift; sourceTree = "<group>"; };
+		F4F5B28829BA4FE2007B960D /* ChatRelamRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRelamRepository.swift; sourceTree = "<group>"; };
+		F4F5B28A29BA5057007B960D /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		F4F5B28C29BA5097007B960D /* RealmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorage.swift; sourceTree = "<group>"; };
+		F4F5B28E29BA50FC007B960D /* ChatRealmDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRealmDTO.swift; sourceTree = "<group>"; };
 		FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -755,8 +821,9 @@
 			isa = PBXGroup;
 			children = (
 				F459EF7B29B6E08000199ED7 /* DynamicCollectionView.swift */,
-				F459EF5229B65EA800199ED7 /* AlertView.swift */,
 				F4F5B1CD29B83A2F007B960D /* ProfileImageVIew.swift */,
+				F459EF6D29B6DB8F00199ED7 /* InputTextView.swift */,
+				F459EF6929B6D9BC00199ED7 /* PaddingLabel.swift */,
 				F4F5B1CB29B83949007B960D /* SesacCardView */,
 			);
 			path = Main;
@@ -777,6 +844,8 @@
 				F4F5B15E29B71884007B960D /* UserRepositoryInterface.swift */,
 				F4F5B16829B71D44007B960D /* SesacRepositoryInterface.swift */,
 				F459EF1929B5E2ED00199ED7 /* FirebaseRepositoryInterface.swift */,
+				F4F5B24F29BA4025007B960D /* SocketIORepositoryInterface.swift */,
+				F4F5B25129BA4051007B960D /* ChatRelamRepositoryInterface.swift */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -790,9 +859,10 @@
 				F459EF6329B6D9A000199ED7 /* BaseLabel.swift */,
 				F459EF6529B6D9AA00199ED7 /* BaseButton.swift */,
 				F459EF6729B6D9B500199ED7 /* BaseTextField.swift */,
-				F459EF6D29B6DB8F00199ED7 /* InputTextView.swift */,
-				F459EF6929B6D9BC00199ED7 /* PaddingLabel.swift */,
 				F459EF6129B6D94300199ED7 /* IndicatorView.swift */,
+				F459EF5229B65EA800199ED7 /* AlertView.swift */,
+				F4F5B27329BA4729007B960D /* PopupView.swift */,
+				F4F5B27929BA48FF007B960D /* PopupTextView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -800,8 +870,8 @@
 		F459EF2E29B659C600199ED7 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				F4F5B1F129B8EE32007B960D /* Main */,
 				F4F5B1F029B8EE1D007B960D /* Auth */,
+				F4F5B1F129B8EE32007B960D /* Main */,
 				F4F5B1EF29B8EE01007B960D /* Common */,
 			);
 			path = Constants;
@@ -1065,6 +1135,12 @@
 				F4F5B1A529B82E46007B960D /* UserUpdateQuery.swift */,
 				F4F5B1FC29B97F14007B960D /* SesacSearchQuery.swift */,
 				F4F5B23829BA04C4007B960D /* SesacFriendQuery.swift */,
+				F4F5B25529BA4118007B960D /* ChatQuery.swift */,
+				F4F5B25729BA41E8007B960D /* DodgeQuery.swift */,
+				F4F5B25929BA41FE007B960D /* ReviewQuery.swift */,
+				F4F5B25B29BA4213007B960D /* ReportQuery.swift */,
+				F4F5B25D29BA4233007B960D /* UpdateShopQuery.swift */,
+				F4F5B25F29BA4253007B960D /* PurchaseItemQuery.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1076,6 +1152,7 @@
 				F4F5B1F829B97DEB007B960D /* Onqueue.swift */,
 				F4F5B1FA29B97E1C007B960D /* Coordinate.swift */,
 				F4F5B23329B9F933007B960D /* MyQueueState.swift */,
+				F4F5B25329BA40B7007B960D /* Chat.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -1112,6 +1189,7 @@
 		F4F5B17B29B7225A007B960D /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
+				F4F5B28C29BA5097007B960D /* RealmStorage.swift */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -1122,6 +1200,8 @@
 				F4F5B16E29B71F3B007B960D /* UserRepository.swift */,
 				F4F5B19B29B78A4D007B960D /* SesacRepository.swift */,
 				F452DCBD27E22A0E003F550B /* FirebaseRepository.swift */,
+				F4F5B28629BA4FD3007B960D /* SocketIORepository.swift */,
+				F4F5B28829BA4FE2007B960D /* ChatRelamRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -1140,6 +1220,7 @@
 		F4F5B18429B725D1007B960D /* Socket */ = {
 			isa = PBXGroup;
 			children = (
+				F4F5B28A29BA5057007B960D /* SocketIOManager.swift */,
 			);
 			path = Socket;
 			sourceTree = "<group>";
@@ -1154,6 +1235,7 @@
 		F4F5B18829B73143007B960D /* RealmDTO */ = {
 			isa = PBXGroup;
 			children = (
+				F4F5B28E29BA50FC007B960D /* ChatRealmDTO.swift */,
 			);
 			path = RealmDTO;
 			sourceTree = "<group>";
@@ -1173,6 +1255,7 @@
 				F4F5B19D29B78A85007B960D /* UserInfoResponseDTO.swift */,
 				F4F5B22529B9DA30007B960D /* OnqueueResponseDTO.swift */,
 				F4F5B23C29BA1F50007B960D /* MyQueueStateResponseDTO.swift */,
+				F4F5B26329BA433D007B960D /* ChatResponseDTO.swift */,
 			);
 			path = ResponseDTO;
 			sourceTree = "<group>";
@@ -1193,6 +1276,7 @@
 				F4F5B1F629B97D8E007B960D /* HomeUseCase.swift */,
 				F4F5B20E29B98B2A007B960D /* HomeHobbySettingUseCase.swift */,
 				F4F5B23129B9F730007B960D /* HomeSesacSearchUseCase.swift */,
+				F4F5B24D29BA3FA1007B960D /* HomeChatUseCase.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1241,6 +1325,7 @@
 			isa = PBXGroup;
 			children = (
 				F4F5B1BC29B8349F007B960D /* MyPageMainViewController.swift */,
+				F4F5B28229BA4CE0007B960D /* Custom */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1281,6 +1366,7 @@
 				F4F5B20729B981FA007B960D /* Main */,
 				F4F5B20829B98200007B960D /* HobbySetting */,
 				F4F5B21D29B99162007B960D /* SesacSearch */,
+				F4F5B24329BA23BC007B960D /* Chat */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1291,6 +1377,8 @@
 				F4F5B1FE29B97FE0007B960D /* Main */,
 				F4F5B20629B981A3007B960D /* HobbySetting */,
 				F4F5B21C29B99148007B960D /* SesacSearch */,
+				F4F5B24229BA2357007B960D /* ReviewDetail */,
+				F4F5B24429BA23D0007B960D /* Chat */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1325,7 +1413,6 @@
 		F4F5B1C029B8354A007B960D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				F4F5B1C629B836F7007B960D /* MyPageMainCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1359,6 +1446,7 @@
 				F4F5B1E329B8DFE1007B960D /* SesacCardProfileView.swift */,
 				F4F5B1E529B8DFEE007B960D /* SesacCardPreviewView.swift */,
 				F4F5B1D529B8DCF0007B960D /* SesacCardTitleView.swift */,
+				F4F5B27529BA4846007B960D /* SesacCardReportView.swift */,
 				F4F5B1E729B8E0FC007B960D /* SesacCardHobbyView.swift */,
 				F4F5B1D729B8DCFC007B960D /* SesacCardReviewView.swift */,
 			);
@@ -1401,6 +1489,7 @@
 				F459EF8B29B6E30A00199ED7 /* SesacBackgroundCase.swift */,
 				F459EF8529B6E2B400199ED7 /* MyPageMainCase.swift */,
 				F459EF8F29B6E34100199ED7 /* SearchSesacTab.swift */,
+				F4F5B27729BA487F007B960D /* SesacReportCase.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1443,8 +1532,8 @@
 		F4F5B20929B98859007B960D /* SectionModel */ = {
 			isa = PBXGroup;
 			children = (
-				F4F5B20C29B98991007B960D /* Hobby.swift */,
 				F4F5B20A29B9886B007B960D /* HomeHobbySettingSectionModel.swift */,
+				F4F5B20C29B98991007B960D /* Hobby.swift */,
 			);
 			path = SectionModel;
 			sourceTree = "<group>";
@@ -1527,6 +1616,12 @@
 				F4F5B22329B9D9DF007B960D /* OnqueueRequestDTO.swift */,
 				F4F5B22729B9DB2B007B960D /* SesacSearchRequestDTO.swift */,
 				F4F5B23A29BA1ED7007B960D /* SesacFriendRequestDTO.swift */,
+				F4F5B26129BA42E4007B960D /* ChatRequestDTO.swift */,
+				F4F5B26529BA43CD007B960D /* DodgeRequestDTO.swift */,
+				F4F5B26729BA440D007B960D /* ReviewRequestDTO.swift */,
+				F4F5B26929BA445E007B960D /* ReportRequestDTO.swift */,
+				F4F5B26B29BA44D6007B960D /* UpdateShopRequestDTO.swift */,
+				F4F5B26D29BA4500007B960D /* PurchaseShopItemRequestDTO.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1551,7 +1646,91 @@
 		F4F5B23E29BA1FE3007B960D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				F4F5B23F29BA1FFA007B960D /* SesacSeachCardCell.swift */,
+				F4F5B23F29BA1FFA007B960D /* HomeSesacSeachCardCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F4F5B24229BA2357007B960D /* ReviewDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B24529BA2425007B960D /* HomeReviewDetailViewController.swift */,
+				F4F5B26F29BA45B4007B960D /* Custom */,
+			);
+			path = ReviewDetail;
+			sourceTree = "<group>";
+		};
+		F4F5B24329BA23BC007B960D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B24B29BA3F79007B960D /* HomeChatViewModel.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		F4F5B24429BA23D0007B960D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B24929BA3F6A007B960D /* HomeChatViewController.swift */,
+				F4F5B27B29BA4B89007B960D /* Custom */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		F4F5B26F29BA45B4007B960D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B27029BA45BB007B960D /* Cell */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		F4F5B27029BA45BB007B960D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B27129BA45DB007B960D /* HomeReviewDetailCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F4F5B27B29BA4B89007B960D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B27D29BA4B99007B960D /* Cell */,
+				F4F5B27C29BA4B91007B960D /* HeaderFooter */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		F4F5B27C29BA4B91007B960D /* HeaderFooter */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B28429BA4F1C007B960D /* HomeChatHeaderView.swift */,
+			);
+			path = HeaderFooter;
+			sourceTree = "<group>";
+		};
+		F4F5B27D29BA4B99007B960D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B27E29BA4C24007B960D /* HomeChatSendCell.swift */,
+				F4F5B28029BA4C3F007B960D /* HomeChatReceiveCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F4F5B28229BA4CE0007B960D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B28329BA4CE9007B960D /* Cell */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		F4F5B28329BA4CE9007B960D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F4F5B1C629B836F7007B960D /* MyPageMainCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1898,6 +2077,8 @@
 				F4EDAE4527D9A4D6005D26E6 /* AppDelegate.swift in Sources */,
 				F4F5B20529B98030007B960D /* HomeHobbySettingViewModel.swift in Sources */,
 				F459EEFD29B5A6C100199ED7 /* Coordinator.swift in Sources */,
+				F4F5B25229BA4051007B960D /* ChatRelamRepositoryInterface.swift in Sources */,
+				F4F5B26629BA43CD007B960D /* DodgeRequestDTO.swift in Sources */,
 				F4F5B1C929B83791007B960D /* MyPageMainHeaderView.swift in Sources */,
 				F4F5B22429B9D9DF007B960D /* OnqueueRequestDTO.swift in Sources */,
 				F459EEFB29B5A5CB00199ED7 /* AppCoordinator.swift in Sources */,
@@ -1911,7 +2092,9 @@
 				F459EF4E29B65D2400199ED7 /* InputTextView+Rx.swift in Sources */,
 				F4F5B1EC29B8E368007B960D /* HobbyLabel.swift in Sources */,
 				F4F5B23029B9F59D007B960D /* TabButton.swift in Sources */,
+				F4F5B27229BA45DB007B960D /* HomeReviewDetailCell.swift in Sources */,
 				F4F5B20B29B9886B007B960D /* HomeHobbySettingSectionModel.swift in Sources */,
+				F4F5B27F29BA4C24007B960D /* HomeChatSendCell.swift in Sources */,
 				F4F5B21729B98EA0007B960D /* GenderFilterView.swift in Sources */,
 				F459EF3729B65BA900199ED7 /* UIButton+.swift in Sources */,
 				F459EF8E29B6E31B00199ED7 /* MatchStatus.swift in Sources */,
@@ -1919,6 +2102,7 @@
 				F459EF3B29B65C5700199ED7 /* UIView+.swift in Sources */,
 				F4F5B18C29B7347E007B960D /* NicknameViewController.swift in Sources */,
 				F459EF6A29B6D9BC00199ED7 /* PaddingLabel.swift in Sources */,
+				F4F5B28129BA4C3F007B960D /* HomeChatReceiveCell.swift in Sources */,
 				F459EF8A29B6E2EA00199ED7 /* SesacImageCase.swift in Sources */,
 				F4F5B1E629B8DFEE007B960D /* SesacCardPreviewView.swift in Sources */,
 				F459EF4D29B65D2400199ED7 /* HomeSearchViewController+Rx.swift in Sources */,
@@ -1930,11 +2114,15 @@
 				F4F5B20329B98022007B960D /* HomeHobbySettingViewController.swift in Sources */,
 				F4F5B1BD29B8349F007B960D /* MyPageMainViewController.swift in Sources */,
 				F459EF0F29B5DA1E00199ED7 /* OnBoardingViewController.swift in Sources */,
+				F4F5B28F29BA50FC007B960D /* ChatRealmDTO.swift in Sources */,
 				F4F5B16929B71D44007B960D /* SesacRepositoryInterface.swift in Sources */,
 				F459EEEE29B595C300199ED7 /* AppFont.swift in Sources */,
+				F4F5B24E29BA3FA1007B960D /* HomeChatUseCase.swift in Sources */,
 				F459EF0729B5AAB500199ED7 /* TabBarCoordinator.swift in Sources */,
 				F4EDAECD27DF7E6F005D26E6 /* ViewModel.swift in Sources */,
+				F4F5B26029BA4253007B960D /* PurchaseItemQuery.swift in Sources */,
 				F459EF5529B6D75800199ED7 /* BaseTableViewCell.swift in Sources */,
+				F4F5B26229BA42E4007B960D /* ChatRequestDTO.swift in Sources */,
 				F4EDAED027DF7F13005D26E6 /* Helper.swift in Sources */,
 				F4F5B21229B98DAC007B960D /* SelectedHobbyCell.swift in Sources */,
 				F459EF5329B65EA900199ED7 /* AlertView.swift in Sources */,
@@ -1948,17 +2136,22 @@
 				F459EF8429B6E29800199ED7 /* TabBarPageCase.swift in Sources */,
 				F4F5B16F29B71F3B007B960D /* UserRepository.swift in Sources */,
 				F4F5B1F329B97CF2007B960D /* HomeMainViewController.swift in Sources */,
+				F4F5B26429BA433D007B960D /* ChatResponseDTO.swift in Sources */,
 				F4F5B18E29B7348B007B960D /* NicknameViewModel.swift in Sources */,
 				F459EF1129B5DAB200199ED7 /* BaseViewController.swift in Sources */,
+				F4F5B28929BA4FE2007B960D /* ChatRelamRepository.swift in Sources */,
 				F459EEF229B5965B00199ED7 /* AppAppearance.swift in Sources */,
 				F4F5B16729B71CEA007B960D /* CertificationUseCase.swift in Sources */,
+				F4F5B25829BA41E8007B960D /* DodgeQuery.swift in Sources */,
 				F4F5B1B529B83384007B960D /* ShopCoordinator.swift in Sources */,
 				F4F5B18029B72596007B960D /* SesacAPIEnvironment.swift in Sources */,
 				F4F5B23429B9F933007B960D /* MyQueueState.swift in Sources */,
+				F4F5B28529BA4F1C007B960D /* HomeChatHeaderView.swift in Sources */,
 				F4F5B21B29B99027007B960D /* FilterButton.swift in Sources */,
 				F4F5B15F29B71884007B960D /* UserRepositoryInterface.swift in Sources */,
 				F4F5B18229B725B3007B960D /* SesacTarget.swift in Sources */,
 				F459EF6229B6D94300199ED7 /* IndicatorView.swift in Sources */,
+				F4F5B26E29BA4500007B960D /* PurchaseShopItemRequestDTO.swift in Sources */,
 				F459EF8229B6E21F00199ED7 /* CollectionViewLeftAlignFlowLayout.swift in Sources */,
 				F459EF4829B65D2400199ED7 /* UITextView+Rx.swift in Sources */,
 				F4F5B1A429B82E15007B960D /* UserUpdateRequestDTO.swift in Sources */,
@@ -1967,11 +2160,13 @@
 				F4F5B17729B72121007B960D /* UserSignUpQuery.swift in Sources */,
 				F4F5B19029B78929007B960D /* BirthdayViewModel.swift in Sources */,
 				F459EF5C29B6D8D300199ED7 /* SelectionButton.swift in Sources */,
+				F4F5B25029BA4025007B960D /* SocketIORepositoryInterface.swift in Sources */,
 				F459EF4F29B65D2400199ED7 /* BaseButton+Rx.swift in Sources */,
 				F4F5B17129B71F95007B960D /* SesacTargetError.swift in Sources */,
 				F459EF7E29B6E0F400199ED7 /* ButtonState.swift in Sources */,
 				F459EF0529B5AAA100199ED7 /* AuthCoordinator.swift in Sources */,
 				F4F5B18729B7307F007B960D /* SesacTarget+Stub.swift in Sources */,
+				F4F5B25C29BA4213007B960D /* ReportQuery.swift in Sources */,
 				F4F5B1D229B83EBE007B960D /* MyPageUpdateFooterView.swift in Sources */,
 				F4F5B1A629B82E46007B960D /* UserUpdateQuery.swift in Sources */,
 				F4F5B1CE29B83A2F007B960D /* ProfileImageVIew.swift in Sources */,
@@ -1983,10 +2178,12 @@
 				F459EEF929B5A54500199ED7 /* Assets+Generated.swift in Sources */,
 				F4F5B23229B9F730007B960D /* HomeSesacSearchUseCase.swift in Sources */,
 				F4F5B19429B789DF007B960D /* EmailViewController.swift in Sources */,
+				F4F5B28B29BA5057007B960D /* SocketIOManager.swift in Sources */,
 				F4F5B1EA29B8E17D007B960D /* HobbyCell.swift in Sources */,
 				F4F5B20D29B98991007B960D /* Hobby.swift in Sources */,
 				F459EEFF29B5A98B00199ED7 /* UIFont+.swift in Sources */,
 				F459EF0329B5AA2D00199ED7 /* UserDefaultKey.swift in Sources */,
+				F4F5B27629BA4846007B960D /* SesacCardReportView.swift in Sources */,
 				F4EDAE4727D9A4D6005D26E6 /* SceneDelegate.swift in Sources */,
 				F459EEF029B5963A00199ED7 /* AppColor.swift in Sources */,
 				F4F5B1E829B8E0FC007B960D /* SesacCardHobbyView.swift in Sources */,
@@ -1996,6 +2193,7 @@
 				F4F5B21929B98EAE007B960D /* MapStatusButton.swift in Sources */,
 				F4F5B1E429B8DFE1007B960D /* SesacCardProfileView.swift in Sources */,
 				F4F5B16D29B71E6F007B960D /* StopWatchConverter.swift in Sources */,
+				F4F5B24629BA2425007B960D /* HomeReviewDetailViewController.swift in Sources */,
 				F4F5B23929BA04C4007B960D /* SesacFriendQuery.swift in Sources */,
 				F459EF8829B6E2CE00199ED7 /* GenderCase.swift in Sources */,
 				F4F5B1BA29B833B7007B960D /* HomeCoordinator.swift in Sources */,
@@ -2003,32 +2201,46 @@
 				F4F5B1A229B78BAE007B960D /* GenderUseCase.swift in Sources */,
 				F4F5B1FB29B97E1C007B960D /* Coordinate.swift in Sources */,
 				F4F5B16129B71BC0007B960D /* ToastCase.swift in Sources */,
+				F4F5B26A29BA445E007B960D /* ReportRequestDTO.swift in Sources */,
 				F459EF7A29B6DDDF00199ED7 /* BaseTableViewBackgroundView.swift in Sources */,
 				F4F5B1F529B97CFF007B960D /* HomeMainViewModel.swift in Sources */,
 				F4EDAEAC27DC64DA005D26E6 /* ViewRepresentable.swift in Sources */,
-				F4F5B24029BA1FFA007B960D /* SesacSeachCardCell.swift in Sources */,
+				F4F5B24029BA1FFA007B960D /* HomeSesacSeachCardCell.swift in Sources */,
+				F4F5B25A29BA41FE007B960D /* ReviewQuery.swift in Sources */,
 				F459EF5E29B6D8EE00199ED7 /* GenderButton.swift in Sources */,
 				F459EF1A29B5E2ED00199ED7 /* FirebaseRepositoryInterface.swift in Sources */,
 				F459EF6829B6D9B600199ED7 /* BaseTextField.swift in Sources */,
 				F459EF4929B65D2400199ED7 /* UISearchBar+Rx.swift in Sources */,
 				F459EF3529B65B8300199ED7 /* UIColor+.swift in Sources */,
+				F4F5B26C29BA44D6007B960D /* UpdateShopRequestDTO.swift in Sources */,
+				F4F5B24C29BA3F79007B960D /* HomeChatViewModel.swift in Sources */,
+				F4F5B27429BA4729007B960D /* PopupView.swift in Sources */,
+				F4F5B27829BA487F007B960D /* SesacReportCase.swift in Sources */,
+				F4F5B28729BA4FD3007B960D /* SocketIORepository.swift in Sources */,
 				F4F5B19629B789FC007B960D /* EmailViewModel.swift in Sources */,
 				F459EF4A29B65D2400199ED7 /* UIViewController+Rx.swift in Sources */,
 				F4F5B1B329B83373007B960D /* MyPageCoordinator.swift in Sources */,
 				F4F5B23D29BA1F50007B960D /* MyQueueStateResponseDTO.swift in Sources */,
 				F4F5B1D629B8DCF0007B960D /* SesacCardTitleView.swift in Sources */,
+				F4F5B26829BA440D007B960D /* ReviewRequestDTO.swift in Sources */,
 				F4EDAED527DF84D5005D26E6 /* NetworkMonitor.swift in Sources */,
 				F452DCBE27E22A0F003F550B /* FirebaseRepository.swift in Sources */,
+				F4F5B24A29BA3F6A007B960D /* HomeChatViewController.swift in Sources */,
 				F4F5B1C729B836F7007B960D /* MyPageMainCell.swift in Sources */,
 				F4EDAEB227DCCB32005D26E6 /* UILabel+.swift in Sources */,
 				F4F5B1F929B97DEB007B960D /* Onqueue.swift in Sources */,
+				F4F5B25629BA4118007B960D /* ChatQuery.swift in Sources */,
+				F4F5B27A29BA48FF007B960D /* PopupTextView.swift in Sources */,
 				F4F5B1C229B83567007B960D /* MyPageUpdateViewController.swift in Sources */,
 				F4F5B1E029B8DDF3007B960D /* MyPageAgeRangeView.swift in Sources */,
 				F459EF6E29B6DB8F00199ED7 /* InputTextView.swift in Sources */,
 				F452DCDB27E60E60003F550B /* UIImage+.swift in Sources */,
 				F4F5B1A029B78AFC007B960D /* UserSignUpRequestDTO.swift in Sources */,
 				F4F5B1E229B8DF62007B960D /* SesacCardView.swift in Sources */,
+				F4F5B25E29BA4233007B960D /* UpdateShopQuery.swift in Sources */,
+				F4F5B28D29BA5097007B960D /* RealmStorage.swift in Sources */,
 				F4F5B22C29B9DD0A007B960D /* HomeSesacSearchViewController.swift in Sources */,
+				F4F5B25429BA40B7007B960D /* Chat.swift in Sources */,
 				F4F5B1DE29B8DDD8007B960D /* MyPagePhoneNumberPermitView.swift in Sources */,
 				F4F5B15D29B717EA007B960D /* LoginUseCase.swift in Sources */,
 				F4F5B1F729B97D8E007B960D /* HomeUseCase.swift in Sources */,
