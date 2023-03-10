@@ -236,6 +236,7 @@
 		F4F5B29829BAD0EE007B960D /* InAppRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B29729BAD0EE007B960D /* InAppRepositoryInterface.swift */; };
 		F4F5B29A29BAD11F007B960D /* InAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B29929BAD11F007B960D /* InAppManager.swift */; };
 		F4F5B29C29BAD138007B960D /* InAppTargetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B29B29BAD138007B960D /* InAppTargetError.swift */; };
+		F4F5B29E29BAD546007B960D /* InAppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5B29D29BAD546007B960D /* InAppRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -465,6 +466,7 @@
 		F4F5B29729BAD0EE007B960D /* InAppRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppRepositoryInterface.swift; sourceTree = "<group>"; };
 		F4F5B29929BAD11F007B960D /* InAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppManager.swift; sourceTree = "<group>"; };
 		F4F5B29B29BAD138007B960D /* InAppTargetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppTargetError.swift; sourceTree = "<group>"; };
+		F4F5B29D29BAD546007B960D /* InAppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppRepository.swift; sourceTree = "<group>"; };
 		FA0EDB87E4BA5D9F46301C7D /* Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; path = "Target Support Files/Pods-HobbyBasedChat-HobbyBasedChatUITests/Pods-HobbyBasedChat-HobbyBasedChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC095AA27474AB6693558FF4 /* Pods_HobbyBasedChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyBasedChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1216,6 +1218,7 @@
 				F452DCBD27E22A0E003F550B /* FirebaseRepository.swift */,
 				F4F5B28629BA4FD3007B960D /* SocketIORepository.swift */,
 				F4F5B28829BA4FE2007B960D /* ChatRelamRepository.swift */,
+				F4F5B29D29BAD546007B960D /* InAppRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -2086,6 +2089,7 @@
 				F4F5B1C429B835A3007B960D /* MyPageUpdateViewModel.swift in Sources */,
 				F4EDAE4527D9A4D6005D26E6 /* AppDelegate.swift in Sources */,
 				F4F5B20529B98030007B960D /* HomeHobbySettingViewModel.swift in Sources */,
+				F4F5B29E29BAD546007B960D /* InAppRepository.swift in Sources */,
 				F459EEFD29B5A6C100199ED7 /* Coordinator.swift in Sources */,
 				F4F5B25229BA4051007B960D /* ChatRelamRepositoryInterface.swift in Sources */,
 				F4F5B26629BA43CD007B960D /* DodgeRequestDTO.swift in Sources */,

@@ -8,7 +8,6 @@
 import Foundation
 import StoreKit
 
-
 final class InAppManager: NSObject {
   static let shared = InAppManager()
   
