@@ -10,7 +10,6 @@ import RxSwift
 import RxRelay
 
 final class ShopBackgroundItemUseCase {
-  
   private let userRepository: UserRepositoryInterface
   private let fireBaseRepository: FirebaseRepositoryInterface
   private let sesacRepository: SesacRepositoryInterface

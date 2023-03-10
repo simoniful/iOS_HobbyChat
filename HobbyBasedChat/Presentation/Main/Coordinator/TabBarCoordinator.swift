@@ -76,11 +76,10 @@ final class TabBarCoordinator: Coordinator {
       self.childCoordinators.append(homeCoordinator)
       homeCoordinator.start()
     case .sesacshop:
-      break
-//      let sesacShopCoordinator = SesacShopCoordinator(tabNavigationController)
-//      sesacShopCoordinator.delegate = self
-//      self.childCoordinators.append(sesacShopCoordinator)
-//      sesacShopCoordinator.start()
+      let shopCoordinator = ShopCoordinator(tabNavigationController)
+      shopCoordinator.delegate = self
+      self.childCoordinators.append(shopCoordinator)
+      shopCoordinator.start()
     case .mypage:
       let myPageCoordinator = MyPageCoordinator(tabNavigationController)
       myPageCoordinator.delegate = self

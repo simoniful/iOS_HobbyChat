@@ -1,0 +1,147 @@
+//
+//  ShopMainViewModel.swift
+//  HobbyBasedChat
+//
+//  Created by Sang hun Lee on 2023/03/10.
+//
+
+import Foundation
+import RxCocoa
+import RxSwift
+
+final class ShopMainViewModel: ViewModel {
+  private weak var coordinator: ShopCoordinator?
+  private let useCase: ShopUseCase
+  
+  struct Input {
+    let viewDidLoad: Observable<Void>
+    let sesacButtonTap: Signal<Void>
+    let backgroundButtonTap: Signal<Void>
+    let saveButtonTap: Signal<Void>
+    let sesacItemTap: Signal<SesacImageCase>
+    let backgroundItemTap: Signal<SesacBackgroundCase>
+    let purchaseSesacProduct: Signal<SesacImageCase>
+    let purchaseBackgroundProduct: Signal<SesacBackgroundCase>
+  }
+  struct Output {
+    let showSesacListAction: Signal<Void>
+    let showBackgroundListAction: Signal<Void>
+    let sesacCollectionList: Driver<[Int]>
+    let backgroundCollectionList: Driver<[Int]>
+    let profileSesac: Driver<SesacImageCase>
+    let profileBackground: Driver<SesacBackgroundCase>
+    let showToastAction: Signal<String>
+  }
+  var disposeBag = DisposeBag()
+  
+  private let showSesacListAction = PublishRelay<Void>()
+  private let showBackgroundListAction = PublishRelay<Void>()
+  private let sesacCollectionList = BehaviorRelay<[Int]>(value: [])
+  private let backgroundCollectionList = BehaviorRelay<[Int]>(value: [])
+  private let profileSesac = BehaviorRelay<SesacImageCase>(value: .sesac0)
+  private let profileBackground = BehaviorRelay<SesacBackgroundCase>(value: .background0)
+  private let showToastAction = PublishRelay<String>()
+  
+  init(coordinator: ShopCoordinator?, useCase: ShopUseCase) {
+    self.coordinator = coordinator
+    self.useCase = useCase
+  }
+  
+  func transform(input: Input) -> Output {
+    input.purchaseSesacProduct
+      .emit(onNext: { [weak self] sesac in
+        guard let self = self else { return }
+        var list = self.sesacCollectionList.value
+        list[sesac.rawValue] = 1
+        self.sesacCollectionList.accept(list)
+      })
+      .disposed(by: disposeBag)
+    
+    input.purchaseBackgroundProduct
+      .emit(onNext: { [weak self] background in
+        guard let self = self else { return }
+        var list = self.backgroundCollectionList.value
+        list[background.rawValue] = 1
+        self.backgroundCollectionList.accept(list)
+      })
+      .disposed(by: disposeBag)
+    
+    input.viewDidLoad
+      .subscribe(onNext: { [weak self] _ in
+        self?.requestSesacShopInfo()
+      })
+      .disposed(by: disposeBag)
+    
+    input.sesacButtonTap
+      .emit(to: showSesacListAction)
+      .disposed(by: disposeBag)
+    
+    input.backgroundButtonTap
+      .emit(to: showBackgroundListAction)
+      .disposed(by: disposeBag)
+    
+    input.sesacItemTap
+      .emit(to: profileSesac)
+      .disposed(by: disposeBag)
+    
+    input.backgroundItemTap
+      .emit(to: profileBackground)
+      .disposed(by: disposeBag)
+    
+    input.saveButtonTap
+      .map { [weak self] _ -> Bool in
+        guard let self = self else { return false }
+        let isHavingSesac = self.sesacCollectionList.value[self.profileSesac.value.rawValue] == 1 ? true : false
+        let isHavingBackground = self.backgroundCollectionList.value[self.profileBackground.value.rawValue] == 1 ? true : false
+        return isHavingSesac && isHavingBackground
+      }
+      .emit(onNext: { [weak self] isValid in
+        guard let self = self else { return }
+        if isValid {
+          self.requestUpdateShop(sesac: self.profileSesac.value, background: self.profileBackground.value)
+        } else {
+          self.showToastAction.accept("구매가 필요한 아이템이 있어요")
+        }
+      })
+      .disposed(by: disposeBag)
+    
+    self.useCase.successUpdateShop
+      .asSignal()
+      .emit(onNext: { [weak self] in
+        self?.showToastAction.accept("성공적으로 저장되었습니다")
+      })
+      .disposed(by: disposeBag)
+    
+    self.useCase.successSesacShopInfo
+      .asSignal()
+      .emit(onNext: { [weak self] info in
+        guard let self = self else { return }
+        self.profileSesac.accept(info.sesac)
+        self.profileBackground.accept(info.background)
+        self.sesacCollectionList.accept(info.sesacCollection)
+        self.backgroundCollectionList.accept(info.backgroundCollection)
+        self.showSesacListAction.accept(())
+      })
+      .disposed(by: disposeBag)
+    
+    return Output(
+      showSesacListAction: showSesacListAction.asSignal(),
+      showBackgroundListAction: showBackgroundListAction.asSignal(),
+      sesacCollectionList: sesacCollectionList.asDriver(),
+      backgroundCollectionList: backgroundCollectionList.asDriver(),
+      profileSesac: profileSesac.asDriver(),
+      profileBackground: profileBackground.asDriver(),
+      showToastAction: showToastAction.asSignal()
+    )
+  }
+}
+
+extension ShopMainViewModel {
+  private func requestSesacShopInfo() {
+    self.useCase.requestSesacShopInfo()
+  }
+  
+  private func requestUpdateShop(sesac: SesacImageCase, background: SesacBackgroundCase) {
+    self.useCase.requestUpdateShop(sesac: sesac, background: background)
+  }
+}
