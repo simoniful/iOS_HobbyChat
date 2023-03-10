@@ -17,7 +17,7 @@ final class HomeSesacSeachCardCell: BaseTableViewCell {
   let cardView = SesacCardView()
   let requestButton = BaseButton(title: "요청하기")
   let receiveButton = BaseButton(title: "수락하기")
-  var status: SearchSesacTab = .near
+  var status: SesacSearchTabCase = .near
   
   var disposeBag = DisposeBag()
   
@@ -93,7 +93,7 @@ final class HomeSesacSeachCardCell: BaseTableViewCell {
     layoutIfNeeded()
   }
   
-  func updateUI(item: SesacDB, tabStatus: SearchSesacTab) {
+  func updateUI(item: SesacDB, tabStatus: SesacSearchTabCase) {
     self.profileView.setBackgroundImage(image: item.background.image)
     self.profileView.setSesacImage(image: item.sesac.image)
     self.cardView.setSesacTitle(reputation: item.reputation)
@@ -109,7 +109,7 @@ final class HomeSesacSeachCardCell: BaseTableViewCell {
     self.setRequestButton(tabStatus: tabStatus)
   }
   
-  private func setRequestButton(tabStatus: SearchSesacTab) {
+  private func setRequestButton(tabStatus: SesacSearchTabCase) {
     switch tabStatus {
     case .near:
       self.requestButton.isHidden = false

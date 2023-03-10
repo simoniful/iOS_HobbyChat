@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SearchSesacTab: String {
+enum SesacSearchTabCase: String {
   case near
   case receive
   

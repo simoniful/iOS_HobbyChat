@@ -30,7 +30,7 @@ final class HomeSesacSearchViewModel: ViewModel {
   
   struct Output {
     let items: Driver<[SesacDB]>
-    let tabStatus: Driver<SearchSesacTab>
+    let tabStatus: Driver<SesacSearchTabCase>
     let nearSecacButtonSelectedAction: Signal<Void>
     let receivedRequestButtonSelectedAction: Signal<Void>
     let showToastAction: Signal<String>
@@ -42,7 +42,7 @@ final class HomeSesacSearchViewModel: ViewModel {
   private let items = BehaviorRelay<[SesacDB]>(value: [])
   private let nearSecacButtonSelectedAction = PublishRelay<Void>()
   private let receivedRequestButtonSelectedAction = PublishRelay<Void>()
-  private let tabStatus = BehaviorRelay<SearchSesacTab>(value: .near)
+  private let tabStatus = BehaviorRelay<SesacSearchTabCase>(value: .near)
   private let showToastAction = PublishRelay<String>()
   private let indicatorAction = BehaviorRelay<Bool>(value: false)
   
@@ -115,8 +115,8 @@ final class HomeSesacSearchViewModel: ViewModel {
       .emit(onNext: { [weak self] userID in
         guard let self = self else { return }
         let alert = AlertView.init(
-          title: SearchSesacTab.near.alertTitle,
-          message: SearchSesacTab.near.alertMessage,
+          title: SesacSearchTabCase.near.alertTitle,
+          message: SesacSearchTabCase.near.alertMessage,
           buttonStyle: .confirmAndCancel) {
             self.indicatorAction.accept(true)
             self.requestSesacFriend(userID: userID)
@@ -129,8 +129,8 @@ final class HomeSesacSearchViewModel: ViewModel {
       .emit(onNext: { [weak self] userID in
         guard let self = self else { return }
         let alert = AlertView.init(
-          title: SearchSesacTab.receive.alertTitle,
-          message: SearchSesacTab.receive.alertMessage,
+          title: SesacSearchTabCase.receive.alertTitle,
+          message: SesacSearchTabCase.receive.alertMessage,
           buttonStyle: .confirmAndCancel) {
             self.indicatorAction.accept(true)
             self.requestAcceptSesacFriend(userID: userID)
@@ -180,7 +180,7 @@ final class HomeSesacSearchViewModel: ViewModel {
     self.useCase.successRequestSesacFriend
       .asSignal()
       .emit(onNext: { [weak self] _ in
-        self?.showToastAction.accept(SearchSesacTab.near.toastMessage)
+        self?.showToastAction.accept(SesacSearchTabCase.near.toastMessage)
         self?.indicatorAction.accept(false)
       })
       .disposed(by: disposeBag)

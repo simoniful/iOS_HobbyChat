@@ -46,7 +46,7 @@ final class HomeSesacSearchViewController: BaseViewController {
   private let requestAcceptSesacFriend = PublishRelay<String>()
   private let reviewDetailButtonTap = PublishRelay<Int>()
   
-  private var status: SearchSesacTab = .near
+  private var status: SesacSearchTabCase = .near
   
   init(viewModel: HomeSesacSearchViewModel) {
     self.viewModel = viewModel
@@ -69,8 +69,8 @@ final class HomeSesacSearchViewController: BaseViewController {
     output.items
       .map { return $0.count <= 0 }
       .drive(tableView.rx.isEmpty(
-        title: SearchSesacTab.near.emptyTitle,
-        message: SearchSesacTab.receive.emptyMessage)
+        title: SesacSearchTabCase.near.emptyTitle,
+        message: SesacSearchTabCase.receive.emptyMessage)
       )
       .disposed(by: disposeBag)
     
