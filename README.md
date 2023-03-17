@@ -58,14 +58,14 @@ MVC를 쓴다고 해서 구식의 아키텍처 패턴을 사용하는 것이 아
 ## ScreenShot
 <div markdown="1">  
     <div align = "center">
-    <img src="https://user-images.githubusercontent.com/87598209/158223391-96dfc3b6-3437-4b4f-b4cf-42678c2a64fd.png" width="250px" height="600px"></img>
-    <img src="https://user-images.githubusercontent.com/87598209/158223474-b9a6ff2e-c983-4ba4-bab4-b016cb18463a.png" width="250px" height="600px"></img>
-    <img src="https://user-images.githubusercontent.com/87598209/158223539-39ecc43a-61f4-4749-b633-4567bbca80e9.png" width="250px" height="600px"></img>
+    <img src="https://user-images.githubusercontent.com/87598209/158223391-96dfc3b6-3437-4b4f-b4cf-42678c2a64fd.png" width="20%"></img>
+    <img src="https://user-images.githubusercontent.com/87598209/158223474-b9a6ff2e-c983-4ba4-bab4-b016cb18463a.png" width="20%"></img>
+    <img src="https://user-images.githubusercontent.com/87598209/158223539-39ecc43a-61f4-4749-b633-4567bbca80e9.png" width="20%"></img>
 </div>
 <div markdown="1">  
     <div align = "center">
-    <img src="https://user-images.githubusercontent.com/87598209/158223593-47e51db8-863f-4549-8ed6-cab49bbba6ec.png" width="250px" height="600px"></img>
-    <img src="https://user-images.githubusercontent.com/87598209/158223706-6760e8c1-8184-4a83-bd66-f6d253b1b960.png" width="250px" height="600px"></img>
-    <img src="https://user-images.githubusercontent.com/87598209/158223793-c4ef51f2-f6e0-4f27-82be-4d58a4ebb5d4.png" width="250px" height="600px"></img>
+    <img src="https://user-images.githubusercontent.com/87598209/158223593-47e51db8-863f-4549-8ed6-cab49bbba6ec.png" width="20%"></img>
+    <img src="https://user-images.githubusercontent.com/87598209/158223706-6760e8c1-8184-4a83-bd66-f6d253b1b960.png" width="20%"></img>
+    <img src="https://user-images.githubusercontent.com/87598209/158223793-c4ef51f2-f6e0-4f27-82be-4d58a4ebb5d4.png" width="20%"></img>
 </div>  
 
